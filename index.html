@@ -77,25 +77,3 @@
         <router-view :class="{ dark: store.dark }"></router-view>
     </body>
 </html>
-
-<ul id="demon-list"></ul>
-
-
-<script>
-async function loadDemons() {
-  const res = await fetch("https://pointercrate.com/api/v1/demons?limit=75");
-  const demons = await res.json();
-
-  const list = document.getElementById("demon-list");
-  list.innerHTML = "";
-
-  demons.forEach(d => {
-    const li = document.createElement("li");
-    li.textContent = `${d.position}. ${d.name} - ${d.points} pts`;
-    list.appendChild(li);
-  });
-}
-
-loadDemons();
-</script>
-
