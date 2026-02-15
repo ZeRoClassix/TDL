@@ -1,27 +1,27 @@
 [
     {
         "role": "owner",
-        "name": "List Owner",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "kaoas",
+        "link": "https://www.youtube.com/@kaoasKKK"
     },
     {
         "role": "admin",
-        "name": "List Admin",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "binarY",
+        "link": "https://www.youtube.com/@binaryKNOWN"
     },
     {
         "role": "helper",
-        "name": "List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "znassPCD",
+        "link": "https://www.youtube.com/@pcdznas"
     },
     {
         "role": "trial",
-        "name": "Trial List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "pyantCARRY",
+        "link": "https://www.youtube.com/@carriesUpyant"
     },
     {
         "role": "dev",
-        "name": "List Coder",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "xullify",
+        "link": "https://www.youtube.com/@xullifyy"
     }
 ]
