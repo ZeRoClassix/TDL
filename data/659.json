@@ -6,5 +6,67 @@
     "verifier": "[IQB7] Whizkid05",
     "verification": "https://www.youtube.com/watch?v=l52ApE4HWkY",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[SJL] Hipo",
+        "link": "https://www.youtube.com/watch?v=nYGLqrzJx5c",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[RF] Kopre",
+        "link": "https://www.youtube.com/watch?v=qgXG5IvIuPQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[RF] BryceTheBest",
+        "link": "https://www.youtube.com/watch?v=XPNhIGfT4Qg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[USSR] kszħy∃!10ki",
+        "link": "https://www.youtube.com/watch?v=z3hFPAsUKjM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Zytrox",
+        "link": "https://www.youtube.com/watch?v=6YeUCL9NcQs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[910] Stefan Boss",
+        "link": "https://www.youtube.com/watch?v=odJ9HQTylvc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IQB7] Mag8zq5er7up",
+        "link": "https://www.youtube.com/watch?v=ZnRxRBdz4_0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ROAR] coubitic",
+        "link": "https://www.youtube.com/watch?v=StkJ8saAU9k",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OUGH] cbremner",
+        "link": "https://www.youtube.com/watch?v=5sxJzYhlhLs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "ThiagoRostizado",
+        "link": "https://www.youtube.com/watch?v=wT866-zC12k",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
 }
