@@ -6,5 +6,18 @@
     "verifier": "eastshark",
     "verification": "https://www.youtube.com/watch?v=20fYiqLAo_E",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[YAHO] agonom",
+        "link": "https://www.youtube.com/watch?v=HMoe9mM3_Zw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OUGH] cbremner",
+        "link": "https://www.youtube.com/watch?v=hZdcnGhmzZ4",
+        "percent": 69,
+        "hz": 360
+    }
+]
 }
