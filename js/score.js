@@ -15,7 +15,7 @@ export function score(rank, percent, minPercent) {
     if (rank > 75 && percent < 100) return 0;
 
     // Formula
-    let baseScore = (-24.9975 * Math.pow(rank - 1, 0.4) + 350) *
+    let baseScore = (-24.9975 * Math.pow(rank - 1, 0.4) + 200) *
         ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
 
     baseScore = Math.max(0, baseScore);
