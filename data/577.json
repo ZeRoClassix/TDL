@@ -6,5 +6,85 @@
     "verifier": "[IQB7] Whizkid05",
     "verification": "https://www.youtube.com/watch?v=nnkgghxxsEE",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[THNDR] Thnnder",
+        "link": "https://www.youtube.com/watch?v=1CQXk6nuLmk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=W8gCO5boRnI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Netermind",
+        "link": "https://www.youtube.com/watch?v=-kOsBAjd-LU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[DV] Dovi",
+        "link": "https://www.youtube.com/watch?v=5zioLmv86xQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ROAR] Flavyola64",
+        "link": "https://www.youtube.com/watch?v=nbSuGhp3_a4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] mariner",
+        "link": "https://www.youtube.com/watch?v=ProNF02JXsk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "bims",
+        "link": "https://www.youtube.com/watch?v=Te55gA3U1Hg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Ahwiin",
+        "link": "https://www.youtube.com/watch?v=SZqSvTSKJts",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MEALY] KrNati",
+        "link": "https://www.youtube.com/watch?v=jx35eIYEp1o",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Klopz",
+        "link": "https://www.youtube.com/watch?v=4uBaaRzWDkU",
+        "percent": 96,
+        "hz": 360
+    },
+    {
+        "user": "[EDDIE] gotsmile",
+        "link": "https://www.youtube.com/watch?v=DOMbOLYPXII",
+        "percent": 93,
+        "hz": 360
+    },
+    {
+        "user": "PAIKS",
+        "link": "https://www.youtube.com/watch?v=xxYBPebd118",
+        "percent": 86,
+        "hz": 360
+    },
+    {
+        "user": "fuuturisticfire",
+        "link": "https://www.youtube.com/watch?v=o9j4RpmeXcs",
+        "percent": 79,
+        "hz": 360
+    }
+]
+
 }
