@@ -6,5 +6,91 @@
     "verifier": "Lavatrex",
     "verification": "https://www.youtube.com/watch?v=nQDTi077O6M",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=Y7GY3V2oPWQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IQB7] Whizkid05",
+        "link": "https://www.youtube.com/watch?v=YsZ6iWW7r7Q",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCD] Trick",
+        "link": "https://www.youtube.com/watch?v=eGAMEL8qkCE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Laniakea",
+        "link": "https://www.youtube.com/watch?v=UnFY3hApyUc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "TFIBB",
+        "link": "https://www.youtube.com/watch?v=7iQDnFE2HY4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[RF] NordstromUSA",
+        "link": "https://www.youtube.com/watch?v=YQLu_lVdS_o",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[4MO] Abstract",
+        "link": "https://www.youtube.com/watch?v=u06CZ-whq7Q",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "skzyl",
+        "link": "https://www.youtube.com/watch?v=wB6kpCgf98A",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] wPopoff",
+        "link": "https://www.youtube.com/watch?v=59QOKT9H5Tk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[CAFE] GuillExprex52",
+        "link": "https://www.youtube.com/watch?v=yaNDmULgwhM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Tortric",
+        "link": "https://www.youtube.com/watch?v=MQdPqjcyYnc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Netermind",
+        "link": "https://www.youtube.com/watch?v=KqTgrbmmXIw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[HOLA] DeividG",
+        "link": "https://www.youtube.com/watch?v=Wo2gh5crX6M",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] kloone",
+        "link": "https://www.youtube.com/watch?v=ZAlArBqotgo",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
 }
