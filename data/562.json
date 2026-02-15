@@ -21,7 +21,7 @@
     },
     {
         "user": "[GNG] aidn76",
-        "link": "https://www.youtube.com/watch?v=RVSNsAJkYek&t=3s",
+        "link": "https://www.youtube.com/watch?v=RVSNsAJkYek&ts",
         "percent": "100",
         "hz": "240"
     },
@@ -52,5 +52,6 @@
 ]
 
 }
+
 
 
