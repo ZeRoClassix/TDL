@@ -22,8 +22,8 @@
     {
         "user": "[GNG] aidn76",
         "link": "https://www.youtube.com/watch?v=RVSNsAJkYek&ts",
-        "percent": "100",
-        "hz": "240"
+        "percent": 100,
+        "hz": 240
     },
     {
         "user": "mindzdraf",
@@ -52,6 +52,7 @@
 ]
 
 }
+
 
 
 
