@@ -6,5 +6,49 @@
     "verifier": "[67] Zoink",
     "verification": "https://www.youtube.com/watch?v=nU5AQPzd2YA",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[EDDIE] moliklee",
+        "link": "https://www.youtube.com/watch?v=R60DOyl8GYQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Netermind",
+        "link": "https://www.youtube.com/watch?v=4HZnramyHW8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[BLOOM] zThund3r",
+        "link": "https://www.youtube.com/watch?v=Dd0ZsxUcuMQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[4MO] ROZE",
+        "link": "https://www.youtube.com/watch?v=tSzLbbDE0EU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[HOLA] weyolll3",
+        "link": "https://www.youtube.com/watch?v=8iAqdq5GmWg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Brian_Cheese",
+        "link": "https://www.youtube.com/watch?v=VFRTdkttPec",
+        "percent": 90,
+        "hz": 360
+    },
+    {
+        "user": "aidanhh",
+        "link": "https://www.youtube.com/watch?v=ezsy5y4hQIg",
+        "percent": 75,
+        "hz": 360
+    }
+]
+
 }
