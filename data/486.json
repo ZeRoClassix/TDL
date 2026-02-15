@@ -6,5 +6,169 @@
     "verifier": "[67] Zoink",
     "verification": "https://www.youtube.com/watch?v=16Zh8jssanc",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[TCD] Diamond",
+        "link": "https://www.youtube.com/watch?v=oEFB-ZrhMmM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCD] Trick",
+        "link": "https://www.youtube.com/watch?v=aWyNtYYpjy8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] wPopoff",
+        "link": "https://www.youtube.com/watch?v=-ynbIhRflw8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "mindzdraf",
+        "link": "https://www.youtube.com/watch?v=s4LJd1WsPos",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[EDDIE] moliklee",
+        "link": "https://www.youtube.com/watch?v=lXgcuhWiThE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] Abakarovich",
+        "link": "https://www.youtube.com/watch?v=8jMEdJCuekg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] Andrey Kapninskii",
+        "link": "https://www.youtube.com/watch?v=FifpSVGGq1U",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[CHAT] Abdieldevil",
+        "link": "https://www.youtube.com/watch?v=KqJW42qq-7c",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] Taiago",
+        "link": "https://www.youtube.com/watch?v=nSSr_W9CUFs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] Mizukii",
+        "link": "https://www.youtube.com/watch?v=3l4akJem96w",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Netermind",
+        "link": "https://www.youtube.com/watch?v=csTgoj00VQI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[4MO] ROZE",
+        "link": "https://www.youtube.com/watch?v=5qAiQ_v-SC4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SSS] w3rty",
+        "link": "https://www.youtube.com/watch?v=SAgyELodik8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[4MO] fallen",
+        "link": "https://www.youtube.com/watch?v=toLsDvVv4Mc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[KUNU] Serpentical",
+        "link": "https://www.youtube.com/watch?v=vefvpRl0Kd4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Wavyy",
+        "link": "https://www.youtube.com/watch?v=FeesiByUtqg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SSS] Vorten",
+        "link": "https://www.youtube.com/watch?v=_C8FYkm4RUw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Nickname09",
+        "link": "https://www.youtube.com/watch?v=0rUlpxhCv10",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Yumira",
+        "link": "https://www.youtube.com/watch?v=3z0s6S7bkuU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCD] Doggie",
+        "link": "https://www.youtube.com/watch?v=CB0xfTOC0Lk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] foxyan17",
+        "link": "https://www.youtube.com/watch?v=C8adGQG9AEc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[RF] turtle",
+        "link": "https://www.youtube.com/watch?v=6vonOwyXBes",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[USSR] Light",
+        "link": "https://www.youtube.com/watch?v=jBiI9dbn-cg",
+        "percent": 98,
+        "hz": 360
+    },
+    {
+        "user": "[RF] Johnlikediamond",
+        "link": "https://www.youtube.com/watch?v=qsrT0-Py3BY",
+        "percent": 98,
+        "hz": 360
+    },
+    {
+        "user": "[BLKHL] GodGamer2442",
+        "link": "https://www.youtube.com/watch?v=u7-Rtnbt1XA",
+        "percent": 84,
+        "hz": 360
+    },
+    {
+        "user": "[EZ] Jerpaa",
+        "link": "https://www.youtube.com/watch?v=JMl91KmiT4Q",
+        "percent": 77,
+        "hz": 360
+    },
+    {
+        "user": "[BLKHL] ScoffGD",
+        "link": "https://www.youtube.com/watch?v=8CLIDMmKo5c",
+        "percent": 67,
+        "hz": 360
+    }
+]
+
 }
