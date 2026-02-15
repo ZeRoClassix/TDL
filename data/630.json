@@ -6,5 +6,511 @@
     "verifier": "[SSS] Vorten",
     "verification": "https://www.youtube.com/watch?v=TvA8EJTJFCc",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "Komet01",
+        "link": "https://www.youtube.com/watch?v=OKkhc1DY7MA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[RF] NordstromUSA",
+        "link": "https://www.youtube.com/watch?v=dbZZRh2SXic",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] Kaza",
+        "link": "https://www.youtube.com/watch?v=kmNalYkgCG8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[4MO] fallen",
+        "link": "https://www.youtube.com/watch?v=TkhcgB9uxMs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FOWL] Hqmy",
+        "link": "https://www.youtube.com/watch?v=gfBiouwXSUo",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCD] Trick",
+        "link": "https://www.youtube.com/watch?v=jYQxcRd6Eh4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[AURA] Rosey",
+        "link": "https://www.youtube.com/watch?v=dhO01D-NjFQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] Nexel",
+        "link": "https://www.youtube.com/watch?v=U5v707MFHrM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ROAR] Flavyola64",
+        "link": "https://www.youtube.com/watch?v=8BHfPJBxJds",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SSS] dovv1n",
+        "link": "https://www.youtube.com/watch?v=jyBAeu3rjm0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Avifa",
+        "link": "https://www.youtube.com/watch?v=yxdmG78WxB0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[EDDIE] DibiiziCookie",
+        "link": "https://www.youtube.com/watch?v=f9_fChhQfXQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[V2] Pop-cat_8-bit",
+        "link": "https://www.youtube.com/watch?v=H0iwSPB1Pew",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Gokill",
+        "link": "https://www.youtube.com/watch?v=m8CrUBfU6zU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[CAFE] GuillExprex52",
+        "link": "https://www.youtube.com/watch?v=SArTs6ceAII",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "npoctou_gamer",
+        "link": "https://www.youtube.com/watch?v=urMoWkGFbVA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] Mizukii",
+        "link": "https://www.youtube.com/watch?v=CqEX_1X4zxU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Netermind",
+        "link": "https://www.youtube.com/watch?v=7C3w_1VUDq0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[KUNU] Serpentical",
+        "link": "https://www.youtube.com/watch?v=YYwPOLTNfU0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YABU] Karma.",
+        "link": "https://www.youtube.com/watch?v=fXbTFtA5Ysw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] wPopoff",
+        "link": "https://www.youtube.com/watch?v=Z31bQBTrHL4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[CHAT] Perrix47",
+        "link": "https://www.youtube.com/watch?v=ismzFfFIy4M",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "PAIKS",
+        "link": "https://www.youtube.com/watch?v=a1JWBTsMMHQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] Slaughter",
+        "link": "https://www.youtube.com/watch?v=Bua14f9ozcs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] Andrey Kapninskii",
+        "link": "https://www.youtube.com/watch?v=LD7xf14o8X0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] kloone",
+        "link": "https://www.youtube.com/watch?v=cQhn-zr5Bxo",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[HERVE] Rando",
+        "link": "https://www.youtube.com/watch?v=hfrX99I3714",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FOWL] rain",
+        "link": "https://www.youtube.com/watch?v=MMpQAqmMvsA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Lukie",
+        "link": "https://www.youtube.com/watch?v=XgjE3L5TKIM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=2nXbUdjhjF4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[BUNNY] tea",
+        "link": "https://www.youtube.com/watch?v=j2pTLWIuf2o",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MDT] Raffox",
+        "link": "https://www.youtube.com/watch?v=2DqJ6v0Svq8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "JaxonGD",
+        "link": "https://www.youtube.com/watch?v=bmLgHMVQ_OY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Duv",
+        "link": "https://www.youtube.com/watch?v=NGtMaA9IpM8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "peekingurangle",
+        "link": "https://www.youtube.com/watch?v=ejRGIAawmsw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YOB] ciaran",
+        "link": "https://www.youtube.com/watch?v=Pm8al1tvsdc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Franzy",
+        "link": "https://www.youtube.com/watch?v=yzVoiV0pwQY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[PIG] Rediio",
+        "link": "https://www.youtube.com/watch?v=Qhh1otYXwNQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "eastshark",
+        "link": "https://www.youtube.com/watch?v=HkjeysWj8EU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FOWL] ByteLaww",
+        "link": "https://www.youtube.com/watch?v=dB8WHNSMirg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SLR] carv",
+        "link": "https://www.youtube.com/watch?v=NAMMOJI6mDU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[BLKHL] LordeGD",
+        "link": "https://www.youtube.com/watch?v=FaoGt8mv85w",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ZOBRO] Kot",
+        "link": "https://www.youtube.com/watch?v=uKfanoWnTWU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[RF] Johnlikediamond",
+        "link": "https://www.youtube.com/watch?v=r5TWY7VlGBo",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MEALY] MrOozer",
+        "link": "https://www.youtube.com/watch?v=gxQ_rIqXQNQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Rusty111",
+        "link": "https://www.youtube.com/watch?v=FPA19B_hRtI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SPQR] zStucc",
+        "link": "https://www.youtube.com/watch?v=8UT59B-Df98",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Timy",
+        "link": "https://www.youtube.com/watch?v=7VD8gVGuO-E",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[STACK] CHOOONK",
+        "link": "https://www.youtube.com/watch?v=w8urekjEPsI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[PATU] manu",
+        "link": "https://www.youtube.com/watch?v=BBniryG0tM4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[BENJA] PaltaDash",
+        "link": "https://www.youtube.com/watch?v=myOZxqPLLEs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IBSL] Syrcx",
+        "link": "https://www.youtube.com/watch?v=AcUglqD8Cxo",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[smd] donley",
+        "link": "https://www.youtube.com/watch?v=MTKUyfHLYqw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "cudby",
+        "link": "https://www.youtube.com/watch?v=sSPxzdGBiqs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "ProudGiraffe311",
+        "link": "https://www.youtube.com/watch?v=_wevV1rf2Yk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FOWL] geodom",
+        "link": "https://www.youtube.com/watch?v=Qqv8Zo6KR18",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] 한명",
+        "link": "https://www.youtube.com/watch?v=JIY85j3g0mk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[24hs] 金艮",
+        "link": "https://www.youtube.com/watch?v=HIEZ09tQ_nM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "ddamian",
+        "link": "https://www.youtube.com/watch?v=7vKQLVx31rM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WBT] Noctal",
+        "link": "https://www.youtube.com/watch?v=3bBqbz4-e7c",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "VeturnusGDMC",
+        "link": "https://www.youtube.com/watch?v=TLA0zsMePmo",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Laban",
+        "link": "https://www.youtube.com/watch?v=zlz8QsETAtM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "PL0SIVE",
+        "link": "https://www.youtube.com/watch?v=74p3vRCKlT4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[EDDIE] moliklee",
+        "link": "https://www.youtube.com/watch?v=iFYEDKjC8nE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MEALY] zLevii",
+        "link": "https://www.youtube.com/watch?v=TiVqWCgW8wE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[103] Kole",
+        "link": "https://www.youtube.com/watch?v=-oa_kMgLlJ8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Zeroxy",
+        "link": "https://www.youtube.com/watch?v=W7bSpHsE_Js",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YTG] haz3l",
+        "link": "https://www.youtube.com/watch?v=SmWOsW5l274",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "BloodyCat",
+        "link": "https://www.youtube.com/watch?v=sY7ajuBgXBg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[99] goobs",
+        "link": "https://www.youtube.com/watch?v=ViYFNHZPlKU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Thelifinof",
+        "link": "https://www.youtube.com/watch?v=RR0Eunx4620",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Spoken",
+        "link": "https://www.youtube.com/watch?v=bahGzIkBPMU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] zoe",
+        "link": "https://www.youtube.com/watch?v=yxel_PT5q90",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[KRAS] Bleamer",
+        "link": "https://www.youtube.com/watch?v=GXPo5F3DH-A",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "(SWEDEN) LOL123",
+        "link": "https://www.youtube.com/watch?v=qJEKVLJINhU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WHO] zepion",
+        "link": "https://www.youtube.com/watch?v=bhWoGdXczng",
+        "percent": 86,
+        "hz": 360
+    },
+    {
+        "user": "serresiete",
+        "link": "https://www.youtube.com/watch?v=YN3quyPmNto",
+        "percent": 82,
+        "hz": 360
+    },
+    {
+        "user": "~ lenii.",
+        "link": "https://www.youtube.com/watch?v=F53rmInBt3k",
+        "percent": 81,
+        "hz": 360
+    },
+    {
+        "user": "[IQB7] envyixy",
+        "link": "https://www.youtube.com/watch?v=nuFozUcCL9s",
+        "percent": 81,
+        "hz": 360
+    },
+    {
+        "user": "[YTG] Lilbro334",
+        "link": "https://www.youtube.com/watch?v=LcgDWKgDXPs",
+        "percent": 79,
+        "hz": 360
+    },
+    {
+        "user": "AmIJorge",
+        "link": "https://www.youtube.com/watch?v=Fzp9AyqbFG4",
+        "percent": 76,
+        "hz": 360
+    },
+    {
+        "user": "EmeraldKnight",
+        "link": "https://www.youtube.com/watch?v=jaXMkfFGdmo",
+        "percent": 72,
+        "hz": 360
+    },
+    {
+        "user": "[OUGH] cbremner",
+        "link": "https://www.youtube.com/watch?v=UTASCMdp5iw",
+        "percent": 72,
+        "hz": 360
+    },
+    {
+        "user": "zDusti",
+        "link": "https://www.youtube.com/watch?v=rs3uXOFV7Lk",
+        "percent": 71,
+        "hz": 360
+    }
+]
+
 }
