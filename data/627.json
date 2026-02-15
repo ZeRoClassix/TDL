@@ -6,5 +6,103 @@
     "verifier": "cobrablitz",
     "verification": "https://www.youtube.com/watch?v=WsVF-ayipvY",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[400] CuatrocientosYT",
+        "link": "https://www.youtube.com/watch?v=IIAJ3y9WOLI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[BUNNY] Nocturina",
+        "link": "https://www.youtube.com/watch?v=W3USL7XTWEU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "TFIBB",
+        "link": "https://www.youtube.com/watch?v=T3TAEaEFeFw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Tunax",
+        "link": "https://www.youtube.com/watch?v=UAT4P46pJ4Y",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] IcaroX",
+        "link": "https://www.youtube.com/watch?v=Z1g4dfR898w",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "xxxluigixxx",
+        "link": "https://www.youtube.com/watch?v=enfZQH766fY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=RPr00k9vRcs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Lobster",
+        "link": "https://www.youtube.com/watch?v=BfpUmTO-PyM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FOWL] merkz",
+        "link": "https://www.youtube.com/watch?v=6XtmTxNktBA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "XBelugaX",
+        "link": "https://www.youtube.com/watch?v=_bcQfGDgMt8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "bims",
+        "link": "https://www.youtube.com/watch?v=vaJdbVFCqKE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MEALY] zLevii",
+        "link": "https://www.youtube.com/watch?v=E5iuX5V2RHM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[smd] Blebae",
+        "link": "https://www.youtube.com/watch?v=e0lqtrb6Dkw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Tired",
+        "link": "https://www.youtube.com/watch?v=eKgjGqabRNA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FULEX] Ozone",
+        "link": "https://www.youtube.com/watch?v=kV5zPDPS6Q4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "hokiie",
+        "link": "https://www.youtube.com/watch?v=shuGh3oRMOM",
+        "percent": 81,
+        "hz": 360
+    }
+]
+
 }
