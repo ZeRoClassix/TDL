@@ -6,5 +6,43 @@
     "verifier": "[JUICE] Amplitron",
     "verification": "https://www.youtube.com/watch?v=cjHwgbtAkXU",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[OG B] Superjavicon",
+        "link": "https://www.youtube.com/watch?v=MaYspGzxBcE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "ChopBlox",
+        "link": "https://www.youtube.com/watch?v=_ApuV_9GpZw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[HERVE] BBQDash",
+        "link": "https://www.youtube.com/watch?v=Al6aCV2BBDw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] Nexel",
+        "link": "https://www.youtube.com/watch?v=RqRPrriC-8I",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[CHAT] Perrix47",
+        "link": "https://www.youtube.com/watch?v=TI0HdjXwtug",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Cewz",
+        "link": "https://www.youtube.com/watch?v=2BbTTjMo-sk",
+        "percent": 79,
+        "hz": 360
+    }
+]
+
 }
