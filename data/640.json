@@ -6,5 +6,55 @@
     "verifier": "[IQB7] Whizkid05",
     "verification": "https://www.youtube.com/watch?v=qeRKuyU3eGI",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "[CAFE] GuillExprex52",
+        "link": "https://www.youtube.com/watch?v=epOIBPIYhxY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[PRIME] exsii",
+        "link": "https://www.youtube.com/watch?v=UFNoaMhlzoA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] Kaza",
+        "link": "https://www.youtube.com/watch?v=uA8CcG2M_ng",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SSS] dovv1n",
+        "link": "https://www.youtube.com/watch?v=9rOxFUaEakg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=ftDDz4-iDQM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "BigMacGD",
+        "link": "https://www.youtube.com/watch?v=LQhfnkCraA8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "bims",
+        "link": "https://www.youtube.com/watch?v=cvz_0Imq9hs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] kloone",
+        "link": "https://www.youtube.com/watch?v=g8XN9O2i6HQ",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
 }
