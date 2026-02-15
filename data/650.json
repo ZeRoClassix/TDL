@@ -6,5 +6,55 @@
     "verifier": "Frice",
     "verification": "https://www.youtube.com/watch?v=dlvsCE3xYkQ",
     "percentToQualify": "100",
-    "records": []
+    "records": [
+    {
+        "user": "EmeraldKnight",
+        "link": "https://www.youtube.com/watch?v=EPbkSG-3Jug",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] Kaza",
+        "link": "https://www.youtube.com/watch?v=gcnyzsHlo60",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Konsuno",
+        "link": "https://www.youtube.com/watch?v=1eeYobZIH5M",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[DL] vonic",
+        "link": "https://www.youtube.com/watch?v=cszCJjVjS8k",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=xsannHBrcww",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ROAR] Flavyola64",
+        "link": "https://www.youtube.com/watch?v=jgw9wq2MQMc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[Ñ] Laurendi",
+        "link": "https://www.youtube.com/watch?v=0eJfbF1uLHE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[COMET] Nexel",
+        "link": "https://www.youtube.com/watch?v=ObA_-ojwkJ8",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
 }
