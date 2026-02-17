@@ -75,15 +75,6 @@
             </nav>
         </header>
         <router-view :class="{ dark: store.dark }">
-            <router-view :class="{ dark: store.dark }">
-    <!-- Glow container -->
-    <div class="main-glow">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Page content (injected by Vue) stays here -->
-        </router-view>
+            <router-view :class="{ dark: store.dark }"></router-view>
     </body>
 </html>
