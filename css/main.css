@@ -163,3 +163,39 @@ input[type="checkbox"] {
     background: linear-gradient(90deg, #7c3aed, #a855f7);
     color: white;
 }
+
+/* Add this to main.css at the bottom */
+
+/* Glow container inside main content */
+.main-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 0; /* behind content */
+}
+
+.main-glow span {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(124,58,237,0.15), transparent 70%);
+    border-radius: 50%;
+    animation: floatGlow 10s ease-in-out infinite alternate;
+}
+
+/* Create multiple glows */
+.main-glow span:nth-child(1) { top: 50px; left: 20%; }
+.main-glow span:nth-child(2) { top: 200px; left: 60%; animation-delay: 3s; }
+.main-glow span:nth-child(3) { top: 400px; left: 35%; animation-delay: 5s; }
+
+/* Animation */
+@keyframes floatGlow {
+    0%   { transform: translate(0,0) scale(1); opacity: 0.1; }
+    50%  { transform: translate(15px,15px) scale(1.1); opacity: 0.15; }
+    100% { transform: translate(0,30px) scale(1); opacity: 0.1; }
+}
+
