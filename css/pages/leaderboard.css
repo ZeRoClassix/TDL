@@ -79,7 +79,7 @@
     padding: 1rem;
     text-align: end;
     font-weight: 600;
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    background: linear-gradient(90deg, #b366ff, #8e2de2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -105,18 +105,18 @@
 
 /* Hover animation */
 .page-leaderboard .board .user button:hover {
-    background: linear-gradient(90deg, rgba(88,166,255,0.15), rgba(88,166,255,0.05));
+    background: linear-gradient(90deg, rgba(179,102,255,0.15), rgba(142,45,226,0.05));
     color: var(--color-on-background-hover);
     cursor: pointer;
     transform: scale(1.02);
-    box-shadow: 0 0 12px rgba(88,166,255,0.2);
+    box-shadow: 0 0 12px rgba(142,45,226,0.2);
 }
 
 /* Active selected player */
 .page-leaderboard .board .user.active button {
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    background: linear-gradient(90deg, #b366ff, #8e2de2);
     color: white;
-    box-shadow: 0 0 16px rgba(79,172,254,0.4);
+    box-shadow: 0 0 16px rgba(179,102,255,0.4);
     transform: scale(1.02);
 }
 
@@ -133,13 +133,13 @@
 
 /* Gradient headers */
 .page-leaderboard .player h1 {
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    background: linear-gradient(90deg, #b366ff, #8e2de2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .page-leaderboard .player h2 {
-    background: linear-gradient(90deg, #43e97b, #38f9d7);
+    background: linear-gradient(90deg, #b366ff, #d299ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -155,7 +155,7 @@
 }
 
 .page-leaderboard .player .table tr:hover {
-    background-color: rgba(255,255,255,0.03);
+    background-color: rgba(142,45,226,0.05);
     transform: translateX(4px);
 }
 
@@ -186,5 +186,5 @@
 
 .page-leaderboard .player .table a:hover {
     text-decoration: underline;
-    color: #4facfe;
+    color: #b366ff;
 }
