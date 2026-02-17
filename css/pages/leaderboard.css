@@ -1,11 +1,6 @@
 .page-leaderboard-container {
     display: block;
 }
-
-/* =========================
-   Layout
-========================= */
-
 .page-leaderboard {
     height: 100%;
     display: grid;
@@ -15,176 +10,84 @@
     max-width: 80rem;
     margin: 0 auto;
 }
-
 .page-leaderboard > div {
     overflow-y: auto;
 }
-
 .page-leaderboard .error-container {
     grid-row: 1;
     grid-column: 1 / span 2;
 }
-
 .page-leaderboard .error-container .error {
     padding: 1rem;
-    background: linear-gradient(90deg, #ff4d4d, #ff1a1a);
-    color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+    background-color: var(--color-error);
+    color: var(--color-on-error);
 }
-
-/* =========================
-   Board Container
-========================= */
-
 .page-leaderboard .board-container,
 .page-leaderboard .player-container {
     grid-row: 2;
     padding-block: 2rem;
 }
-
 .page-leaderboard .board-container {
     padding-inline: 1rem;
 }
-
-/* =========================
-   Leaderboard Table
-========================= */
-
 .page-leaderboard .board {
     table-layout: auto;
     display: block;
     width: 100%;
 }
-
-/* Smooth row animation */
-.page-leaderboard .board tr {
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.page-leaderboard .board tr:hover {
-    transform: translateX(6px);
-}
-
-/* Rank */
 .page-leaderboard .board .rank {
     padding-block: 1rem;
     text-align: end;
-    font-weight: 600;
-    opacity: 0.8;
 }
-
-/* Points */
 .page-leaderboard .board .total {
     padding: 1rem;
     text-align: end;
-    font-weight: 600;
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
-
-/* User column */
 .page-leaderboard .board .user {
     width: 100%;
 }
-
-/* Player button */
 .page-leaderboard .board .user button {
     background-color: var(--color-background);
     color: var(--color-on-background);
     border: none;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     text-align: start;
     word-break: normal;
     overflow-wrap: anywhere;
-    transition: all 0.25s ease;
-    position: relative;
 }
-
-/* Hover animation */
 .page-leaderboard .board .user button:hover {
-    background: linear-gradient(90deg, rgba(88,166,255,0.15), rgba(88,166,255,0.05));
+    background-color: var(--color-background-hover);
     color: var(--color-on-background-hover);
     cursor: pointer;
-    transform: scale(1.02);
-    box-shadow: 0 0 12px rgba(88,166,255,0.2);
 }
-
-/* Active selected player */
 .page-leaderboard .board .user.active button {
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
-    color: white;
-    box-shadow: 0 0 16px rgba(79,172,254,0.4);
-    transform: scale(1.02);
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
 }
-
-/* =========================
-   Player Detail Section
-========================= */
-
 .page-leaderboard .player {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-right: 2rem;
 }
-
-/* Gradient headers */
-.page-leaderboard .player h1 {
-    background: linear-gradient(90deg, #4facfe, #00f2fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.page-leaderboard .player h2 {
-    background: linear-gradient(90deg, #43e97b, #38f9d7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Tables */
 .page-leaderboard .player .table {
     table-layout: fixed;
 }
-
-/* Table rows animation */
-.page-leaderboard .player .table tr {
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.page-leaderboard .player .table tr:hover {
-    background-color: rgba(255,255,255,0.03);
-    transform: translateX(4px);
-}
-
 .page-leaderboard .player .table tr td:not(:last-child) {
     padding-right: 2rem;
 }
-
 .page-leaderboard .player .table p,
 .page-leaderboard .player .table a {
     padding-block: 1rem;
 }
-
 .page-leaderboard .player .table .rank p,
 .page-leaderboard .player .table .score p {
     text-align: end;
-    font-weight: 600;
 }
-
-/* Level column */
 .page-leaderboard .player .table .level {
     width: 100%;
 }
-
-/* Links */
-.page-leaderboard .player .table a {
-    transition: color 0.2s ease;
-}
-
 .page-leaderboard .player .table a:hover {
     text-decoration: underline;
-    color: #4facfe;
 }
