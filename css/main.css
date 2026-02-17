@@ -1,27 +1,36 @@
 :root {
+    /* Theme Colors */
     --color-background: white;
     --color-on-background: black;
     --color-background-hover: #eee;
     --color-on-background-hover: black;
-    --color-primary: #0066ff;
+    --color-primary: #7c3aed; /* Purple theme */
     --color-on-primary: white;
     --color-error: #de0000;
     --color-on-error: white;
+
+    /* Transition speeds */
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.3s ease;
 }
 
 main.dark,
 header.dark {
     color-scheme: dark;
+
     --color-background: #1c1b1f;
     --color-on-background: white;
     --color-background-hover: #27262c;
     --color-on-background-hover: white;
-    --color-primary: #283593;
-    --color-primary-disabled: #1f213c;
+    --color-primary: #8b5cf6;
     --color-on-primary: white;
-    --color-error: #de0000;
+    --color-error: #ff4d4d;
     --color-on-error: white;
 }
+
+/* =========================
+   Base Layout
+========================= */
 
 html,
 body {
@@ -32,54 +41,98 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    background: var(--color-background);
+    color: var(--color-on-background);
+    transition: background var(--transition-smooth), color var(--transition-smooth);
 }
 
-header,
-main {
-    background-color: var(--color-background);
-    color: var(--color-on-background);
-    display: grid;
-    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(
-            16em,
-            1fr
-        );
-    column-gap: 2rem;
-}
+/* =========================
+   Header
+========================= */
 
 header {
     display: flex;
-    padding-inline: calc(25vw - 10rem);
-    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 4.5rem;
     background-color: var(--color-primary);
     color: var(--color-on-primary);
+    gap: 2rem;
+    transition: background var(--transition-smooth);
 }
-@media screen and (min-width: 1366px) {
-    header {
-        display: grid;
-        padding-inline: 0;
-    }
-}
+
 header .logo {
-    justify-self: end;
-    align-self: center;
     display: flex;
     align-items: flex-end;
     gap: 1rem;
 }
+
 header .nav {
     flex: 1;
 }
+
+/* =========================
+   Main Layout
+========================= */
 
 main {
     height: 0;
     flex: 1;
     display: grid;
+    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 2fr) minmax(16rem, 1fr);
     grid-template-rows: minmax(0, 1fr);
     column-gap: 2rem;
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    overflow: hidden;
+    position: relative;
 }
+
+/* =========================
+   Glow Elements (Leaderboard-style)
+========================= */
+
+main::before,
+main::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(circle, rgba(124,58,237,0.15), transparent 70%);
+    animation: floatGlow 12s ease-in-out infinite alternate;
+}
+
+main::before {
+    top: 50px;
+    left: 10%;
+}
+
+main::after {
+    top: 200px;
+    left: 60%;
+    animation-delay: 3s;
+}
+
+@keyframes floatGlow {
+    0%   { transform: translate(0,0) scale(1); opacity: 0.1; }
+    50%  { transform: translate(15px,15px) scale(1.05); opacity: 0.15; }
+    100% { transform: translate(0,30px) scale(1); opacity: 0.1; }
+}
+
+/* Ensure content stays above glow */
 main > div {
     overflow-y: auto;
+    position: relative;
+    z-index: 1;
 }
+
+/* =========================
+   Spinner
+========================= */
 
 .spinner {
     display: flex;
@@ -88,9 +141,32 @@ main > div {
     grid-column: span 3;
 }
 
+/* =========================
+   Inputs
+========================= */
+
 input[type="checkbox"] {
     height: 1.25rem;
     width: 1.25rem;
     cursor: pointer;
     margin: 0;
+}
+
+/* =========================
+   Tabs Hover Lift
+========================= */
+
+.tabs button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tabs button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Active tab styling */
+.tabs .active {
+    background: linear-gradient(90deg, #7c3aed, #a855f7);
+    color: white;
 }
