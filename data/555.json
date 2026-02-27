@@ -7,7 +7,6 @@
     "verification": "https://www.youtube.com/watch?v=FPfSqlI0T30",
     "percentToQualify": "100",
     "records": [
-        [
     {
         "user": "[67] Zoink",
         "link": "https://www.youtube.com/watch?v=OiW0BoVDcV8",
@@ -458,7 +457,7 @@
         "percent": 73,
         "hz": 360
     }
-]
     ]
 
 }
+
