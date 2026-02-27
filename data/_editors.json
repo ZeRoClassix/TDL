@@ -10,6 +10,11 @@
         "link": "https://www.youtube.com/@binaryKNOWN"
     },
     {
+        "role": "admin",
+        "name": "casamio",
+        "link": "https://www.youtube.com/@casamioo1"
+    },
+    {
         "role": "helper",
         "name": "znassPCD",
         "link": "https://www.youtube.com/@pcdznas"
@@ -23,5 +28,10 @@
         "role": "dev",
         "name": "xasit",
         "link": "https://www.youtube.com/@xasit"
+    },
+    {
+        "role": "dev",
+        "name": "verOPP",
+        "link": "https://www.youtube.com/@verOPP"
     }
 ]
