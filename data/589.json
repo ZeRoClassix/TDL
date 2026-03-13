@@ -20,6 +20,12 @@
         "hz": 360
     },
     {
+        "user": "[FAX] Hover",
+        "link": "https://www.youtube.com/watch?v=GcG3X3WZZrs",
+        "percent": 100,
+        "hz": 360
+    },        
+    {
         "user": "[SSS] w3rty",
         "link": "https://www.youtube.com/watch?v=FmeeyDzivzI",
         "percent": 100,
@@ -44,9 +50,21 @@
         "hz": 360
     },
     {
+        "user": "[PATU] Theitha",
+        "link": "https://www.youtube.com/watch?v=j7tKDLfQddQ",
+        "percent": 74,
+        "hz": 360
+    },
+    {
         "user": "ralex",
         "link": "https://www.youtube.com/watch?v=hRUAGZmDn1k",
         "percent": 71,
+        "hz": 360
+    },
+    {
+        "user": "benbotwyd",
+        "link": "https://www.youtube.com/watch?v=stxzvy_ZAp0",
+        "percent": 68,
         "hz": 360
     }
 ]
