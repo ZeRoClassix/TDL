@@ -1,200 +1,358 @@
 /* =========================
-   List Layout
+   List Page – Pointercrate card style
+   JS hooks preserved: .page-list, .list-container,
+   .level-container, .meta-container, .list, .level,
+   .rank, .records, .meta, .editors
 ========================= */
 
+/* ---- Column Padding ---- */
 .page-list .list-container,
 .page-list .level-container,
 .page-list .meta-container {
-    padding-block: 2rem;
+    padding-block: 1.75rem;
 }
 
 .page-list .list-container {
-    padding-inline: 1rem;
+    padding-inline: 0;
+}
+
+.page-list .level-container {
+    padding-inline: 1.5rem;
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
 }
 
 .page-list .meta-container {
-    padding-right: 2rem;
+    padding-inline: 1.5rem;
 }
 
-/* =========================
-   List Table
-========================= */
-
+/* ---- List Sidebar Table ---- */
 .page-list .list {
     table-layout: auto;
-}
-
-.page-list .list .rank {
-    text-align: end;
-    padding-right: 1rem;
-}
-
-.page-list .list .level {
     width: 100%;
 }
 
-/* =========================
-   Level Buttons (Purple Gradient + Hover Animation)
-========================= */
+/* Rank number column */
+.page-list .list .rank {
+    text-align: end;
+    padding: 0.3rem 0.75rem 0.3rem 1rem;
+    white-space: nowrap;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--color-on-background-muted);
+    vertical-align: middle;
+}
 
+/* Level name column */
+.page-list .list .level {
+    width: 100%;
+    padding: 0.2rem 0.5rem 0.2rem 0;
+    vertical-align: middle;
+}
+
+/* ---- Level Row Buttons – card style ---- */
 .page-list .list .level button {
-    background-color: var(--color-background);
+    width: 100%;
+    background: transparent;
     color: var(--color-on-background);
     border: none;
-    border-radius: 0.5rem;
-    padding: 1rem;
+    border-left: 3px solid transparent;
+    border-radius: 0;
+    padding: 0.7rem 1rem;
     text-align: start;
     word-break: normal;
     overflow-wrap: anywhere;
     cursor: pointer;
+    font-family: 'Nunito', 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
     font-weight: 600;
-
-    /* Purple gradient for demon names */
-    background: linear-gradient(90deg, #b366ff, #8e2de2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    position: relative;
-    transition: all 0.3s ease;
+    transition:
+        background var(--transition-fast),
+        border-color var(--transition-fast),
+        color var(--transition-fast);
+    display: block;
 }
 
-/* Hover effect */
 .page-list .list .level button:hover {
-    /* Slight lift */
-    transform: translateY(-2px);
-    /* Add a subtle glow like leaderboard */
-    text-shadow: 0 0 6px rgba(179, 102, 255, 0.6), 0 0 12px rgba(142, 45, 226, 0.4);
-    cursor: pointer;
+    background: var(--color-background-hover);
+    border-left-color: var(--color-primary-light);
+    color: var(--color-primary);
 }
 
-/* Error styling */
+/* Error level */
 .page-list .list .level.error button {
     color: var(--color-error);
     cursor: not-allowed;
     text-decoration: line-through;
+    opacity: 0.7;
 }
 
-/* Active styling */
+/* Active / selected level */
 .page-list .list .level.active button {
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
-    box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
-    transform: scale(1.02);
+    background: rgba(74, 144, 217, 0.1);
+    border-left-color: var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
-/* =========================
-   Level Container
-========================= */
-
+/* ---- Level Detail (centre column) ---- */
 .page-list .level-container .level {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding-right: 2rem;
-    max-width: 48rem;
+    gap: 1.75rem;
+    max-width: 52rem;
 }
 
-.page-list .level-container .level .level-authors {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-auto-rows: max-content;
-    gap: 1rem;
+/* Level title */
+.page-list .level-container .level h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-on-background);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
 }
 
+/* Video embed */
 .page-list .level-container .level .video {
     aspect-ratio: 16/9;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--color-shadow);
 }
 
+/* Stats strip (Points / ID / Password) */
 .page-list .level-container .level .stats {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    gap: 2rem;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--color-background-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px var(--color-shadow);
 }
 
 .page-list .level-container .level .stats li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    text-align: center;
 }
 
+/* Stat label */
+.page-list .level-container .level .stats .type-title-sm {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-on-background-muted);
+}
+
+/* Stat value */
+.page-list .level-container .level .stats p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+/* Author grid */
+.page-list .level-container .level .level-authors {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-auto-rows: max-content;
+    gap: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Records section header */
+.page-list .level-container .level h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-on-background);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+}
+
+/* Records qualify text */
+.page-list .level-container .level > p {
+    font-size: 0.88rem;
+    color: var(--color-on-background-muted);
+}
+
+.page-list .level-container .level > p strong {
+    color: var(--color-primary);
+}
+
+/* Records table */
 .page-list .level-container .level .records {
-    table-layout: fixed;
+    /* auto layout so columns size naturally to their content */
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.page-list .level-container .level .records tr td:not(:last-child) {
-    padding-right: 1rem;
+.page-list .level-container .level .records tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background var(--transition-fast);
 }
 
-.page-list .level-container .level .records .percent,
-.page-list .level-container .level .records .user,
-.page-list .level-container .level .records .hz {
-    padding-block: 1rem;
+.page-list .level-container .level .records tr:hover {
+    background: var(--color-background-hover);
 }
 
+/* Percent column – never shrink, right-aligned */
+.page-list .level-container .level .records .percent {
+    padding: 0.75rem 1rem 0.75rem 0;
+    white-space: nowrap;
+    text-align: end;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    vertical-align: middle;
+}
+
+/* User / name column – takes remaining space */
 .page-list .level-container .level .records .user {
     width: 100%;
-    font-weight: 600;
-    /* Purple gradient for user names */
-    background: linear-gradient(90deg, #b366ff, #8e2de2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.25s ease;
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    word-break: break-word;
 }
 
-.page-list .level-container .level .records .percent,
+/* Mobile icon column */
+.page-list .level-container .level .records .mobile {
+    padding: 0.75rem 0.5rem;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.page-list .level-container .level .records .mobile img {
+    height: 1.1rem;
+    display: block;
+}
+
+/* Hz / FPS column – never shrink, right-aligned */
 .page-list .level-container .level .records .hz {
+    padding: 0.75rem 0 0.75rem 0.5rem;
+    white-space: nowrap;
     text-align: end;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-on-background-muted);
+    vertical-align: middle;
 }
 
-/* Hover for records links */
+/* Record links hover */
 .page-list .meta-container .og a:hover,
 .page-list .level-container .level .records a:hover {
     text-decoration: underline;
-    color: #b366ff;
+    color: var(--color-primary);
 }
 
-/* =========================
-   Meta Section
-========================= */
-
+/* ---- Meta Sidebar (right column) ---- */
 .page-list .meta {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.75rem;
 }
 
+/* Meta card wrapper for each section */
+.page-list .meta > * {
+    background: var(--color-background-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.4rem;
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+/* Meta section headings */
+.page-list .meta h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Errors card */
 .page-list .meta .errors {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
 }
 
 .page-list .meta .errors .error {
-    padding: 1rem;
-    background-color: var(--color-error);
-    color: var(--color-on-error);
-    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: rgba(229, 62, 62, 0.1);
+    border: 1px solid rgba(229, 62, 62, 0.3);
+    color: var(--color-error);
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
 }
 
+/* Editors list */
 .page-list .meta .editors {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.6rem;
+    margin-top: 0.1rem;
 }
 
 .page-list .meta .editors li {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.55rem;
+    font-size: 0.88rem;
 }
 
 .page-list .meta .editors li img {
-    height: 1.25rem;
+    height: 1.1rem;
+    opacity: 0.75;
 }
 
 .page-list .meta .editors li a:hover {
     text-decoration: underline;
-    color: #b366ff;
+    color: var(--color-primary);
+}
+
+/* Guidelines paragraphs */
+.page-list .meta > div > p {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--color-on-background-muted);
+    margin-bottom: 0.5rem;
+}
+
+.page-list .meta > div > p:last-child {
+    margin-bottom: 0;
+}
+
+/* Original credits */
+.page-list .meta .og {
+    font-size: 0.78rem;
+    color: var(--color-on-background-muted);
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.page-list .meta .og a {
+    color: var(--color-primary);
+    font-weight: 600;
 }
