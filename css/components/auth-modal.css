@@ -1,0 +1,218 @@
+/* =========================
+   Auth Modal – Login / Sign Up
+   Pure front-end UI, no backend
+========================= */
+
+/* Overlay backdrop */
+.auth-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Modal card */
+.auth-modal {
+    background: var(--color-background-card);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35), 0 0 0 1px var(--color-border);
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    animation: slideUp 0.22s ease;
+    position: relative;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(24px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Top accent stripe */
+.auth-modal::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary), var(--color-primary-light));
+}
+
+/* Header bar */
+.auth-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 1.75rem 0;
+}
+
+.auth-modal__header h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-on-background);
+    letter-spacing: -0.02em;
+}
+
+/* Close button */
+.auth-modal__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-on-background-muted);
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.auth-modal__close:hover {
+    color: var(--color-on-background);
+    background: var(--color-background-hover);
+}
+
+/* Tab switcher inside modal (Login / Sign Up) */
+.auth-modal__tabs {
+    display: flex;
+    margin: 1rem 1.75rem 0;
+    border-bottom: 2px solid var(--color-border);
+    gap: 0;
+}
+
+.auth-modal__tabs button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    padding: 0.6rem 1.1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-on-background-muted);
+    cursor: pointer;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.auth-modal__tabs button:hover {
+    color: var(--color-on-background);
+}
+
+.auth-modal__tabs button.active {
+    border-bottom-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* Form body */
+.auth-modal__body {
+    padding: 1.5rem 1.75rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Field group */
+.auth-modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.auth-modal__field label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-on-background-muted);
+}
+
+.auth-modal__field input {
+    /* Inherits global input styles from main.css */
+}
+
+/* Form actions */
+.auth-modal__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.auth-modal__actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+}
+
+/* Divider */
+.auth-modal__divider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-on-background-muted);
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    margin: 0.25rem 0;
+}
+
+.auth-modal__divider::before,
+.auth-modal__divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--color-border);
+}
+
+/* Footer link */
+.auth-modal__footer {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.82rem;
+    color: var(--color-on-background-muted);
+    padding-top: 0.25rem;
+}
+
+.auth-modal__footer a,
+.auth-modal__footer button.link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    transition: color var(--transition-fast);
+}
+
+.auth-modal__footer a:hover,
+.auth-modal__footer button.link:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+/* Error message inside form */
+.auth-modal__error {
+    background: rgba(229, 62, 62, 0.1);
+    border: 1px solid rgba(229, 62, 62, 0.35);
+    color: var(--color-error);
+    border-radius: var(--radius-sm);
+    padding: 0.6rem 0.9rem;
+    font-size: 0.85rem;
+    font-family: 'Nunito', sans-serif;
+}
