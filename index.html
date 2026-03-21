@@ -34,6 +34,7 @@
         <link rel="stylesheet" type="text/css" href="/css/components/auth-modal.css" />
         <link rel="stylesheet" type="text/css" href="/css/components/footer.css" />
         <link rel="stylesheet" type="text/css" href="/css/pages/submit.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/mod.css" />
 
         <!-- Vue + Vue Router -->
         <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
@@ -85,6 +86,7 @@
 
                     <!-- Login button (UI only – opens modal) -->
                     <button
+                        v-if="!store.user"
                         class="nav__auth-btn login"
                         @click.prevent="store.showAuth = 'login'"
                         id="nav-btn-login"
@@ -92,10 +94,25 @@
 
                     <!-- Sign Up button (UI only – opens modal) -->
                     <button
+                        v-if="!store.user"
                         class="nav__auth-btn signup"
                         @click.prevent="store.showAuth = 'signup'"
                         id="nav-btn-signup"
                     >Sign Up</button>
+                    
+                    <!-- Mod Dashboard Link -->
+                    <router-link
+                        v-if="store.user && store.user.role === 'moderator'"
+                        class="nav__auth-btn login"
+                        to="/mod"
+                    >Mod Dashboard</router-link>
+
+                    <!-- Logout button -->
+                    <button
+                        v-if="store.user"
+                        class="nav__auth-btn signup"
+                        @click.prevent="store.logout()"
+                    >Logout</button>
 
                     <!-- Submit Record – routes to in-site form -->
                     <router-link
@@ -151,7 +168,7 @@
                 </div>
 
                 <!-- ---- LOGIN FORM ---- -->
-                <form class="auth-modal__body" v-if="store.showAuth === 'login'" @submit.prevent id="form-login">
+                <form class="auth-modal__body" v-if="store.showAuth === 'login'" @submit.prevent="store.login()" id="form-login">
                     <div class="auth-modal__field">
                         <label for="login-username">Username</label>
                         <input
@@ -160,6 +177,7 @@
                             name="username"
                             placeholder="Your username"
                             autocomplete="username"
+                            v-model="store.loginUsername"
                         />
                     </div>
                     <div class="auth-modal__field">
@@ -170,6 +188,7 @@
                             name="password"
                             placeholder="••••••••"
                             autocomplete="current-password"
+                            v-model="store.loginPassword"
                         />
                     </div>
                     <div class="auth-modal__actions">
@@ -256,7 +275,7 @@
                 </a>
             </div>
             <div class="footer__copy">
-                &copy; 2024 TDL &mdash; All rights reserved.
+                &copy; 2024 TDL &mdash; Not affiliated with Pointercrate
             </div>
         </footer>
     </body>
