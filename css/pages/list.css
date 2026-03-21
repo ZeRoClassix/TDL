@@ -13,7 +13,7 @@
 }
 
 .page-list .list-container {
-    padding-inline: 0;
+    padding-inline: 1.10rem;
 }
 
 .page-list .level-container {
@@ -32,53 +32,95 @@
     width: 100%;
 }
 
-/* Rank number column */
-.page-list .list .rank {
-    text-align: end;
-    padding: 0.3rem 0.75rem 0.3rem 1rem;
-    white-space: nowrap;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--color-on-background-muted);
-    vertical-align: middle;
-}
-
-/* Level name column */
+/* ---- Level Row Buttons – card style ---- */
 .page-list .list .level {
     width: 100%;
-    padding: 0.2rem 0.5rem 0.2rem 0;
+    padding: 0.2rem 0;
     vertical-align: middle;
 }
 
-/* ---- Level Row Buttons – card style ---- */
-.page-list .list .level button {
+.page-list .list .level button.level-bar-btn {
+    position: relative;
     width: 100%;
     background: transparent;
     color: var(--color-on-background);
     border: none;
     border-left: 3px solid transparent;
-    border-radius: 0;
-    padding: 0.7rem 1rem;
+    border-radius: var(--radius-sm);
+    padding: 0; /* content padding inside .level-content */
     text-align: start;
-    word-break: normal;
-    overflow-wrap: anywhere;
     cursor: pointer;
     font-family: 'Nunito', 'Lexend Deca', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    transition:
-        background var(--transition-fast),
-        border-color var(--transition-fast),
-        color var(--transition-fast);
+    transition: border-color var(--transition-fast);
     display: block;
+    overflow: hidden; /* Contains background scaling */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
 
-.page-list .list .level button:hover {
-    background: var(--color-background-hover);
-    border-left-color: var(--color-primary-light);
-    color: var(--color-primary);
+/* Background Image Layer */
+.level-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-background-hover); /* Fallback base color */
+    z-index: 1;
+    transition: transform var(--transition-fast), filter var(--transition-fast);
 }
+
+/* Dark Overlay to make text perfectly readable */
+.level-bg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10, 15, 25, 0.7); /* Deep dark overlay */
+    transition: background var(--transition-fast);
+}
+
+/* Container for rank and name floating above background */
+.level-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    gap: 1.25rem;
+}
+
+/* Rank rendering inside button */
+.level-content .rank {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.65);
+    white-space: nowrap;
+    min-width: 44px;
+    text-align: right;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Demon name rendering inside button */
+.level-content .name-label {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Hover Effects */
+.page-list .list .level button.level-bar-btn:hover .level-bg {
+    transform: scale(1.05); /* Slight zoom into background */
+}
+
+.page-list .list .level button.level-bar-btn:hover .level-bg::after {
+    background: rgba(10, 15, 25, 0.45); /* Brighten overlay mildly on hover */
+}
+
 
 /* Error level */
 .page-list .list .level.error button {
@@ -94,6 +136,45 @@
     border-left-color: var(--color-primary);
     color: var(--color-primary);
     font-weight: 700;
+}
+
+/* ---- List Labels & Separators ---- */
+/* Applied to the row containing the list labels (Main List, Extended List) */
+.page-list .list .list-label-row {
+    background: transparent;
+}
+
+.page-list .list .list-label {
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    text-align: center;
+}
+
+/* Label text styling */
+.page-list .list .list-label h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0;
+}
+
+/* Subtle separator line for Extended/Legacy lists */
+.page-list .list .list-separator {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+    margin-bottom: 1rem;
+    width: 60%;
+    margin-inline: auto;
+}
+
+/* Subtle background overlay for Extended List items */
+.page-list .list .list-item-row.extended-item .level button {
+    background-color: rgba(0, 0, 0, 0.015);
+}
+main.dark .page-list .list .list-item-row.extended-item .level button {
+    background-color: rgba(255, 255, 255, 0.015);
 }
 
 /* ---- Level Detail (centre column) ---- */
