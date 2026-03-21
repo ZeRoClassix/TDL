@@ -1,5 +1,5 @@
 import { store } from "../main.js";
-import { embed } from "../util.js";
+import { embed, getYoutubeIdFromUrl } from "../util.js";
 import { score } from "../score.js";
 import { fetchEditors, fetchList } from "../content.js";
 
@@ -23,17 +23,48 @@ export default {
         <main v-else class="page-list">
             <div class="list-container">
                 <table class="list" v-if="list">
-                    <tr v-for="([level, err], i) in list">
-                        <td class="rank">
-                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
-                            <p v-else class="type-label-lg">Legacy</p>
-                        </td>
-                        <td class="level" :class="{ 'active': selected == i, 'error': !level }">
-                            <button @click="selected = i">
-                                <span class="type-label-lg">{{ level?.name || \`Error (\${err}.json)\` }}</span>
-                            </button>
-                        </td>
-                    </tr>
+                    <tbody v-for="([level, err], i) in list" :key="i">
+                        
+                        <!-- Main List Label above #1 -->
+                        <tr v-if="i === 0" class="list-label-row">
+                            <td colspan="2" class="list-label">
+                                <h3>Main List (Top 1–75)</h3>
+                            </td>
+                        </tr>
+                        
+                        <!-- Extended List Label & Separator above #76 -->
+                        <tr v-if="i === 75" class="list-label-row">
+                            <td colspan="2" class="list-label">
+                                <div class="list-separator"></div>
+                                <h3>Extended List (Top 76–150)</h3>
+                            </td>
+                        </tr>
+                        
+                        <!-- Legacy List Label & Separator above #151 -->
+                        <tr v-if="i === 150" class="list-label-row">
+                            <td colspan="2" class="list-label">
+                                <div class="list-separator"></div>
+                                <h3>Legacy List</h3>
+                            </td>
+                        </tr>
+
+                        <!-- Standard Level Row -->
+                        <tr class="list-item-row" :class="{ 'extended-item': i >= 75 && i < 150 }">
+                            <td colspan="2" class="level" :class="{ 'active': selected == i, 'error': !level }">
+                                <button @click="selected = i" class="level-bar-btn">
+                                    <!-- Full background thumbnail with optional fallback from getThumb() -->
+                                    <div class="level-bg" :style="{ backgroundImage: 'url(' + getThumb(level?.verification) + ')' }"></div>
+                                    <div class="level-content">
+                                        <div class="rank">
+                                            <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
+                                            <p v-else class="type-label-lg">Legacy</p>
+                                        </div>
+                                        <span class="type-label-lg name-label">{{ level?.name || \`Error (\${err}.json)\` }}</span>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="level-container">
@@ -180,5 +211,11 @@ export default {
     methods: {
         embed,
         score,
+        getThumb(videoUrl) {
+            if (!videoUrl) return '/extreme.png';
+            const id = getYoutubeIdFromUrl(videoUrl);
+            if (!id) return '/extreme.png';
+            return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+        }
     },
 };
