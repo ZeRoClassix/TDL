@@ -1,7 +1,7 @@
 import routes from './routes.js';
 
 export const store = Vue.reactive({
-    dark: JSON.parse(localStorage.getItem('dark')) || false,
+    dark: JSON.parse(localStorage.getItem('theme-dark')) ?? true,
     // Auth modal state: null | 'login' | 'signup'
     // UI-only – no backend yet
     showAuth: null,
@@ -27,7 +27,7 @@ export const store = Vue.reactive({
     },
     toggleDark() {
         this.dark = !this.dark;
-        localStorage.setItem('dark', JSON.stringify(this.dark));
+        localStorage.setItem('theme-dark', JSON.stringify(this.dark));
     },
 });
 
