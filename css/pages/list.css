@@ -67,17 +67,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--color-background-hover); /* Fallback base color */
-    z-index: 1;
+    z-index: 0;
     transition: transform var(--transition-fast), filter var(--transition-fast);
 }
 
+/* Video Hover Background */
+.level-bg-video {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 100%; 
+    aspect-ratio: 16 / 9; 
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    border: none;
+    animation: fadeVideoIn 0.3s ease-out 0.8s forwards;
+}
+
+@keyframes fadeVideoIn {
+    to { opacity: 1; }
+}
+
 /* Dark Overlay to make text perfectly readable */
-.level-bg::after {
-    content: "";
+.level-overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(10, 15, 25, 0.7); /* Deep dark overlay */
     transition: background var(--transition-fast);
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* Container for rank and name floating above background */
@@ -117,7 +136,7 @@
     transform: scale(1.05); /* Slight zoom into background */
 }
 
-.page-list .list .level button.level-bar-btn:hover .level-bg::after {
+.page-list .list .level button.level-bar-btn:hover .level-overlay {
     background: rgba(10, 15, 25, 0.45); /* Brighten overlay mildly on hover */
 }
 
