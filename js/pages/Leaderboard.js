@@ -23,6 +23,7 @@ export default {
         loading: true,
         selected: 0,
         err: [],
+        searchQuery: '',
     }),
     template: `
         <main v-if="loading">
@@ -36,25 +37,38 @@ export default {
                     </p>
                 </div>
                 <div class="board-container">
-                    <table class="board">
-                        <tr v-for="(ientry, i) in leaderboard">
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input type="text" v-model="searchQuery" placeholder="Search player..." />
+                        <button v-if="searchQuery" class="clear-search" @click="searchQuery = ''" aria-label="Clear search">✕</button>
+                    </div>
+
+                    <!-- Leaderboard Table -->
+                    <table class="board" v-if="filteredLeaderboard.length > 0">
+                        <tr v-for="(ientry, i) in filteredLeaderboard" :key="ientry.user">
                             <td class="rank">
-                                <p class="type-label-lg">#{{ i + 1 }}</p>
+                                <p class="type-label-lg">#{{ ientry.rank }}</p>
                             </td>
                             <td class="total">
                                 <p class="type-label-lg">{{ localize(ientry.total) }}</p>
                             </td>
                             <td class="user" :class="{ 'active': selected == i }">
                                 <button @click="selected = i">
+                                    <!-- Highlight matching text feature via simple regex or just display user -->
                                     <span class="type-label-lg">{{ ientry.user }}</span>
                                 </button>
                             </td>
                         </tr>
                     </table>
+                    
+                    <!-- No Results Fallback -->
+                    <div class="no-results" v-else>
+                        <p>No players found matching "{{ searchQuery }}".</p>
+                    </div>
                 </div>
                 <div class="player-container">
-                    <div class="player">
-                        <h1>#{{ selected + 1 }} {{ entry.user }}</h1>
+                    <div class="player" v-if="entry">
+                        <h1>#{{ entry.rank }} {{ entry.user }}</h1>
                         <h3>{{ localize(entry.total) }}</h3>
                         <h2 v-if="entry.verified.length > 0">Verified ({{ entry.verified.length}})</h2>
                         <table class="table">
@@ -99,19 +113,34 @@ export default {
                             </tr>
                         </table>
                     </div>
+                    <div class="player" v-else style="display: flex; height: 100%; align-items: center; justify-content: center;">
+                        <p class="type-label-lg" style="color: var(--color-on-background-muted);">(´・ω・｀)</p>
+                    </div>
                 </div>
             </div>
         </main>
     `,
     computed: {
-        entry() {
-            return this.leaderboard[this.selected];
+        filteredLeaderboard() {
+            if (!this.searchQuery) return this.leaderboard;
+            const q = this.searchQuery.toLowerCase();
+            return this.leaderboard.filter(entry => entry.user.toLowerCase().includes(q));
         },
+        entry() {
+            return this.filteredLeaderboard[this.selected];
+        },
+    },
+    watch: {
+        searchQuery() {
+            // Reset right-panel selection securely to bounds whenever search changes
+            this.selected = 0;
+        }
     },
     async mounted() {
         const [leaderboard, err] = await fetchLeaderboard();
-        this.leaderboard = leaderboard;
-        this.err = err;
+        // pre-calculate global rank so it doesn't break when filtered
+        this.leaderboard = leaderboard ? leaderboard.map((entry, index) => ({ ...entry, rank: index + 1 })) : [];
+        this.err = err || [];
         this.loading = false;
     },
     methods: {

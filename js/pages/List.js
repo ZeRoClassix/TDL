@@ -51,9 +51,10 @@ export default {
                         <!-- Standard Level Row -->
                         <tr class="list-item-row" :class="{ 'extended-item': i >= 75 && i < 150 }">
                             <td colspan="2" class="level" :class="{ 'active': selected == i, 'error': !level }">
-                                <button @click="selected = i" class="level-bar-btn">
-                                    <!-- Full background thumbnail with optional fallback from getThumb() -->
+                                <button @click="selected = i" class="level-bar-btn" @mouseenter="hoveredIndex = i" @mouseleave="hoveredIndex = null">
                                     <div class="level-bg" :style="{ backgroundImage: 'url(' + getThumb(level?.verification) + ')' }"></div>
+                                    <iframe v-if="isHoverSupported && hoveredIndex === i && getHoverVideoUrl(level?.verification)" class="level-bg-video" :src="getHoverVideoUrl(level?.verification)" frameborder="0" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+                                    <div class="level-overlay"></div>
                                     <div class="level-content">
                                         <div class="rank">
                                             <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
@@ -165,7 +166,9 @@ export default {
         selected: 0,
         errors: [],
         roleIconMap,
-        store
+        store,
+        hoveredIndex: null,
+        isHoverSupported: window.matchMedia('(hover: hover)').matches
     }),
     computed: {
         level() {
@@ -216,6 +219,12 @@ export default {
             const id = getYoutubeIdFromUrl(videoUrl);
             if (!id) return '/extreme.png';
             return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+        },
+        getHoverVideoUrl(videoUrl) {
+            if (!videoUrl) return "";
+            const id = getYoutubeIdFromUrl(videoUrl);
+            if (!id) return "";
+            return `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&disablekb=1`;
         }
     },
 };
