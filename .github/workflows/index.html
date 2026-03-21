@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1024" />
+        <title>TDL – The Demonlist</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="/extreme.png" />
+
+        <!-- Google Fonts: Lexend Deca (headings) + Nunito (body) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700;800&family=Nunito:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Base styles -->
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="/css/typography.css" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+        <!-- Page styles -->
+        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/leaderboard.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
+
+        <!-- Component styles -->
+        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/tabs.css" />
+        <!-- NEW: record submission form + auth modal + footer -->
+        <link rel="stylesheet" type="text/css" href="/css/components/auth-modal.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/footer.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/submit.css" />
+
+        <!-- Vue + Vue Router -->
+        <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+        <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
+        <script type="module" src="/js/main.js"></script>
+    </head>
+
+    <body id="app">
+        <!-- ===========================
+             HEADER / NAVIGATION
+        =========================== -->
+        <header :class="{ dark: store.dark }">
+            <!-- Logo -->
+            <div class="logo">
+                <h2>TDL</h2>
+                <p>Demonlist</p>
+            </div>
+
+            <!-- Main nav tabs -->
+            <nav class="nav">
+                <router-link class="nav__tab" to="/">
+                    <span class="type-label-lg">List</span>
+                </router-link>
+                <router-link class="nav__tab" to="/leaderboard">
+                    <span class="type-label-lg">Leaderboard</span>
+                </router-link>
+                <router-link class="nav__tab" to="/roulette">
+                    <span class="type-label-lg">Roulette</span>
+                </router-link>
+
+                <!-- Nav action buttons -->
+                <div class="nav__actions">
+                    <!-- Dark mode toggle -->
+                    <button
+                        class="nav__icon"
+                        @click.prevent="store.toggleDark()"
+                        :title="store.dark ? 'Light Mode' : 'Dark Mode'"
+                    >
+                        <img
+                            :src="store.dark ? '/assets/light.svg' : '/assets/dark.svg'"
+                            alt=""
+                        />
+                    </button>
+
+                    <!-- Discord link -->
+                    <a class="nav__icon" href="https://discord.gg/geometrydash" title="Discord">
+                        <img src="/assets/discord.svg" alt="Discord Logo" />
+                    </a>
+
+                    <!-- Login button (UI only – opens modal) -->
+                    <button
+                        class="nav__auth-btn login"
+                        @click.prevent="store.showAuth = 'login'"
+                        id="nav-btn-login"
+                    >Login</button>
+
+                    <!-- Sign Up button (UI only – opens modal) -->
+                    <button
+                        class="nav__auth-btn signup"
+                        @click.prevent="store.showAuth = 'signup'"
+                        id="nav-btn-signup"
+                    >Sign Up</button>
+
+                    <!-- Submit Record – routes to in-site form -->
+                    <router-link
+                        class="nav__cta type-label-lg"
+                        to="/submit"
+                        id="nav-cta-submit"
+                    >Submit Record</router-link>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ===========================
+             MAIN ROUTER VIEW
+        =========================== -->
+        <router-view :class="{ dark: store.dark }"></router-view>
+
+        <!-- ===========================
+             AUTH MODAL (UI only – no backend)
+             Opens when store.showAuth === 'login' or 'signup'
+        =========================== -->
+        <div
+            class="auth-modal-overlay"
+            :class="{ dark: store.dark }"
+            v-if="store.showAuth"
+            @click.self="store.showAuth = null"
+            id="auth-modal-overlay"
+        >
+            <div class="auth-modal" role="dialog" aria-modal="true" :aria-label="store.showAuth === 'login' ? 'Login' : 'Create Account'">
+
+                <!-- Modal header -->
+                <div class="auth-modal__header">
+                    <h2>{{ store.showAuth === 'login' ? 'Welcome Back' : 'Create Account' }}</h2>
+                    <button
+                        class="auth-modal__close"
+                        @click="store.showAuth = null"
+                        aria-label="Close"
+                        id="auth-modal-close"
+                    >✕</button>
+                </div>
+
+                <!-- Tab switcher -->
+                <div class="auth-modal__tabs">
+                    <button
+                        :class="{ active: store.showAuth === 'login' }"
+                        @click="store.showAuth = 'login'"
+                        id="auth-tab-login"
+                    >Login</button>
+                    <button
+                        :class="{ active: store.showAuth === 'signup' }"
+                        @click="store.showAuth = 'signup'"
+                        id="auth-tab-signup"
+                    >Sign Up</button>
+                </div>
+
+                <!-- ---- LOGIN FORM ---- -->
+                <form class="auth-modal__body" v-if="store.showAuth === 'login'" @submit.prevent id="form-login">
+                    <div class="auth-modal__field">
+                        <label for="login-username">Username</label>
+                        <input
+                            type="text"
+                            id="login-username"
+                            name="username"
+                            placeholder="Your username"
+                            autocomplete="username"
+                        />
+                    </div>
+                    <div class="auth-modal__field">
+                        <label for="login-password">Password</label>
+                        <input
+                            type="password"
+                            id="login-password"
+                            name="password"
+                            placeholder="••••••••"
+                            autocomplete="current-password"
+                        />
+                    </div>
+                    <div class="auth-modal__actions">
+                        <button type="submit" class="btn" id="btn-login-submit">Login</button>
+                    </div>
+                    <p class="auth-modal__footer">
+                        No account?
+                        <button type="button" class="link" @click="store.showAuth = 'signup'">Sign up for free</button>
+                    </p>
+                </form>
+
+                <!-- ---- SIGN UP FORM ---- -->
+                <form class="auth-modal__body" v-if="store.showAuth === 'signup'" @submit.prevent id="form-signup">
+                    <div class="auth-modal__field">
+                        <label for="signup-username">Username</label>
+                        <input
+                            type="text"
+                            id="signup-username"
+                            name="username"
+                            placeholder="Choose a username"
+                            autocomplete="username"
+                        />
+                    </div>
+                    <div class="auth-modal__field">
+                        <label for="signup-email">Email Address</label>
+                        <input
+                            type="email"
+                            id="signup-email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                        />
+                    </div>
+                    <div class="auth-modal__field">
+                        <label for="signup-password">Password</label>
+                        <input
+                            type="password"
+                            id="signup-password"
+                            name="password"
+                            placeholder="Min. 8 characters"
+                            autocomplete="new-password"
+                        />
+                    </div>
+                    <div class="auth-modal__field">
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="signup-confirm"
+                            name="confirm"
+                            placeholder="••••••••"
+                            autocomplete="new-password"
+                        />
+                    </div>
+                    <div class="auth-modal__actions">
+                        <button type="submit" class="btn" id="btn-signup-submit">Create Account</button>
+                    </div>
+                    <p class="auth-modal__footer">
+                        Already have an account?
+                        <button type="button" class="link" @click="store.showAuth = 'login'">Log in</button>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- ===========================
+             FOOTER
+        =========================== -->
+        <footer :class="{ dark: store.dark }">
+            <div class="footer__brand">
+                <strong>TDL</strong>
+                <span>The Demonlist</span>
+            </div>
+            <div class="footer__links">
+                <a href="https://discord.gg/geometrydash" target="_blank">
+                    <img src="/assets/discord.svg" alt="Discord" />
+                    Discord
+                </a>
+                <router-link to="/submit" class="footer__link">
+                    Submit Record
+                </router-link>
+                <a href="https://pcdemonlist.pages.dev/" target="_blank">
+                    Site Template by xuliffy
+                </a>
+            </div>
+            <div class="footer__copy">
+                &copy; 2024 TDL &mdash; Not affiliated with Pointercrate
+            </div>
+        </footer>
+    </body>
+</html>
