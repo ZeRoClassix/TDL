@@ -5,6 +5,26 @@ export const store = Vue.reactive({
     // Auth modal state: null | 'login' | 'signup'
     // UI-only – no backend yet
     showAuth: null,
+    
+    // Auth user state
+    user: null,
+    loginUsername: '',
+    loginPassword: '',
+    
+    login() {
+        if (this.loginUsername === 'ModTest' && this.loginPassword === 'Test1234') {
+            this.user = { username: 'ModTest', role: 'moderator' };
+            this.showAuth = null;
+            this.loginPassword = ''; // clear password
+        } else {
+            alert('Invalid credentials! Use ModTest / Test1234 for testing.');
+        }
+    },
+    logout() {
+        this.user = null;
+        this.loginUsername = '';
+        this.loginPassword = '';
+    },
     toggleDark() {
         this.dark = !this.dark;
         localStorage.setItem('dark', JSON.stringify(this.dark));
