@@ -261,3 +261,33 @@ input[type="number"]:focus {
     color: var(--color-primary) !important;
     font-weight: 700;
 }
+
+/* =========================
+   Global Scrollbar Styling
+========================= */
+/* Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background so site background shows through */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-header-bg); /* Match main header color */
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    background-clip: padding-box; /* Ensures the border makes the thumb look thinner */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-header-accent); /* Lighter shade on hover */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-header-bg) transparent;
+}
