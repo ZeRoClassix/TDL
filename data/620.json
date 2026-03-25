@@ -44,7 +44,7 @@
         "hz": 360
     },
     {
-        "user": "[SSS] lanx",
+        "user": "[USSR] lanx",
         "link": "https://www.youtube.com/watch?v=qCMU4Ua8vcc",
         "percent": 100,
         "hz": 360
@@ -56,9 +56,21 @@
         "hz": 360
     },
     {
+        "user": "bims",
+        "link": "https://www.youtube.com/watch?v=AuYoe-m-xJ0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
         "user": "Cymmas",
         "link": "https://www.youtube.com/watch?v=LiY2n1dm1X4",
         "percent": 87,
+        "hz": 360
+    },
+    {
+        "user": "Kiruu",
+        "link": "https://www.youtube.com/watch?v=V4VIbgSn00w",
+        "percent": 69,
         "hz": 360
     }
 ]
