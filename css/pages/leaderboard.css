@@ -295,3 +295,202 @@
     text-decoration: underline;
     color: var(--color-primary);
 }
+
+/* ---- Player Flags & Clan Tags ---- */
+.flag {
+    display: inline-block;
+    height: 1.1em;
+    width: auto;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+.flag-lg {
+    display: inline-block;
+    height: 0.9em;
+    width: auto;
+    margin-right: 0.75rem;
+    vertical-align: baseline;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.clan-tag {
+    color: var(--color-on-background-muted);
+    font-weight: 500;
+    margin-right: 0.25rem;
+    font-size: 0.9em;
+}
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-edit-profile {
+    padding: 0.5rem 1rem;
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-on-background);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-edit-profile:hover {
+    background: var(--color-background-hover);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+/* ---- Profile Editor Modal ---- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal {
+    background: var(--color-background);
+    width: 100%;
+    max-width: 450px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    animation: modal-slide-up 0.3s ease-out;
+}
+
+@keyframes modal-slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--color-on-background-muted);
+    cursor: pointer;
+    padding: 0.25rem;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: var(--color-error);
+}
+
+.modal-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.field label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-on-background-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.field input, .field select {
+    padding: 0.75rem 1rem;
+    background: var(--color-background-sidebar);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-on-background);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.field input:focus, .field select:focus {
+    border-color: var(--color-primary);
+}
+
+.flag-select-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.flag-preview {
+    height: 2rem;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid var(--color-border);
+}
+
+.flag-dropdown {
+    flex: 1;
+}
+
+.modal-footer {
+    padding: 1.25rem 1.5rem;
+    background: var(--color-background-sidebar);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-save {
+    padding: 0.75rem 1.5rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-save:hover {
+    filter: brightness(1.1);
+}
+
+/* Dark mode adjustments if needed */
+.dark .modal-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
