@@ -9,9 +9,15 @@
     "records": [
     {
         "user": "[WBT] wPopoff",
-        "link": "https://youtu.be/X5svZ49OS6E?si=DpFdVI46KNammnrG",
-        "percent": 85,
+        "link": "https://youtu.be/hJHiGeuahTI?si=HmWETJcqKrBspmAs",
+        "percent": 100,
         "hz": 360
+    },
+    {
+        "user": "[GNG] aidn76",
+        "link": "https://youtu.be/AoX45YA9C3U",
+        "percent": 100,
+        "hz": 240
     }
 ]
 
