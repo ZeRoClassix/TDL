@@ -9,11 +9,12 @@
     overflow-y: auto;
     background: var(--color-background);
     color: var(--color-on-background);
+    position: relative;
 }
 
 /* ---- Page wrapper ---- */
 .page-submit .submit-wrapper {
-    max-width: 72rem;
+    max-width: 78rem;
     margin: 0 auto;
     padding: 2.5rem 2rem 4rem;
     display: grid;
@@ -25,15 +26,39 @@
 /* ---- Page heading ---- */
 .page-submit .submit-heading {
     grid-column: 1 / -1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding: 1.65rem 1.85rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background:
+        radial-gradient(circle at top right, rgba(91, 163, 245, 0.16), transparent 34%),
+        linear-gradient(180deg, rgba(19, 19, 37, 0.82), rgba(19, 19, 37, 0.68));
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.page-submit .submit-kicker {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(91, 163, 245, 0.12);
+    border: 1px solid rgba(91, 163, 245, 0.22);
+    color: var(--color-primary-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.74rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
 }
 
 .page-submit .submit-heading h1 {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 800;
-    letter-spacing: -0.04em;
-    color: var(--color-on-background);
+    letter-spacing: -0.05em;
+    color: #ffffff;
     line-height: 1.2;
 }
 
@@ -45,31 +70,55 @@
     max-width: 52rem;
 }
 
-/* Top accent stripe under heading */
-.page-submit .submit-heading::after {
-    content: '';
+.page-submit .submit-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin-top: 1.35rem;
+}
+
+.page-submit .submit-highlight {
+    padding: 0.95rem 1rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.page-submit .submit-highlight__label {
     display: block;
-    height: 3px;
-    width: 4rem;
-    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary));
-    border-radius: 999px;
-    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.page-submit .submit-highlight strong {
+    color: #ffffff;
+    font-size: 0.96rem;
+    font-weight: 800;
 }
 
 /* ---- Main form card ---- */
 .page-submit .submit-card {
-    background: var(--color-background-card);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-xl);
-    box-shadow: 0 4px 20px var(--color-shadow);
+    background: linear-gradient(180deg, rgba(19, 19, 37, 0.84), rgba(19, 19, 37, 0.72));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
     overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 /* Card section header */
 .page-submit .submit-card__header {
-    padding: 1.4rem 1.75rem;
-    border-bottom: 1px solid var(--color-border);
-    background: var(--color-background-sidebar);
+    padding: 1.45rem 1.75rem 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    background:
+        linear-gradient(180deg, rgba(91, 163, 245, 0.1), rgba(91, 163, 245, 0.04)),
+        rgba(255, 255, 255, 0.02);
 }
 
 .page-submit .submit-card__header h2 {
@@ -81,19 +130,53 @@
     color: var(--color-primary);
 }
 
+.page-submit .submit-card__header p {
+    margin-top: 0.45rem;
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.86rem;
+    line-height: 1.55;
+}
+
 /* Card inner body */
 .page-submit .submit-card__body {
     padding: 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 /* ---- Form field group ---- */
 .submit-field {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.45rem;
+    padding: 1rem 1.05rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.submit-field__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.submit-field .field-step {
+    width: 1.95rem;
+    height: 1.95rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: linear-gradient(180deg, rgba(91, 163, 245, 0.18), rgba(91, 163, 245, 0.06));
+    border: 1px solid rgba(91, 163, 245, 0.18);
+    color: var(--color-primary-light);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
 }
 
 .submit-field label {
@@ -125,9 +208,9 @@
 .submit-field textarea {
     width: 100%;
     background: var(--color-background);
-    border: 1.5px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 0.7rem 0.95rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 0.82rem 1rem;
     color: var(--color-on-background);
     font-family: 'Nunito', sans-serif;
     font-size: 0.93rem;
@@ -185,9 +268,9 @@
 .submit-dropdown .dropdown-trigger {
     width: 100%;
     background: var(--color-background);
-    border: 1.5px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 0.7rem 2.5rem 0.7rem 0.95rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 0.82rem 2.75rem 0.82rem 1rem;
     color: var(--color-on-background);
     font-family: 'Nunito', sans-serif;
     font-size: 0.93rem;
@@ -235,7 +318,7 @@
     left: 0; right: 0;
     background: var(--color-background-card);
     border: 1.5px solid var(--color-primary);
-    border-radius: var(--radius-md);
+    border-radius: 16px;
     box-shadow: 0 8px 32px var(--color-shadow-hover);
     z-index: 200;
     overflow: hidden;
@@ -329,7 +412,7 @@
     left: 0; right: 0;
     background: var(--color-background-card);
     border: 1.5px solid var(--color-primary);
-    border-radius: var(--radius-md);
+    border-radius: 16px;
     box-shadow: 0 8px 32px var(--color-shadow-hover);
     z-index: 200;
     overflow: hidden;
@@ -380,6 +463,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    padding: 0.25rem 0;
 }
 
 .progress-row input {
@@ -388,8 +472,8 @@
 
 .progress-meter {
     flex: 1;
-    height: 6px;
-    background: var(--color-border);
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 999px;
     overflow: hidden;
 }
@@ -403,9 +487,7 @@
 
 /* ---- Divider between field groups ---- */
 .submit-divider {
-    border: none;
-    border-top: 1px solid var(--color-border);
-    margin: 0.25rem 0;
+    display: none;
 }
 
 /* ---- Submit button row ---- */
@@ -413,12 +495,16 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-top: 0.5rem;
+    padding: 1rem 1.05rem 0.2rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .submit-actions .btn {
-    padding: 0.8rem 2rem;
+    padding: 0.9rem 2.2rem;
     font-size: 1rem;
+    box-shadow: 0 12px 28px rgba(74, 144, 217, 0.22);
 }
 
 .submit-actions .submit-note {
@@ -438,17 +524,21 @@
 
 /* Sidebar info cards */
 .submit-info-card {
-    background: var(--color-background-card);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    box-shadow: 0 2px 8px var(--color-shadow);
+    background: linear-gradient(180deg, rgba(19, 19, 37, 0.84), rgba(19, 19, 37, 0.72));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
     overflow: hidden;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .submit-info-card__header {
-    padding: 0.9rem 1.2rem;
-    background: var(--color-background-sidebar);
-    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 1.2rem;
+    background:
+        linear-gradient(180deg, rgba(91, 163, 245, 0.1), rgba(91, 163, 245, 0.03)),
+        rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .submit-info-card__header h3 {
@@ -458,6 +548,14 @@
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.submit-info-card__header svg {
+    color: var(--color-primary-light);
+    flex-shrink: 0;
 }
 
 .submit-info-card__body {
@@ -480,6 +578,16 @@
     font-weight: 700;
 }
 
+.submit-info-card__body a {
+    color: var(--color-primary-light);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.submit-info-card__body a:hover {
+    text-decoration: underline;
+}
+
 /* ---- Success / error banner ---- */
 .submit-banner {
     grid-column: 1 / -1;
@@ -492,6 +600,7 @@
     align-items: center;
     gap: 0.75rem;
     animation: slideUp 0.25s ease;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
 .submit-banner.success {
@@ -513,7 +622,20 @@
         padding: 1.5rem 1rem 3rem;
     }
 
+    .page-submit .submit-highlights {
+        grid-template-columns: 1fr;
+    }
+
     .page-submit .submit-sidebar {
         position: static;
+    }
+
+    .submit-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .progress-row {
+        flex-wrap: wrap;
     }
 }
