@@ -3,7 +3,7 @@ import { round, score } from './score.js';
 /**
  * Path to directory containing `_list.json` and all levels
  */
-const dir = '/data';
+const dir = 'data';
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
@@ -121,4 +121,88 @@ export async function fetchLeaderboard() {
 
     // Sort by total score
     return [res.sort((a, b) => b.total - a.total), errs];
+}
+
+/**
+ * Fetch the future demons list
+ */
+export async function fetchFutureDemons() {
+    const listResult = await fetch(`${dir}/_future_list.json`);
+    try {
+        const list = await listResult.json();
+        return await Promise.all(
+            list.map(async (path) => {
+                const demonResult = await fetch(`${dir}/${path}.json`);
+                try {
+                    const demon = await demonResult.json();
+                    return {
+                        ...demon,
+                        id: path.replace(/_/g, '-'),
+                        path,
+                        records: demon.records ? demon.records.sort((a, b) => b.percent - a.percent) : [],
+                    };
+                } catch {
+                    // Silently handle missing files - don't log to console
+                    return null;
+                }
+            }),
+        ).then(demons => demons.filter(d => d !== null));
+    } catch {
+        console.error(`Failed to load future demons list.`);
+        return null;
+    }
+}
+
+/**
+ * Fetch all future records (aggregated from all future demons)
+ */
+export async function fetchFutureRecords() {
+    const demons = await fetchFutureDemons();
+    if (!demons) return [];
+    
+    const allRecords = [];
+    demons.forEach(demon => {
+        if (demon.records) {
+            demon.records.forEach(record => {
+                allRecords.push({
+                    ...record,
+                    demonId: demon.id,
+                    demonName: demon.name,
+                });
+            });
+        }
+    });
+    
+    return allRecords.sort((a, b) => b.percent - a.percent);
+}
+
+/**
+ * Fetch future demons progress for a specific player
+ */
+export async function fetchFutureProgress(username) {
+    const demons = await fetchFutureDemons();
+    if (!demons) return [];
+    
+    const progress = [];
+    demons.forEach(demon => {
+        if (demon.records) {
+            const playerRecords = demon.records.filter(r => 
+                r.user.toLowerCase() === username.toLowerCase()
+            );
+            if (playerRecords.length > 0) {
+                const bestRecord = playerRecords.sort((a, b) => b.percent - a.percent)[0];
+                progress.push({
+                    demonId: demon.id,
+                    demonName: demon.name,
+                    percent: bestRecord.percent,
+                    video: bestRecord.video || bestRecord.link,
+                    date: bestRecord.date,
+                    status: bestRecord.status || demon.status || null,
+                    isWR: false // Will be determined by caller
+                });
+            }
+        }
+    });
+    
+    return progress.sort((a, b) => b.percent - a.percent);
 }

@@ -28,7 +28,7 @@ function normalizeName(name) {
  */
 export async function initFlags() {
     try {
-        const response = await fetch('/2kplayerflags.txt');
+        const response = await fetch('./2kplayerflags.txt');
         const text = await response.text();
 
         // 1. Parse FLAG IDS

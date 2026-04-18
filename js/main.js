@@ -1,7 +1,10 @@
 import routes from './routes.js';
 import { initFlags } from './flags.js';
 
-export const store = Vue.reactive({
+const VueGlobal = window.Vue;
+const VueRouterGlobal = window.VueRouter;
+
+export const store = VueGlobal.reactive({
     dark: JSON.parse(localStorage.getItem('theme-dark')) ?? true,
     // Auth modal state: null | 'login' | 'signup'
     // UI-only – no backend yet
@@ -63,12 +66,22 @@ initFlags();
 
 
 
-const app = Vue.createApp({
+const app = VueGlobal.createApp({
     data: () => ({ store }),
+    watch: {
+        'store.dark'(val) {
+            document.documentElement.classList.toggle('dark', val);
+            document.body.classList.toggle('dark', val);
+        }
+    },
+    mounted() {
+        document.documentElement.classList.toggle('dark', this.store.dark);
+        document.body.classList.toggle('dark', this.store.dark);
+    }
 });
 
-const router = VueRouter.createRouter({
-    history: VueRouter.createWebHashHistory(),
+const router = VueRouterGlobal.createRouter({
+    history: VueRouterGlobal.createWebHashHistory(),
     routes,
 });
 

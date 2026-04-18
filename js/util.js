@@ -1,12 +1,15 @@
 // https://stackoverflow.com/questions/3452546/how-do-i-get-the-youtube-video-id-from-a-url
 export function getYoutubeIdFromUrl(url) {
+    if (typeof url !== 'string') return '';
     return url.match(
         /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/,
     )?.[1] ?? '';
 }
 
 export function embed(video) {
-    return `https://www.youtube.com/embed/${getYoutubeIdFromUrl(video)}`;
+    const videoId = getYoutubeIdFromUrl(video);
+    if (!videoId) return null;
+    return `https://www.youtube.com/embed/${videoId}`;
 }
 
 export function localize(num) {
@@ -35,4 +38,14 @@ export function shuffle(array) {
     }
 
     return array;
+}
+export function getPercentNumber(p) {
+    if (typeof p === 'number') return p;
+    const str = String(p);
+    if (str.includes('-')) {
+        const nums = str.split('-').map(n => parseFloat(n.trim()));
+        // E.g., "25-100" -> roughly prioritize by segment length or highest point 
+        return !isNaN(nums[1]) ? nums[1] - 0.01 : 0; 
+    }
+    return parseFloat(str) || 0;
 }
