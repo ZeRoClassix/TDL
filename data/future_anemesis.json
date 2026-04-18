@@ -1,0 +1,26 @@
+{
+    "id": 3,
+    "name": "Anemesis",
+    "author": "Lime",
+    "creators": ["Lime"],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Anemesis delivers a brutal combination of extreme wave precision, tight ship corridors, and unrelenting timing-based gameplay that maintains high intensity throughout. The level's complex structure with minimal consistency breaks and demanding accuracy requirements establishes it as a definitive Top 1 contender that pushes beyond current extreme demon standards."
+    },
+    "verification": {
+        "username": "swiborg",
+        "percent": 94
+    },
+    "showcase": "https://www.youtube.com/watch?v=Go2xnL5uStI",
+    "description": "Anemesis features intense, precision-based gameplay with demanding wave sections, tight ship timings, and complex dual segments. The level maintains a high difficulty curve throughout with minimal breaks, combining fast-paced mechanics with unforgiving accuracy requirements that create a relentless and challenging experience for even the most skilled players.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Private copy",
+    "completionPercent": "100",
+    "gameVersion": "2.2",
+    "song": null,
+    "records": []
+}

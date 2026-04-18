@@ -1,0 +1,35 @@
+{
+    "id": 45,
+    "name": "Redemption",
+    "author": "CherryTeam",
+    "creators": [
+        "Winchester",
+        "Seattle",
+        "Catarsis",
+        "KiraGMJ",
+        "Sauzzeth",
+        "CuluC",
+        "Mitany",
+        "Konsi"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Redemption is a high-detail project from CherryTeam that combines a unique industrial 2.2 aesthetic with punishingly precise mechanical timings."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/iXphvymqzks",
+    "description": "A visually striking project featuring intricate structural decoration and demanding mechanical segments wrappers in a distinctive industrial aesthetic.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Early 2027",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Redemption by various",
+    "records": []
+}

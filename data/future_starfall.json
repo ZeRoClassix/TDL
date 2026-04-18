@@ -1,0 +1,32 @@
+{
+    "id":  52,
+    "name":  "Starfall",
+    "author":  "Triforce",
+    "creators":  [
+                     "Triforce",
+                     "Celestia",
+                     "More"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Starfall delivers an intense sensory and mechanical experience paired with high-speed precision that targets the pinnacle of difficulty in the 2.2 era."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/2dOQiHdftiU",
+    "description":  "A high-intensity project featuring extreme mechanical segments and a polished aesthetic, Starfall is a masterclass in modern creative design and mechanical challenge led by Triforce.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2026",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Starfall by various",
+    "records":  [
+
+                  ]
+}

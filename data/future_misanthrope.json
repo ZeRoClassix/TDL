@@ -1,0 +1,32 @@
+{
+    "id":  36,
+    "name":  "Misanthrope",
+    "author":  "Brittank88",
+    "creators":  [
+                     "Brittank88",
+                     "Various",
+                     "Vart"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Misanthrope is a legendary, six-minute long layout that aims to be one of the most significant projects in GD history, featuring contributions from a massive roster of icons."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/sRCdoA_P9cQ",
+    "description":  "A super-long megacollab project that is nearly impossible in its current layout state, Misanthrope is a masterclass in long-form structural design and collaborative effort.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Misanthrope by various",
+    "records":  [
+
+                ]
+}

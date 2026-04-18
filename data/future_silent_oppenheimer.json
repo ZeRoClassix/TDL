@@ -1,0 +1,36 @@
+{
+    "id": 49,
+    "name": "Silent Oppenheimer",
+    "author": "Feijoaoa",
+    "creators": [
+        "Feijoaoa"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Silent Oppenheimer is a work of art inspired by Made in Abyss, featuring stunning visual storytelling and extreme mechanical timings that push 2.2 editor potential."
+    },
+    "verification": {
+        "username": "Destroyer0912",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/Q-IT8xuqU9Q",
+    "description": "A highly conceptual and visually stunning solo project that has been over 178 hours in the making, featuring innovative mechanical gimmicks and ethereal atmospheric depth.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Dawn of the Deep Soul by various",
+    "records": [
+        {
+            "user": "Destroyer0912",
+            "percent": "64",
+            "isWR": true,
+            "video": "https://youtu.be/QIEpCdZgBIQ?si=EHJOaL17IQZ8iGNt",
+            "date": "2026-03-12"
+        }
+    ]
+}

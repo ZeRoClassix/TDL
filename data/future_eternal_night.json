@@ -1,0 +1,36 @@
+{
+    "id": 23,
+    "name": "Eternal Night",
+    "author": "electro5185",
+    "creators": [
+        "electro5185"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Eternal Night features punishing wave segments and intricate structural design that challenge the limits of modern mechanical skill and consistency."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/03EwCewqZWo",
+    "description": "A dark and atmospheric project led by electro5185, featuring high-speed mechanical challenges and a distinct aesthetic that pay homage to the classic extreme demon style.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Eternal Night by electro5185",
+    "records": [
+        {
+            "user": "[ASITL] Trolly1",
+            "percent": "31",
+            "isWR": true,
+            "video": "https://youtu.be/f9ewrnsAAvs?si=sWZIvCA-Yj_gEhJ7",
+            "date": "2025-08-10"
+        }
+    ]
+}

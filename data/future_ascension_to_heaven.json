@@ -1,0 +1,31 @@
+{
+    "id":  10,
+    "name":  "Ascension To Heaven",
+    "author":  "Eydis",
+    "creators":  [
+                     "Eydis",
+                     "CherryTeam"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Ascension to Heaven is widely regarded as one of the most beautiful upcoming levels, combining top-tier heavenly decoration with gameplay that pushes the absolute limits of consistency and skill."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/pbEjR_3frRg",
+    "description":  "Featuring an ethereal aesthetic and some of the most complex structural decoration in the game, Ascension to Heaven is a masterclass in modern creative design and mechanical challenge led by Eydis and the CherryTeam.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Ascension to Heaven by Xi",
+    "records":  [
+
+                ]
+}

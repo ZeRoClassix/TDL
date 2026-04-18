@@ -1,0 +1,29 @@
+{
+    "id": 58,
+    "name": "WRATH",
+    "author": "Inex",
+    "creators": [
+        "Inex",
+        "CherryTeam"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Wrath is a massive grand finale project from the CherryTeam, combining top-tier creative talent with gameplay that pushes the boundary of elite performance."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/-jvx1MJTP-Q",
+    "description": "A punishing and visually dense grand finale project hosted by Inex, featuring some of the most difficult and complex mechanical segments ever conceived for the demon list.",
+    "devStatus": "Closed verification",
+    "estimatedRelease": "Private copy",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Wrath by various",
+    "records": []
+}

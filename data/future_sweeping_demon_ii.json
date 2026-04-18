@@ -1,0 +1,36 @@
+{
+    "id": 53,
+    "name": "Sweeping Demon II",
+    "author": "tempgd",
+    "creators": [
+        "tempgd"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Sweeping Demon II aims for the absolute peak of difficulty as an upcoming Top 1 contender, focusing on raw mechanical skill and unrelenting intensity."
+    },
+    "verification": {
+        "username": "[WBT] Taiago",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/88E_O9Uwgu8",
+    "description": "A high-intensity project featuring extreme mechanical segments and a polished aesthetic, Sweeping Demon II is a masterclass in raw difficulty and mechanical depth.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Sweeping Demon II by various",
+    "records": [
+        {
+            "user": "[WBT] Taiago",
+            "percent": "73",
+            "isWR": true,
+            "video": "https://youtu.be/ic_9fFREAWo?si=6HQIc3vhB1v4pXxA",
+            "date": "2025-10-31"
+        }
+    ]
+}

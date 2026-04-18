@@ -1,0 +1,40 @@
+{
+    "id":  46,
+    "name":  "Scattered Faith",
+    "author":  "Brittank88",
+    "creators":  [
+                     "Brittank88",
+                     "RealVet",
+                     "Arct",
+                     "Duke",
+                     "SacredBloom",
+                     "Kacurro",
+                     "Croli",
+                     "SyQual",
+                     "Adrone",
+                     "zNotAlex",
+                     "X Future"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Scattered Faith presents an overwhelming challenge through its combination of extreme mechanical precision and high-detail structural decoration from a massive team."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/q1VUKT9Sjrs?si=06EJT_PFQYd67m-5",
+    "description":  "A high-intensity project featuring a massive roster of top-tier creators, Scattered Faith is a masterclass in long-term collaborative effort and mechanical depth.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2026",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Scattered Faith by Jinobeats",
+    "records":  [
+
+                ]
+}

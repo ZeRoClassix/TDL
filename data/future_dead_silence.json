@@ -1,0 +1,30 @@
+{
+    "id":  22,
+    "name":  "Dead Silence",
+    "author":  "Neiron",
+    "creators":  [
+                     "Neiron"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Dead Silence focuses on peak precision and timing, maintaining a minimalist yet striking aesthetic that emphasizes raw mechanical difficulty."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/IPV-C9yROO8",
+    "description":  "A dark and atmospheric project led by Neiron, Dead Silence features punishing timings and intricate structural design that challenge the player's focus and precision.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2026",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Dead Silence by various",
+    "records":  [
+
+                ]
+}

@@ -1,0 +1,55 @@
+{
+    "id": 47,
+    "name": "Silent Acropolis",
+    "author": "ThePurgatory",
+    "creators": [
+        "dan007d",
+        "ValkyrieMasterGD",
+        "synage3211",
+        "MittiRan",
+        "roselyne3878",
+        "NnexttGD",
+        "frxtrd123",
+        "Oldspace2023",
+        "Jf3julNfYO",
+        "1nvise",
+        "dyubinart",
+        "pes_patron",
+        "Uriun112",
+        "InexGD"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Silent Acropolis is a definitive Top 1/Impossible level remake that aims to reclaim the legendary status of its namesake through unrelenting difficulty."
+    },
+    "verification": {
+        "username": "raevezz_",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/2djt_p6OQsg?si=8OwMpci5Pbd3TfmI",
+    "description": "A dark and punishing atmospheric project led by The Purgatory, featuring extreme mechanical segments and high-detail technical decoration.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Silent Acropolis by Various",
+    "records": [
+        {
+            "user": "bop",
+            "percent": "31-100",
+            "isWR": true,
+            "video": "https://youtu.be/c2pc6LSqBl8?si=luBk505F8z1ecFL1",
+            "date": "2024-10-25"
+        },
+        {
+            "user": "SeptaGon7",
+            "percent": "66",
+            "video": "https://youtu.be/4oV6fgdo4Eo?si=jOrlgbpR-YefeObS",
+            "date": "2024-08-04"
+        }
+    ]
+}

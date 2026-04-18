@@ -1,0 +1,55 @@
+{
+    "id": 29,
+    "name": "GRIEF",
+    "status": "BUFFED",
+    "author": "DrCuber",
+    "creators": [
+        "DrCuber",
+        "Doop",
+        "GhostVandalf",
+        "Iris",
+        "CDMusic",
+        "MercuryDT",
+        "RealVet",
+        "Triplash",
+        "Greafer",
+        "GrenadeOfTacos",
+        "Rynoxious",
+        "Burgadahz",
+        "NineDice"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Grief is a definitive unnerfed Slaughterhouse remake that has been over 8 years in the making, aiming to reclaim the title of the absolute peak of difficulty."
+    },
+    "verification": {
+        "username": "[TCD] Doggie",
+        "percent": 83
+    },
+    "showcase": "https://www.youtube.com/watch?v=bQXnREyaO34",
+    "description": "One of the most anticipated and long-awaited projects in GD history, Grief is a brutal re-imagining of Slaughterhouse that pushes human consistency to its ultimate limit.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": 83,
+    "gameVersion": "2.2",
+    "song": "Stalemate by KzX",
+    "records": [
+        {
+            "user": "[TCD] Doggie",
+            "percent": "25-100",
+            "video": "https://youtu.be/JZ6rLQoP7Y0?si=vjNPuq4OrAEzW95A",
+            "date": "2025-02-27"
+        },
+        {
+            "user": "[TCD] Doggie",
+            "percent": "83",
+            "isWR": true,
+            "video": "https://youtu.be/mp8TSHLoW8Q?si=QnQmnU1P9SrULbpU",
+            "date": "2025-11-02"
+        }
+    ]
+}

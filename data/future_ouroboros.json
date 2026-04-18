@@ -1,0 +1,38 @@
+{
+    "id": 310,
+    "name": "OUROBOROS",
+    "author": "qmystic",
+    "creators": [
+        "qmystic",
+        "CherryTeam",
+        "VernamGD"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Ouroboros is the grand finale of CherryTeam projects, aiming to be harder than current legends like VSC and Abyss of Darkness through extreme mechanical density."
+    },
+    "verification": {
+        "username": "mindzdraf",
+        "percent": 73
+    },
+    "showcase": "https://youtu.be/gZz_2r97wzM?si=GjsTqVl3AiR0U6yw",
+    "description": "A punishing and visually dense grand finale to the CherryTeam saga, Ouroboros features some of the most difficult and complex mechanical segments ever conceived in Geometry Dash.",
+    "devStatus": "Closed verification",
+    "estimatedRelease": "Private copy",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Grand Finale by various",
+    "records": [
+        {
+            "user": "mindzdraf",
+            "percent": "73",
+            "isWR": true,
+            "video": "https://youtu.be/olWPDI0M5A4?si=oTFRFMGfOhOdMyMP",
+            "date": "2025-02-04"
+        }
+    ]
+}

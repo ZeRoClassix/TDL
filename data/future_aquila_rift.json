@@ -1,0 +1,33 @@
+{
+    "id":  71,
+    "name":  "Aquila Rift",
+    "author":  "Zoink Doink",
+    "creators":  [
+                     "Zoink Doink",
+                     "Renn241",
+                     "loltad",
+                     "juhou"
+                 ],
+    "verificationStatus":  "closed",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Aquila Rift represents a new era of short, hyper-difficult levels, combining Zoink's legendary layout design with Renn's atmospheric and polished decoration to create a unique Top 1 contender."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/FQfTPfZYldY",
+    "description":  "A high-detail collaboration that transforms a classic layout into a visual and mechanical powerhouse, Aquila Rift features intense wave and ship segments within a beautifully crafted space-themed environment.",
+    "devStatus":  "Closed verification",
+    "estimatedRelease":  "Private copy",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Aquila Rift by Renn241",
+    "records":  [
+
+                ]
+}
