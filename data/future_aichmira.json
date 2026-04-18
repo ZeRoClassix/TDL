@@ -5,10 +5,10 @@
     "creators": ["TEAM OMEGA"],
     "verificationStatus": "wip",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": "2-3",
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "Flamewall",
+        "below": "Thinking Space II",
         "reason": "AICHMIRA features an intricate combination of high-speed wave segments, precise ship corridors, and tight timing-based gameplay that creates an unforgiving difficulty curve. The level's sustained intensity with minimal breaks and complex dual sections pushes beyond current Top 1 benchmarks, establishing it as a definitive challenge for the world's best players."
     },
     "verification": {

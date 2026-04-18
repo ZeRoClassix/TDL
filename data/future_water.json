@@ -13,10 +13,10 @@
     ],
     "verificationStatus": "wip",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": 5,
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "ORBIT",
+        "below": "Tidal Wave",
         "reason": "Water is a deeply atmospheric solo project that features an extensive lore and high-speed mechanical challenge, aiming for a Top 10 placement."
     },
     "verification": {

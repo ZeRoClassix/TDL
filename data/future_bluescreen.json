@@ -8,11 +8,11 @@
                      "SeokSquid"
                  ],
     "verificationStatus":  "wip",
-    "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "difficultyCategory":  "hard",
+    "estimatedPlace":  "3-5",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "ORBIT",
+                             "below":  "Amethyst",
                              "reason":  "Bluescreen introduces a high-tech glitch aesthetic paired with punishingly precise gameplay that targets the top tier of difficulty."
                          },
     "verification":  {

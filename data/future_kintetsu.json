@@ -7,10 +7,10 @@
                  ],
     "verificationStatus":  "closed",
     "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "estimatedPlace":  "5-10",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "andromeda",
+                             "below":  "ORBIT",
                              "reason":  "Kintetsu's improved version focuses on extreme mechanical precision, with the current verifier showing exceptional consistency on this high-speed project."
                          },
     "verification":  {

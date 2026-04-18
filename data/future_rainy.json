@@ -7,10 +7,10 @@
     ],
     "verificationStatus": "open",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": "1-3",
     "placementContext": {
         "above": "Thinking Space II",
-        "below": "-",
+        "below": "Flamewall",
         "reason": "Rainy is an ambitious art-focused project that pushes the absolute boundary of decoration and atmosphere, creating a unique impossible-level experience."
     },
     "verification": {

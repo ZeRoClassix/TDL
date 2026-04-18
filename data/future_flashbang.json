@@ -8,10 +8,10 @@
     ],
     "verificationStatus": "closed",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": "10-15",
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "Avernus",
+        "below": "Every End",
         "reason": "Flashbang creates an intense sensory experience paired with high-speed precision that targets the pinnacle of difficulty in the 2.2 era."
     },
     "verification": {

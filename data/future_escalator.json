@@ -9,10 +9,10 @@
     ],
     "verificationStatus": "closed",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": "5-10",
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "andromeda",
+        "below": "ORBIT",
         "reason": "Escalator represents a new peak of mechanical consistency and skill, with Hqmy's 33-96% run proving that this behemoth is well within the realm of verification."
     },
     "verification": {

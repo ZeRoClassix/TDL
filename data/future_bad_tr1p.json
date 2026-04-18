@@ -6,11 +6,11 @@
                      "kapycta999"
                  ],
     "verificationStatus":  "closed",
-    "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "difficultyCategory":  "hard",
+    "estimatedPlace":  "4-5",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "ORBIT",
+                             "below":  "Tidal wave",
                              "reason":  "Bad Tr1p introduces a unique glitch-themed experience, blending trippy visuals with demanding mechanical segments that challenge player focus and precision."
                          },
     "verification":  {

@@ -7,10 +7,10 @@
     ],
     "verificationStatus": "wip",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": "2-3",
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "Amethyst",
+        "below": "Flamewall",
         "reason": "Exterminatus delivers a brutal mechanical challenge with precise timings and atmospheric decoration that aims to establish it as a top-tier contender."
     },
     "verification": {

@@ -35,11 +35,11 @@
                      "Ryaldymont"
                  ],
     "verificationStatus":  "wip",
-    "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "difficultyCategory":  "medium",
+    "estimatedPlace":  "20-30",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "Deimos",
+                             "below":  "Abyss of Darkness",
                              "reason":  "Aegleseeker combines a unique 'heavenly' aesthetic with extreme precision-based gameplay, setting a new bar for both artistic and mechanical difficulty, potentially challenging the very top of the list."
                          },
     "verification":  {

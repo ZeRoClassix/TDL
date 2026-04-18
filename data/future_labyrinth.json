@@ -8,10 +8,10 @@
     ],
     "verificationStatus": "closed",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": 5,
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "Nullscapes",
+        "below": "ORBIT",
         "reason": "Labyrinth draws heavy inspiration from the Labyrinth of Suffering in Maplestory, translating its atmospheric and punishing aesthetic into a Top 5 contender difficulty."
     },
     "verification": {

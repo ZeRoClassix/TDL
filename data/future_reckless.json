@@ -8,10 +8,10 @@
     ],
     "verificationStatus": "wip",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": 10,
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "andromeda",
+        "below": "Every End",
         "reason": "Reckless delivers an intense sensory and mechanical experience paired with high-speed precision that targets the pinnacle of difficulty in the 2.2 era."
     },
     "verification": {

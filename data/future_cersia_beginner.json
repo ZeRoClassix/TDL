@@ -11,11 +11,11 @@
         "Magmeta"
     ],
     "verificationStatus": "closed",
-    "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "difficultyCategory": "hard",
+    "estimatedPlace": 10,
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "andromeda",
+        "below": "Every End",
         "reason": "Cersia Beginner combines retro-inspired visuals with awkward, high-speed timings and dual segments that challenge even the most experienced top-list players."
     },
     "verification": {

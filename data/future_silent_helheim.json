@@ -7,10 +7,10 @@
     ],
     "verificationStatus": "open",
     "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "estimatedPlace": "2-3",
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "Flamewall",
+        "below": "Flamewall",
         "reason": "Silent Helheim aims to be a new pinnacle of mechanical difficulty, featuring high-speed precision segments and a striking aesthetic."
     },
     "verification": {

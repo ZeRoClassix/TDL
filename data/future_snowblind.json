@@ -8,10 +8,10 @@
                  ],
     "verificationStatus":  "wip",
     "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "estimatedPlace":  20,
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "Defeated Circles",
+                             "below":  "Abyss of Darkness",
                              "reason":  "Snowblind represents a new era of mechanical difficulty in a revamped 2.2 environment, aiming for a Top 20 placement with its extreme precision."
                          },
     "verification":  {

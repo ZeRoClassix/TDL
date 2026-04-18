@@ -7,11 +7,11 @@
         "Komp"
     ],
     "verificationStatus": "closed",
-    "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "difficultyCategory": "hard",
+    "estimatedPlace": 5,
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "ORBIT",
+        "below": "Tidal wave",
         "reason": "Banshee's incredible consistency-based difficulty, combined with its high-speed wave and ship sections, has proven to be a bridge too far for many, but the recent 86% run shows it is nearing completion."
     },
     "verification": {

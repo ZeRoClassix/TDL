@@ -6,12 +6,12 @@
         "Lesi",
         "More"
     ],
-    "verificationStatus": "closed",
-    "difficultyCategory": "hardest",
-    "estimatedPlace": 1,
+    "verificationStatus": "open",
+    "difficultyCategory": "hard",
+    "estimatedPlace": "3-5",
     "placementContext": {
-        "above": "Thinking Space II",
-        "below": "-",
+        "above": "Tidal wave",
+        "below": "Amethyst",
         "reason": "Astec combines ancient-themed visuals with futuristic mechanical gameplay, creating a unique contrast and a difficult experience that targets the upper echelons of the demon list."
     },
     "verification": {
@@ -20,7 +20,7 @@
     },
     "showcase": "https://youtu.be/_Aw6_d84Ojg",
     "description": "A visually unique collaboration featuring intricate structural detail and demanding gameplay segments, Astec is a promising upcoming project that blends theme and difficulty seamlessly.",
-    "devStatus": "Closed verification",
+    "devStatus": "Open verification",
     "estimatedRelease": "Already released",
     "completionPercent": null,
     "gameVersion": "2.2",

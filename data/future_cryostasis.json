@@ -16,11 +16,11 @@
                      "OfficialSnom"
                  ],
     "verificationStatus":  "closed",
-    "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "difficultyCategory":  "medium",
+    "estimatedPlace":  30,
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "Deimos",
+                             "below":  "Sakupen Circles",
                              "reason":  "Cryostasis delivers a unique industrial atmosphere paired with extreme mechanical difficulty, themed around a factory in disrepair due to freezing climates."
                          },
     "verification":  {

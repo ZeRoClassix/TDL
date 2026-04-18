@@ -8,10 +8,10 @@
                  ],
     "verificationStatus":  "wip",
     "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "estimatedPlace":  "3-5",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "ORBIT",
+                             "below":  "Amethyst",
                              "reason":  "Kinesiophobia has been in development for years, aiming to push the boundaries of mechanical difficulty through a series of unrelenting and diverse skill tests."
                          },
     "verification":  {

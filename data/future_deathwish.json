@@ -7,11 +7,11 @@
                      "Etheriall"
                  ],
     "verificationStatus":  "open",
-    "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "difficultyCategory":  "hard",
+    "estimatedPlace":  "10-15",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "Avernus",
+                             "below":  "Every End",
                              "reason":  "Deathwish carries the legacy of Hatred into the 2.2 era, offering a similar vibe but with significantly buffed gameplay that targets the upper end of the extreme demon list."
                          },
     "verification":  {

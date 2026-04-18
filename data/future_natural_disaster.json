@@ -9,10 +9,10 @@
                  ],
     "verificationStatus":  "closed",
     "difficultyCategory":  "hardest",
-    "estimatedPlace":  1,
+    "estimatedPlace":  "10",
     "placementContext":  {
-                             "above":  "Thinking Space II",
-                             "below":  "-",
+                             "above":  "andromeda",
+                             "below":  "Every End",
                              "reason":  "Natural Disaster's redeco version breathes new life into a classic concept, bringing high-detail modern visuals and re-balanced gameplay to a Top 10 contender difficulty."
                          },
     "verification":  {
