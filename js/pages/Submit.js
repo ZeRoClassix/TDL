@@ -42,13 +42,29 @@ export default {
 
                 <!-- ── Page heading ───────────────────────── -->
                 <div class="submit-heading">
+                    <div class="submit-kicker">Official Submission Portal</div>
                     <h1>Submit a Record</h1>
                     <p>
                         Submit your completion or progress on a demon from the
                         <strong>Top 150</strong>. All submissions are reviewed by list staff
-                        before appearing on the site. Make sure to read the
-                        requirements carefully.
+                        before appearing on the site, so accurate links, complete
+                        footage, and clear run information are essential for a
+                        smooth verification process.
                     </p>
+                    <div class="submit-highlights">
+                        <div class="submit-highlight">
+                            <span class="submit-highlight__label">Scope</span>
+                            <strong>Top 150 Only</strong>
+                        </div>
+                        <div class="submit-highlight">
+                            <span class="submit-highlight__label">Review Time</span>
+                            <strong>Usually 1-5 Days</strong>
+                        </div>
+                        <div class="submit-highlight">
+                            <span class="submit-highlight__label">Raw Footage</span>
+                            <strong>Confidential Staff Access</strong>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- ── Status banner ─────────────────────── -->
@@ -60,12 +76,16 @@ export default {
                 <div class="submit-card">
                     <div class="submit-card__header">
                         <h2>Record Details</h2>
+                        <p>Complete each section carefully. Fields marked with an asterisk are required for review.</p>
                     </div>
                     <form class="submit-card__body" @submit.prevent="handleSubmit" novalidate>
 
                         <!-- 1 ── Demon ─────────────────────────────── -->
                         <div class="submit-field">
-                            <label for="field-demon">Demon <span class="required">*</span></label>
+                            <div class="submit-field__meta">
+                                <span class="field-step">01</span>
+                                <label for="field-demon">Demon <span class="required">*</span></label>
+                            </div>
                             <div class="submit-dropdown" :class="{ 'is-open': demonOpen }">
                                 <!-- Trigger button -->
                                 <button
@@ -122,7 +142,10 @@ export default {
 
                         <!-- 2 ── Holder ────────────────────────────── -->
                         <div class="submit-field">
-                            <label for="field-holder">Holder <span class="required">*</span></label>
+                            <div class="submit-field__meta">
+                                <span class="field-step">02</span>
+                                <label for="field-holder">Holder <span class="required">*</span></label>
+                            </div>
                             <div class="submit-autocomplete">
                                 <input
                                     type="text"
@@ -168,7 +191,10 @@ export default {
 
                         <!-- 3 ── Progress ─────────────────────────── -->
                         <div class="submit-field">
-                            <label for="field-progress">Progress <span class="required">*</span></label>
+                            <div class="submit-field__meta">
+                                <span class="field-step">03</span>
+                                <label for="field-progress">Progress <span class="required">*</span></label>
+                            </div>
                             <div class="progress-row">
                                 <input
                                     type="number"
@@ -201,7 +227,10 @@ export default {
 
                         <!-- 4 ── Video ─────────────────────────────── -->
                         <div class="submit-field">
-                            <label for="field-video">Proof Video <span class="required">*</span></label>
+                            <div class="submit-field__meta">
+                                <span class="field-step">04</span>
+                                <label for="field-video">Proof Video <span class="required">*</span></label>
+                            </div>
                             <input
                                 type="url"
                                 id="field-video"
@@ -222,7 +251,10 @@ export default {
 
                         <!-- 5 ── Raw footage ──────────────────────── -->
                         <div class="submit-field">
-                            <label for="field-raw">Raw Footage <span class="required">*</span></label>
+                            <div class="submit-field__meta">
+                                <span class="field-step">05</span>
+                                <label for="field-raw">Raw Footage <span class="required">*</span></label>
+                            </div>
                             <input
                                 type="url"
                                 id="field-raw"
@@ -245,7 +277,10 @@ export default {
 
                         <!-- 6 ── Notes ────────────────────────────── -->
                         <div class="submit-field">
-                            <label for="field-notes">Notes or Comments</label>
+                            <div class="submit-field__meta">
+                                <span class="field-step">06</span>
+                                <label for="field-notes">Notes or Comments</label>
+                            </div>
                             <textarea
                                 id="field-notes"
                                 v-model="form.notes"
@@ -279,9 +314,12 @@ export default {
                 <aside class="submit-sidebar">
 
                     <!-- Requirements -->
-                    <div class="submit-info-card">
+                    <div class="submit-info-card submit-info-card--requirements">
                         <div class="submit-info-card__header">
-                            <h3>Requirements</h3>
+                            <h3>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-2.9 7.6-7 10-4.1-2.4-7-5.5-7-10V6l7-3z"/><path d="M9.5 12.5l1.7 1.7 3.8-4.2"/></svg>
+                                Requirements
+                            </h3>
                         </div>
                         <div class="submit-info-card__body">
                             <ul>
@@ -297,9 +335,12 @@ export default {
                     </div>
 
                     <!-- Review time -->
-                    <div class="submit-info-card">
+                    <div class="submit-info-card submit-info-card--review">
                         <div class="submit-info-card__header">
-                            <h3>Review Process</h3>
+                            <h3>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg>
+                                Review Process
+                            </h3>
                         </div>
                         <div class="submit-info-card__body">
                             Submissions are reviewed manually by list staff.
@@ -310,9 +351,12 @@ export default {
                     </div>
 
                     <!-- Raw footage note -->
-                    <div class="submit-info-card">
+                    <div class="submit-info-card submit-info-card--raw">
                         <div class="submit-info-card__header">
-                            <h3>About Raw Footage</h3>
+                            <h3>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l7 3.5-7 3.5-7-3.5L12 4z"/><path d="M5 12l7 3.5 7-3.5"/><path d="M5 16l7 4 7-4"/></svg>
+                                About Raw Footage
+                            </h3>
                         </div>
                         <div class="submit-info-card__body">
                             Raw footage is <strong>never published</strong>.
@@ -323,9 +367,12 @@ export default {
                     </div>
 
                     <!-- Contact -->
-                    <div class="submit-info-card">
+                    <div class="submit-info-card submit-info-card--contact">
                         <div class="submit-info-card__header">
-                            <h3>Questions?</h3>
+                            <h3>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                Questions?
+                            </h3>
                         </div>
                         <div class="submit-info-card__body">
                             Join our
