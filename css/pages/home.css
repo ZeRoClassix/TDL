@@ -209,25 +209,21 @@
     padding: 1.25rem;
 }
 
-/* SCROLLABLE CARDS ON HOVER */
+/* SCROLLABLE CARDS */
 .recent-changes-card .card-body,
 .updates-card .card-body {
     max-height: 320px;
-    overflow: hidden;
-    transition: overflow 0.3s ease;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
 }
 
 .why-card .card-body {
     max-height: 320px;
     overflow-y: auto;
+    scrollbar-gutter: stable;
 }
 
-.recent-changes-card:hover .card-body,
-.updates-card:hover .card-body {
-    overflow-y: auto;
-}
-
-/* TRANSPARENT SCROLLBAR */
+/* VISIBLE SCROLLBAR */
 .recent-changes-card .card-body::-webkit-scrollbar,
 .updates-card .card-body::-webkit-scrollbar {
     width: 6px;
@@ -248,18 +244,13 @@
 
 .recent-changes-card .card-body::-webkit-scrollbar-thumb,
 .updates-card .card-body::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: rgba(91, 163, 245, 0.3);
     border-radius: 3px;
 }
 
 .why-card .card-body::-webkit-scrollbar-thumb {
     background: rgba(91, 163, 245, 0.3);
     border-radius: 3px;
-}
-
-.recent-changes-card:hover .card-body::-webkit-scrollbar-thumb,
-.updates-card:hover .card-body::-webkit-scrollbar-thumb {
-    background: rgba(91, 163, 245, 0.3);
 }
 
 .recent-changes-card .card-body::-webkit-scrollbar-thumb:hover,
@@ -275,16 +266,11 @@
 .recent-changes-card .card-body,
 .updates-card .card-body {
     scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
+    scrollbar-color: rgba(91, 163, 245, 0.3) transparent;
 }
 
 .why-card .card-body {
     scrollbar-width: thin;
-    scrollbar-color: rgba(91, 163, 245, 0.3) transparent;
-}
-
-.recent-changes-card:hover .card-body,
-.updates-card:hover .card-body {
     scrollbar-color: rgba(91, 163, 245, 0.3) transparent;
 }
 
