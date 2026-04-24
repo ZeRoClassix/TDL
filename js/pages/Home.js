@@ -106,7 +106,19 @@ export default {
                             </div>
                             <div class="card-body">
                                 <div class="changes-date-group">
-                                    <div class="changes-date-label">TODAY</div>
+                                    <div class="changes-date-label">24TH APRIL</div>
+                                    <div class="change-item">
+                                        <span class="change-icon icon-add" aria-hidden="true">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 5v14"/>
+                                                <path d="M5 12h14"/>
+                                            </svg>
+                                        </span>
+                                        <strong>Dualist</strong> <span class="change-detail">placed at #92, between Terminal Rampancy and The Golden</span>
+                                    </div>
+                                </div>
+                                <div class="changes-date-group">
+                                    <div class="changes-date-label">19TH APRIL</div>
                                     <div class="change-item">
                                         <span class="change-icon icon-add" aria-hidden="true">
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -145,7 +157,7 @@ export default {
                                     </div>
                                 </div>
                                 <div class="changes-date-group">
-                                    <div class="changes-date-label">YESTERDAY</div>
+                                    <div class="changes-date-label">18TH APRIL</div>
                                     <div class="change-item">
                                         <span class="change-icon icon-down" aria-hidden="true">
                                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

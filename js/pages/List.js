@@ -197,7 +197,7 @@ export default {
                 <!-- 5. Discord -->
                 <div class="card sidebar-card">
                     <div class="card-header">
-                        <h3 class="sidebar-card__title"><span class="sidebar-card__icon sidebar-card__icon--discord"><img :src="'assets/discord' + (store.dark ? '-dark' : '') + '.svg'" width="18" height="18" alt=""/></span>Join Our Community</h3>
+                        <h3 class="sidebar-card__title"><span class="sidebar-card__icon sidebar-card__icon--discord"><img src="assets/discord.svg" width="18" height="18" alt="Discord"/></span>Join Our Community</h3>
                     </div>
                     <div class="card-body">
                         <p class="sidebar-note">Join the official PCDemonlist Discord server, where you can get in touch with the list team, get notified of updates, and connect with the GD community!</p>
