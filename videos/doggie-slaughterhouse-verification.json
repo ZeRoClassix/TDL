@@ -1,0 +1,33 @@
+{
+  "id": "doggie-slaughterhouse-verification",
+  "playerSlug": "doggie",
+  "playerName": "[TCD] Doggie",
+  "levelName": "Slaughterhouse",
+  "levelAuthor": "icedcave",
+  "levelRank": 22,
+  "type": "verification",
+  "youtubeId": "kpcF1-QAHQc",
+  "title": "Slaughterhouse Verification",
+  "uploadDate": "2026-03-28T18:25:00Z",
+  "statMode": "hybrid",
+  "views": 932000,
+  "likes": 87500,
+  "dislikes": 3300,
+  "commentsCount": 7000,
+  "categoryFlags": {
+    "mostPopular": true,
+    "topVerifications": true
+  },
+  "simulation": {
+    "dailyGrowth": 9400
+  },
+  "comments": [
+    {
+      "id": "d-sh-1",
+      "username": "LegacyRunz",
+      "text": "One of the most replayable uploads in the whole list scene.",
+      "likes": 402,
+      "createdAt": "2026-03-29T11:00:00Z"
+    }
+  ]
+}

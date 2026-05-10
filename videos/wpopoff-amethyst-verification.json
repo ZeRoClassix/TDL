@@ -1,0 +1,35 @@
+{
+  "id": "wpopoff-amethyst-verification",
+  "playerSlug": "wpopoff",
+  "playerName": "[WBT] wPopoff",
+  "levelName": "Amethyst",
+  "levelAuthor": "iMist",
+  "levelRank": 3,
+  "type": "verification",
+  "youtubeId": "4lfkzz1VCbA",
+  "title": "Amethyst Verification",
+  "uploadDate": "2026-04-15T18:55:00Z",
+  "statMode": "hybrid",
+  "views": 854000,
+  "likes": 77100,
+  "dislikes": 2600,
+  "commentsCount": 6200,
+  "featured": true,
+  "categoryFlags": {
+    "mostPopular": true,
+    "trending": true,
+    "topVerifications": true
+  },
+  "simulation": {
+    "dailyGrowth": 18700
+  },
+  "comments": [
+    {
+      "id": "w-amy-1",
+      "username": "VerifierWatch",
+      "text": "This is the kind of upload that makes the verification lane feel like its own spotlight category.",
+      "likes": 203,
+      "createdAt": "2026-04-16T11:30:00Z"
+    }
+  ]
+}

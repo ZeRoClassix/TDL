@@ -1,0 +1,34 @@
+{
+  "id": "trick-tidal-wave-completion",
+  "playerSlug": "trick",
+  "playerName": "[TCD] Trick",
+  "levelName": "Tidal Wave",
+  "levelAuthor": "OniLink",
+  "levelRank": 4,
+  "type": "completion",
+  "youtubeId": "t0o4wsg36l0",
+  "title": "Tidal Wave 100% Completion",
+  "uploadDate": "2026-04-17T18:30:00Z",
+  "statMode": "hybrid",
+  "views": 681000,
+  "likes": 56100,
+  "dislikes": 2100,
+  "commentsCount": 4800,
+  "featured": true,
+  "categoryFlags": {
+    "trending": true,
+    "latest": true
+  },
+  "simulation": {
+    "dailyGrowth": 15300
+  },
+  "comments": [
+    {
+      "id": "t-tw-1",
+      "username": "ConsistencyClub",
+      "text": "This upload is a great example of how a clean completion can still feel explosive.",
+      "likes": 188,
+      "createdAt": "2026-04-18T08:45:00Z"
+    }
+  ]
+}

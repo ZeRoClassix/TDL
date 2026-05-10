@@ -1,0 +1,37 @@
+{
+  "id": "zoink-thinking-space-ii-verification",
+  "playerSlug": "zoink",
+  "playerName": "[67] Zoink",
+  "levelName": "Thinking Space II",
+  "levelAuthor": "CairoX",
+  "levelRank": 1,
+  "type": "verification",
+  "youtubeId": "CELNmHwln_c",
+  "title": "Thinking Space II Verification",
+  "uploadDate": "2026-04-26T19:45:00Z",
+  "statMode": "hybrid",
+  "views": 1370000,
+  "likes": 154000,
+  "dislikes": 4200,
+  "commentsCount": 11800,
+  "featured": true,
+  "categoryFlags": {
+    "mostPopular": true,
+    "latest": true,
+    "trending": true,
+    "topVerifications": true
+  },
+  "simulation": {
+    "dailyGrowth": 40200,
+    "engagementBias": 1.18
+  },
+  "comments": [
+    {
+      "id": "z-ts2-1",
+      "username": "Top1Observer",
+      "text": "Exactly the kind of upload that should always sit near the front page.",
+      "likes": 613,
+      "createdAt": "2026-04-26T21:10:00Z"
+    }
+  ]
+}
