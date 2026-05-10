@@ -1,0 +1,32 @@
+{
+  "id": "doggie-acheron-completion",
+  "playerSlug": "doggie",
+  "playerName": "[TCD] Doggie",
+  "levelName": "Acheron",
+  "levelAuthor": "ryamu",
+  "levelRank": 14,
+  "type": "completion",
+  "youtubeId": "4ytMwX9B1Ss",
+  "title": "Acheron 100% Completion",
+  "uploadDate": "2026-04-10T17:40:00Z",
+  "statMode": "hybrid",
+  "views": 611000,
+  "likes": 50200,
+  "dislikes": 2700,
+  "commentsCount": 4300,
+  "categoryFlags": {
+    "latest": true
+  },
+  "simulation": {
+    "dailyGrowth": 10600
+  },
+  "comments": [
+    {
+      "id": "d-ach-1",
+      "username": "RouteReader",
+      "text": "You can really tell how much of this level is being controlled instead of reacted to.",
+      "likes": 165,
+      "createdAt": "2026-04-11T13:30:00Z"
+    }
+  ]
+}
