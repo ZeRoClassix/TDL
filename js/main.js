@@ -1,112 +1,87 @@
 import routes from './routes.js';
 import { initFlags } from './flags.js';
+import { store } from './store.js';
 
 const VueGlobal = window.Vue;
 const VueRouterGlobal = window.VueRouter;
-
-export const store = VueGlobal.reactive({
-    dark: JSON.parse(localStorage.getItem('theme-dark')) ?? true,
-    // Auth modal state: null | 'login' | 'signup'
-    // UI-only – no backend yet
-    showAuth: null,
-    
-    // Auth user state
-    user: JSON.parse(localStorage.getItem('user')) || null,
-    loginUsername: '',
-    loginPassword: '',
-    // Auth user passwords (mock database)
-    passwords: {
-        'ModTest': 'Test1234',
-        '[GNG] aidn76': 'classixclears'
-    },
-    
-    // Player profiles (Clan Tag, Flag override)
-    profiles: JSON.parse(localStorage.getItem('profiles')) || {},
-
-    login() {
-        if (this.passwords[this.loginUsername] === this.loginPassword) {
-            const role = this.loginUsername === 'ModTest' ? 'moderator' : 'player';
-            this.user = { username: this.loginUsername, role };
-            this.saveAuth();
-            this.showAuth = null;
-            this.loginPassword = '';
-            this.loginUsername = '';
-        } else {
-            alert('Invalid username or password.');
-        }
-    },
-    logout() {
-        this.user = null;
-        this.saveAuth();
-    },
-    saveAuth() {
-        localStorage.setItem('user', JSON.stringify(this.user));
-    },
-    updateProfile(username, data) {
-        this.profiles[username.toLowerCase()] = {
-            ...this.profiles[username.toLowerCase()],
-            ...data
-        };
-        localStorage.setItem('profiles', JSON.stringify(this.profiles));
-    },
-    getProfile(username) {
-        return this.profiles[username?.toLowerCase()] || {};
-    },
-    toggleDark() {
-        this.dark = !this.dark;
-        localStorage.setItem('theme-dark', JSON.stringify(this.dark));
-    },
-});
-
-// Expose store globally for components to access without circular deps
-window.store = store;
-
-// Initialize flag data from 2kplayerflags.txt
-initFlags();
-
-
-
-const app = VueGlobal.createApp({
-    data: () => ({ store }),
-    watch: {
-        'store.dark'(val) {
-            document.documentElement.classList.toggle('dark', val);
-            document.body.classList.toggle('dark', val);
-        }
-    },
-    mounted() {
-        document.documentElement.classList.toggle('dark', this.store.dark);
-        document.body.classList.toggle('dark', this.store.dark);
-    }
-});
 
 const router = VueRouterGlobal.createRouter({
     history: VueRouterGlobal.createWebHashHistory(),
     routes,
 });
 
-/**
- * v-click-outside directive
- * Calls the binding value (a function) when a click occurs outside the element.
- * Used by the demon dropdown in Submit.js to auto-close on outside click.
- *
- * Usage: <div v-click-outside="() => isOpen = false">…</div>
- */
+const app = VueGlobal.createApp({
+    data: () => ({ store }),
+    methods: {
+        toggleDark() {
+            this.store.toggleDark();
+        },
+        openAuth(type) {
+            this.store.showAuth = type;
+        },
+        closeAuth() {
+            this.store.showAuth = null;
+        },
+        handleLogin() {
+            // BACKEND: Connect to real login API here
+            const username = this.loginUsername.trim();
+            const password = this.loginPassword.trim();
+            
+            // Mock authentication
+            if (this.store.passwords && this.store.passwords[username] === password) {
+                this.store.setUser({ username, role: username === 'ModTest' ? 'moderator' : 'player' });
+                this.closeAuth();
+            } else {
+                alert('Invalid username or password.');
+            }
+        },
+        handleLogout() {
+            this.store.setUser(null);
+        }
+    },
+    computed: {
+        loginUsername: {
+            get() { return this.store.loginUsername || ''; },
+            set(v) { this.store.loginUsername = v; }
+        },
+        loginPassword: {
+            get() { return this.store.loginPassword || ''; },
+            set(v) { this.store.loginPassword = v; }
+        },
+        authModalMode() {
+            const mode = this.store.showAuth;
+            return mode === 'login' || mode === 'signup' ? mode : 'login';
+        },
+        authModalTitle() {
+            return this.authModalMode === 'signup' ? 'Create your account' : 'Welcome back';
+        },
+        authModalEyebrow() {
+            return this.authModalMode === 'signup' ? 'Join PCDemonlist' : 'Account Access';
+        },
+        authModalDescription() {
+            return this.authModalMode === 'signup'
+                ? 'Sign up to comment, submit records, and access community features.'
+                : 'Log in to continue to the official submission and ranking platform.';
+        },
+    }
+});
+
+// Click Outside Directive
 app.directive('click-outside', {
-    beforeMount(el, binding) {
-        el._clickOutsideHandler = (event) => {
-            if (!el.contains(event.target)) {
+    mounted(el, binding) {
+        el.clickOutsideEvent = (event) => {
+            if (!(el === event.target || el.contains(event.target))) {
                 binding.value(event);
             }
         };
-        document.addEventListener('click', el._clickOutsideHandler, true);
+        document.addEventListener('click', el.clickOutsideEvent);
     },
     unmounted(el) {
-        document.removeEventListener('click', el._clickOutsideHandler, true);
+        document.removeEventListener('click', el.clickOutsideEvent);
     },
 });
 
 app.use(router);
-
-app.mount('#app');
-
+initFlags().then(() => {
+    app.mount('#app');
+});
