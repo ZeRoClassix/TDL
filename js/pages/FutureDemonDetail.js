@@ -1,4 +1,4 @@
-import { store } from "../main.js";
+import { store } from "../store.js";
 import { embed, getYoutubeIdFromUrl, getPercentNumber } from "../util.js";
 import { fetchFutureDemons, fetchEditors, fetchFutureRecords } from "../content.js";
 

@@ -12,7 +12,7 @@
  * content.js, score.js, or any data files.
  */
 
-import { store } from '../main.js';
+import { store } from '../store.js';
 import Spinner from '../components/Spinner.js';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -408,20 +408,20 @@ export default {
 
         // ── Form fields ──────────────────────────────────
         form: {
-            holder:   '',
+            holder: '',
             progress: '',
-            video:    '',
-            raw:      '',
-            notes:    '',
+            video: '',
+            raw: '',
+            notes: '',
         },
 
         // ── Validation errors ────────────────────────────
         errors: {
-            demon:    '',
-            holder:   '',
+            demon: '',
+            holder: '',
             progress: '',
-            video:    '',
-            raw:      '',
+            video: '',
+            raw: '',
         },
 
         // ── UI state ─────────────────────────────────────
@@ -477,7 +477,7 @@ export default {
         // ── Fetch top-150 data ──────────────────────────────────────────────
         // Re-uses the same data files as List.js; does not modify them.
         try {
-            const listRes  = await fetch('/data/_list.json');
+            const listRes = await fetch('/data/_list.json');
             const listJson = await listRes.json();
 
             // Only take the first 150 (indices 0-149 = main list, exclude legacy)
@@ -487,16 +487,16 @@ export default {
 
             const results = await Promise.allSettled(
                 top150.map(async (path, i) => {
-                    const lvlRes  = await fetch(`/data/${path}.json`);
-                    const lvl     = await lvlRes.json();
+                    const lvlRes = await fetch(`/data/${path}.json`);
+                    const lvl = await lvlRes.json();
 
                     // Collect player names for autocomplete
                     if (lvl.verifier) playerSet.add(lvl.verifier);
                     (lvl.records || []).forEach(r => { if (r.user) playerSet.add(r.user); });
 
                     return {
-                        rank:             i + 1,
-                        name:             lvl.name,
+                        rank: i + 1,
+                        name: lvl.name,
                         percentToQualify: lvl.percentToQualify ?? 100,
                         path,
                     };
@@ -531,8 +531,8 @@ export default {
 
         pickDemon(demon) {
             this.selectedDemon = demon;
-            this.demonOpen     = false;
-            this.errors.demon  = '';
+            this.demonOpen = false;
+            this.errors.demon = '';
 
             // Reset progress if it's now out of range
             if (this.form.progress !== '' &&
@@ -552,8 +552,8 @@ export default {
         },
 
         pickHolder(name) {
-            this.form.holder  = name;
-            this.holderFocus  = false;
+            this.form.holder = name;
+            this.holderFocus = false;
             this.errors.holder = '';
         },
 

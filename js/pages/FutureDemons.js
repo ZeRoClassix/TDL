@@ -1,4 +1,4 @@
-import { store } from "../main.js";
+import { store } from "../store.js";
 import { embed, getYoutubeIdFromUrl } from "../util.js";
 import { fetchFutureDemons, fetchEditors } from "../content.js";
 
@@ -293,24 +293,24 @@ export default {
         },
         filteredDemons() {
             let result = this.demons;
-            
+
             // Apply category filter
             if (this.filter !== 'all') {
                 result = result.filter(d => d.difficultyCategory === this.filter);
             }
-            
+
             // Apply search filter
             if (this.searchQuery) {
                 const q = this.searchQuery.toLowerCase();
-                result = result.filter(d => 
-                    d.name.toLowerCase().includes(q) || 
+                result = result.filter(d =>
+                    d.name.toLowerCase().includes(q) ||
                     (d.creators && d.creators.some(c => c.toLowerCase().includes(q))) ||
                     (d.author && d.author.toLowerCase().includes(q))
                 );
             }
-            
+
             // Sort alphabetically by name
-            return result.sort((a, b) => a.name.localeCompare(b.name));
+            return [...result].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
         },
         countByStatus() {
             return {
@@ -337,10 +337,9 @@ export default {
     methods: {
         embed,
         getThumb(video) {
-            if (typeof video === 'object' && video?.video) {
-                video = video.video;
-            } else if (typeof video === 'object' && video?.link) {
-                video = video.link;
+            if (typeof video === 'object' && video !== null) {
+                if (video.video) video = video.video;
+                else if (video.link) video = video.link;
             }
             if (!video || typeof video !== 'string') return 'assets/video-placeholder.png';
             const id = getYoutubeIdFromUrl(video);
@@ -348,8 +347,9 @@ export default {
             return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
         },
         getHoverVideoUrl(video) {
-            if (typeof video === 'object' && video?.video) {
-                video = video.video;
+            if (typeof video === 'object' && video !== null) {
+                if (video.video) video = video.video;
+                else if (video.link) video = video.link;
             }
             if (!video || typeof video !== 'string') return "";
             const id = getYoutubeIdFromUrl(video);

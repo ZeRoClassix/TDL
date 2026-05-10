@@ -1,4 +1,4 @@
-import { store } from '../main.js';
+import { store } from '../store.js';
 
 export default {
     template: `

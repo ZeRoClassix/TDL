@@ -1,4 +1,4 @@
-import { store } from "../main.js";
+import { store } from "../store.js";
 import { embed, getYoutubeIdFromUrl } from "../util.js";
 import { score } from "../score.js";
 import { fetchEditors, fetchList } from "../content.js";
@@ -233,8 +233,8 @@ export default {
                 .filter(item => {
                     const l = item.level;
                     if (!l) return false;
-                    return (l.name && l.name.toLowerCase().includes(q)) || 
-                           (l.author && l.author.toLowerCase().includes(q));
+                    return (l.name && l.name.toLowerCase().includes(q)) ||
+                        (l.author && l.author.toLowerCase().includes(q));
                 });
         },
         level() {
