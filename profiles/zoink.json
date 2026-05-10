@@ -1,0 +1,43 @@
+{
+  "slug": "zoink",
+  "name": "[67] Zoink",
+  "verified": true,
+  "bio": "Verifier, grinder, and high-pressure closer with a feed stacked around the sharpest clears at the top of the list.",
+  "bannerLabel": "Top 1 pressure / Precision uploads",
+  "subscribers": 318000,
+  "socials": {
+    "youtube": "",
+    "twitch": "",
+    "discord": "",
+    "twitter": ""
+  },
+  "youtube": {
+    "channelId": "",
+    "handle": "",
+    "autoFetch": true
+  },
+  "videos": [
+    "zoink-tidal-wave-verification",
+    "zoink-acheron-verification",
+    "zoink-thinking-space-ii-verification"
+  ],
+  "communityPosts": [
+    {
+      "id": "zoink-post-1",
+      "type": "update",
+      "content": "Session quality has been really high this week. I am keeping a few uploads in reserve so the feed stays active.",
+      "createdAt": "2026-04-25T19:00:00Z"
+    },
+    {
+      "id": "zoink-poll-1",
+      "type": "poll",
+      "content": "What kind of upload should be pushed next?",
+      "createdAt": "2026-04-21T19:00:00Z",
+      "pollOptions": [
+        { "id": "zoink-poll-1-a", "label": "Raw grind session", "votes": 221 },
+        { "id": "zoink-poll-1-b", "label": "Edited verification recap", "votes": 318 },
+        { "id": "zoink-poll-1-c", "label": "Progress highlights", "votes": 174 }
+      ]
+    }
+  ]
+}
