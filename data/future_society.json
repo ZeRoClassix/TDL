@@ -1,0 +1,49 @@
+{
+    "id": "future-society",
+    "name": "Society",
+    "author": "Neomarbilan",
+    "creators": [
+        "Neomarbilan",
+        "Tusol",
+        "Ashirymafik",
+        "Ex3r0",
+        "Null66",
+        "IL1ghtlyOne",
+        "EXXXZOR",
+        "SunFl0werBoy",
+        "UnderCookedWaffle",
+        "teraa",
+        "Mizukii",
+        "LiamV4",
+        "leefAteCheese",
+        "swiborg",
+        "ReyRU",
+        "yp_real",
+        "Elinex",
+        "penek",
+        "Nibbles"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "A horror-inspired analog horror extreme demon hosted by Neomarbilan, Society blends disturbing visuals, oppressive atmosphere, and brutally precise gameplay into an intense and unsettling experience."
+    },
+    "verification": {
+        "username": "[WBT] wPopoff",
+        "percent": "51",
+        "isWR": true,
+        "video": "https://youtu.be/77oQEjP1bks?si=hNUeZG1xY2yl5Nkj",
+        "date": "2026-05-09"
+    },
+    "showcase": "https://youtu.be/6s-NBTRzspE?si=v46DoyVTH0IZsXM1",
+    "description": "Society stands out as a horror-inspired analog horror extreme demon, using disturbing atmosphere, unsettling visuals, and relentless precision gameplay to create an intense experience that could rival current top-tier levels.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Private copy",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Society by pathetic240px",
+    "records": []
+}
