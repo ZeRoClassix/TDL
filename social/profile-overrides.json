@@ -1,0 +1,164 @@
+{
+  "_guide": [
+    "profiles: keyed by player slug",
+    "customProfiles: manual-only profiles that do not need discovered list videos",
+    "youtube.channelId or youtube.handle makes avatar/channel linking much more reliable without an API key"
+  ],
+  "_profileTemplate": {
+    "name": "Display name",
+    "avatar": "",
+    "verified": false,
+    "bio": "",
+    "bannerLabel": "",
+    "subscribers": 0,
+    "socials": {
+      "youtube": "",
+      "twitch": "",
+      "discord": "",
+      "twitter": ""
+    },
+    "youtube": {
+      "channelId": "",
+      "handle": "",
+      "autoFetch": true
+    },
+    "videos": [],
+    "featuredVideos": [],
+    "communityPosts": []
+  },
+  "profiles": {
+    "zoink": {
+      "name": "[67] Zoink",
+      "verified": true,
+      "bio": "Verifier, grinder, and high-pressure closer with a feed stacked around the sharpest clears at the top of the list.",
+      "bannerLabel": "Top 1 pressure / Precision uploads",
+      "subscribers": 318000,
+      "socials": {
+        "youtube": "",
+        "twitch": "",
+        "discord": "",
+        "twitter": ""
+      },
+      "youtube": {
+        "channelId": "",
+        "handle": "",
+        "autoFetch": true
+      },
+      "featuredVideos": [
+        "seed-9fsZ014qB3s",
+        "seed-sBKR6aUorzA",
+        "seed-CELNmHwln_c"
+      ],
+      "communityPosts": [
+        {
+          "id": "zoink-post-1",
+          "type": "update",
+          "content": "Session quality has been really high this week. I am keeping a few uploads in reserve so the feed stays active.",
+          "createdAt": "2026-04-25T19:00:00Z"
+        },
+        {
+          "id": "zoink-poll-1",
+          "type": "poll",
+          "content": "What kind of upload should be pushed next?",
+          "createdAt": "2026-04-21T19:00:00Z",
+          "pollOptions": [
+            {
+              "id": "zoink-poll-1-a",
+              "label": "Raw grind session",
+              "votes": 221
+            },
+            {
+              "id": "zoink-poll-1-b",
+              "label": "Edited verification recap",
+              "votes": 318
+            },
+            {
+              "id": "zoink-poll-1-c",
+              "label": "Progress highlights",
+              "votes": 174
+            }
+          ]
+        }
+      ]
+    },
+    "doggie": {
+      "name": "[TCD] Doggie",
+      "verified": true,
+      "bio": "Scene-defining player with iconic clears, major verifications, and uploads that still carry huge list-wide attention.",
+      "bannerLabel": "Legacy pressure / Big clears",
+      "subscribers": 286000,
+      "socials": {
+        "youtube": "",
+        "twitch": "",
+        "discord": "",
+        "twitter": ""
+      },
+      "youtube": {
+        "channelId": "",
+        "handle": "",
+        "autoFetch": true
+      },
+      "communityPosts": [
+        {
+          "id": "doggie-post-1",
+          "type": "text",
+          "content": "I still like mixing the all-time classics with newer list uploads. That contrast is what makes this kind of feed fun.",
+          "createdAt": "2026-04-23T20:30:00Z"
+        }
+      ]
+    },
+    "trick": {
+      "name": "[TCD] Trick",
+      "verified": true,
+      "bio": "Top-level competitor with a strong balance of polished completions, progress uploads, and verifier-level precision.",
+      "bannerLabel": "Consistency / Catalog depth",
+      "subscribers": 204000,
+      "socials": {
+        "youtube": "",
+        "twitch": "",
+        "discord": "",
+        "twitter": ""
+      },
+      "youtube": {
+        "channelId": "",
+        "handle": "",
+        "autoFetch": true
+      },
+      "communityPosts": [
+        {
+          "id": "trick-post-1",
+          "type": "update",
+          "content": "I have been reorganizing a few old recordings into cleaner recaps. Expect a mix of new and archival uploads.",
+          "createdAt": "2026-04-24T17:15:00Z"
+        }
+      ]
+    },
+    "wpopoff": {
+      "name": "[WBT] wPopoff",
+      "verified": true,
+      "bio": "Completion specialist with elite consistency, top-list verifications, and the kind of uploads that age into staples.",
+      "bannerLabel": "Consistency / Verifier energy",
+      "subscribers": 233000,
+      "socials": {
+        "youtube": "",
+        "twitch": "",
+        "discord": "",
+        "twitter": ""
+      },
+      "youtube": {
+        "channelId": "",
+        "handle": "",
+        "autoFetch": true
+      },
+      "communityPosts": [
+        {
+          "id": "wpopoff-post-1",
+          "type": "text",
+          "content": "The queue is mostly list-focused right now, but I am still leaving room for a few underrated uploads to break into the feed.",
+          "createdAt": "2026-04-22T18:10:00Z"
+        }
+      ]
+    }
+  },
+  "customProfiles": []
+}
