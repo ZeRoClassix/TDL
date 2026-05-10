@@ -10,9 +10,15 @@ import ModDashboard from './pages/ModDashboard.js';
 import Guidelines from './pages/Guidelines.js';
 import Contacts from './pages/Contacts.js';
 import ApiDocs from './pages/ApiDocs.js';
+import Social from './pages/Social.js';
+import SocialWatch from './pages/SocialWatch.js';
+import SocialProfile from './pages/SocialProfile.js';
 
 export default [
     { path: '/',               component: Home },
+    { path: '/social',         component: Social },
+    { path: '/social/watch/:id', component: SocialWatch },
+    { path: '/social/player/:slug', component: SocialProfile },
     { path: '/demonlist',      component: List },
     { path: '/demonlist/:id',  component: LevelDetail },
     { path: '/future-demons', component: FutureDemons },
