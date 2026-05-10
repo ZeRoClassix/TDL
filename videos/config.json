@@ -1,0 +1,15 @@
+{
+  "youtubeApiKey": "",
+  "youtubeCacheHours": 12,
+  "channelUploadCacheHours": 6,
+  "channelUploadLimit": 24,
+  "includeDiscoveredListVideos": true,
+  "includeFutureRecordVideos": true,
+  "maxDiscoveredVideos": 0,
+  "includeCachedChannelUploads": true,
+  "featuredPlayerLimit": 8,
+  "preferFetchedTitles": true,
+  "preferFetchedProfilePictures": true,
+  "preferFetchedSubscriberCounts": true,
+  "simulationReferenceDate": ""
+}
