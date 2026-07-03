@@ -27,10 +27,15 @@
     "communityPosts": []
   },
   "profiles": {
+    "aidn76": {
+      "name": "[GNG] aidn76",
+      "verified": false,
+      "subscribers": 9200
+    },
     "zoink": {
       "name": "[67] Zoink",
       "verified": true,
-      "bio": "Verifier, grinder, and high-pressure closer with a feed stacked around the sharpest clears at the top of the list.",
+      "bio": "",
       "bannerLabel": "Top 1 pressure / Precision uploads",
       "subscribers": 318000,
       "socials": {
