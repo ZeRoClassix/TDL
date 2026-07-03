@@ -1,0 +1,54 @@
+{
+    "id": 619,
+    "name": "We Are Not The Same",
+    "author": "mbed",
+    "creators": [],
+    "verifier": "GuitGuit",
+    "verification": "https://www.youtube.com/watch?v=yLLd4mpeYC4",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[IQB7] Whizkid05",
+        "link": "https://www.youtube.com/watch?v=dTnMi2RWCZE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Danieljgd",
+        "link": "https://www.youtube.com/watch?v=juJPTwVOG60",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Nsaynchkn",
+        "link": "https://www.youtube.com/watch?v=QPFv_liZYCQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Marcosito",
+        "link": "https://www.youtube.com/watch?v=CjHczwXCCO4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[j] Rilso",
+        "link": "https://www.youtube.com/watch?v=WYgXX14XpAY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[POB2P] conski",
+        "link": "https://www.youtube.com/watch?v=t_pl99sUh6c",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Sneaky_",
+        "link": "https://www.youtube.com/watch?v=L_d403TSBAo",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

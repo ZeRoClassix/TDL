@@ -1,0 +1,37 @@
+{
+    "id":  69,
+    "name":  "DEATHWISH",
+    "author":  "SrGuillester",
+    "creators":  [
+                     "SrGuillester",
+                     "Etheriall"
+                 ],
+    "verificationStatus":  "open",
+    "difficultyCategory":  "hard",
+    "estimatedPlace":  "10-15",
+    "placementContext":  {
+                             "above":  "Avernus",
+                             "below":  "Every End",
+                             "reason":  "Deathwish carries the legacy of Hatred into the 2.2 era, offering a similar vibe but with significantly buffed gameplay that targets the upper end of the extreme demon list."
+                         },
+    "verification":  {
+                         "username":  "[LOOT] wooshify",
+                         "percent":  100
+                     },
+    "showcase":  "https://youtu.be/fzvALIu7Qto",
+    "description":  "A Hatred-esque project led by SrGuillester and Etheriall, featuring punishing mechanical gameplay and a distinct aesthetic that pays homage to its inspirations.",
+    "devStatus":  "Already verified",
+    "estimatedRelease":  "Already released",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Deathwish by various",
+    "records":  [
+        {
+            "user": "[LOOT] wooshify",
+            "percent": "100",
+            "isWR": true,
+            "video": "https://youtu.be/VzP1phX8_aA?si=tmhP-9zLgvlZOpqD",
+            "date": "2025-03-15"
+        }
+                ]
+}

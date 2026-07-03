@@ -1,0 +1,34 @@
+{
+    "id": 56,
+    "name": "WATER",
+    "author": "aelula",
+    "creators": [
+        "aelula",
+        "vayulena",
+        "inkkyy",
+        "sodemup",
+        "bonntu",
+        "lukkyoto",
+        "remi"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 5,
+    "placementContext": {
+        "above": "ORBIT",
+        "below": "Tidal Wave",
+        "reason": "Water is a deeply atmospheric solo project that features an extensive lore and high-speed mechanical challenge, aiming for a Top 10 placement."
+    },
+    "verification": {
+        "username": "[GNG] aidn76",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/hQ2rLIDD6W4?si=ajNzh5SlCrfurPNt",
+    "description": "A highly conceptual project featuring extensive world-building and extreme mechanical timings, Water is a masterclass in atmospheric creative design and technical difficulty.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Late 2026",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Water by various",
+    "records": []
+}

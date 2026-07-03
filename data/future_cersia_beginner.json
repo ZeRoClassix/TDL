@@ -1,0 +1,33 @@
+{
+    "id": 12,
+    "name": "Cersia Beginner",
+    "author": "Cersia",
+    "creators": [
+        "Cersia",
+        "nikrodox",
+        "declan",
+        "CDMusic",
+        "kyder",
+        "Magmeta"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hard",
+    "estimatedPlace": 10,
+    "placementContext": {
+        "above": "andromeda",
+        "below": "Every End",
+        "reason": "Cersia Beginner combines retro-inspired visuals with awkward, high-speed timings and dual segments that challenge even the most experienced top-list players."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://www.youtube.com/watch?v=nH1j2evypQM",
+    "description": "A retro-inspired Top 10 contender created by Cersia and a talented team, featuring unique awkward gameplay and intricate dual sections that create a truly punishing experience.",
+    "devStatus": "Closed verification",
+    "estimatedRelease": "Private copy",
+    "completionPercent": 100,
+    "gameVersion": "2.2",
+    "song": "Cersia Beginner by CDMusic",
+    "records": []
+}

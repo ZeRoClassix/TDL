@@ -1,0 +1,37 @@
+{
+    "id": 34,
+    "name": "Labyrinth",
+    "author": "Neomabiloan",
+    "creators": [
+        "Neomabiloan",
+        "More"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 5,
+    "placementContext": {
+        "above": "Nullscapes",
+        "below": "ORBIT",
+        "reason": "Labyrinth draws heavy inspiration from the Labyrinth of Suffering in Maplestory, translating its atmospheric and punishing aesthetic into a Top 5 contender difficulty."
+    },
+    "verification": {
+        "username": "[EZ] GGonop",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/PfPOih94r7c?si=XnJkeO_9yLkNkYSn",
+    "description": "Featuring an ethereal theme inspired by Maplestory, Labyrinth is a visually striking project that combines complex structural decoration with relentlessly difficult mechanical segments.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Labyrinth by various",
+    "records": [
+        {
+            "user": "[EZ] GGonop",
+            "percent": "68",
+            "isWR": true,
+            "video": "https://youtu.be/bvU88Sm5Naw?si=0mEfShI85Shiy9ml",
+            "date": "2026-04-06"
+        }
+    ]
+}

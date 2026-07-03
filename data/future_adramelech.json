@@ -1,0 +1,32 @@
+{
+    "id":  "future-adramelech",
+    "name":  "Adramelech",
+    "author":  "FallingStar",
+    "creators":  [
+                     "FallingStar",
+                     "Rico",
+                     "Gorochi"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Adramelech is poised to redefine difficulty standards with its relentless wave sequences and frame-perfect ship maneuvers, creating a level of intensity that rivals and possibly surpasses current top-tier demons."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/Qlv30NZfD1M",
+    "description":  "A visually stunning collaboration led by FallingStar, Adramelech features atmospheric decoration paired with some of the most demanding mechanical challenges in the game, making it a highly anticipated contender for the top 1 spot.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Mid 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Adramelech by Dimrain47",
+    "records":  [
+
+                ]
+}

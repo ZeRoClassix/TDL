@@ -1,0 +1,37 @@
+{
+    "id": 655,
+    "name": "The Salt Factory",
+    "author": "Nickname09",
+    "creators": [],
+    "verifier": "Nickname09",
+    "verification": "https://www.youtube.com/watch?v=lQ7M-Sgov24",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[USSR] BONN GD",
+        "link": "https://www.youtube.com/watch?v=mPB9uI6RfoY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IQB7] Whizkid05",
+        "link": "https://www.youtube.com/watch?v=rQFirVnSzH0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SARK] Netermind",
+        "link": "https://www.youtube.com/watch?v=J6YzmDtc__M",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[GNG] aidn76",
+        "link": "https://www.youtube.com/watch?v=5OeEKwuzcFw",
+        "percent": 100,
+        "hz": 240
+    }
+]
+
+}
+

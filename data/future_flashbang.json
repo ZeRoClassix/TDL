@@ -1,0 +1,29 @@
+{
+    "id": 28,
+    "name": "Flashbang",
+    "author": "LordVadercraft",
+    "creators": [
+        "LordVadercraft",
+        "More"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": "10-15",
+    "placementContext": {
+        "above": "Avernus",
+        "below": "Every End",
+        "reason": "Flashbang creates an intense sensory experience paired with high-speed precision that targets the pinnacle of difficulty in the 2.2 era."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/2j9nLPyE2Tw?si=yUL8ex6YhVkQCW0v",
+    "description": "A visually impactful and mechanically punishing project led by LordVadercraft, featuring complex structural design and fast-paced gameplay segments.",
+    "devStatus": "Closed verification",
+    "estimatedRelease": "Private copy",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Flashbang by various",
+    "records": []
+}

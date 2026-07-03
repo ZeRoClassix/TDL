@@ -1,0 +1,60 @@
+{
+    "id": 651,
+    "name": "Graceful",
+    "author": "[1319] D A G",
+    "creators": [],
+    "verifier": "[1319] D A G",
+    "verification": "https://www.youtube.com/watch?v=5kOD37vQHKE",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[IQB7] Breakcore",
+        "link": "https://www.youtube.com/watch?v=AtaszCutcjU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] DNM121",
+        "link": "https://www.youtube.com/watch?v=E2yalGqc4nw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SJL] Hipo",
+        "link": "https://www.youtube.com/watch?v=2gvP8B3_Psk",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[400] CuatrocientosYT",
+        "link": "https://www.youtube.com/watch?v=XjOHGj1oVxc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[99] goobs",
+        "link": "https://www.youtube.com/watch?v=Un5m-x3-uBI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[BLKHL] ScoffGD",
+        "link": "https://www.youtube.com/watch?v=LRJMA5UtqGI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Bledwinn12",
+        "link": "https://www.youtube.com/watch?v=pL81dD1GqV0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ROAR] coubitic",
+        "link": "https://www.youtube.com/watch?v=H2v3_QrD9P4",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

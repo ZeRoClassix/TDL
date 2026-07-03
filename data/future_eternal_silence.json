@@ -1,0 +1,37 @@
+{
+    "id": 24,
+    "name": "Eternal Silence",
+    "author": "RealVet",
+    "creators": [
+        "RealVet",
+        "More"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Eternal Silence re-imagines the legendary Silent Clubstep with unnerfed gameplay and modern technical decoration, creating a bridge between old-school history and current peak difficulty."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/JWUg2ZILWbM",
+    "description": "A technical masterpiece from RealVet and more, Eternal Silence features the unnerfed version of Silent Clubstep with high-detail 2.2-style structural decoration and atmospheric effects.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Silent Clubstep Deco Version by various",
+    "records": [
+        {
+            "user": "noname228gg",
+            "percent": "74",
+            "isWR": true,
+            "video": "https://youtu.be/by88qCcfKkM?si=SBeHcptPSrbpUCxC",
+            "date": "2026-04-14"
+        }
+    ]
+}

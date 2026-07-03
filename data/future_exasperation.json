@@ -1,0 +1,66 @@
+{
+    "id": 25,
+    "name": "Exasperation",
+    "author": "Thycket",
+    "creators": [
+        "Thycket",
+        "Nacho",
+        "HaellM",
+        "Kacurro",
+        "Radar_The_Fox",
+        "linox",
+        "Ballistic",
+        "Duke",
+        "Insxne97",
+        "Chuckgamer1",
+        "Flame",
+        "Ihsa",
+        "Drakarmin",
+        "KeStar KeStar",
+        "GDSkulll",
+        "GDNacho",
+        "Cobblebitter",
+        "Gother",
+        "Deltaaimee",
+        "Munii",
+        "Skywalker2016",
+        "Juanchus04",
+        "Crowlley",
+        "Sycro"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Exasperation is a massive, four-minute-long endurance test that combines dozens of unique mechanical styles into one overwhelming challenge for the absolute elite."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/ALiDkwlLPgc",
+    "description": "One of the longest and most conceptual projects in development, Exasperation features a huge variety of mechanical gimmicks and structural styles from a massive team of elite creators.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Late 2026",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Exasperation by various",
+    "records": [
+        {
+            "user": "[67] Zoink",
+            "percent": "67",
+            "isWR": true,
+            "video": "https://youtu.be/iV5N4y9byIY?si=wC85nV3vX6vMZHrk",
+            "date": "2025-02-20"
+        },
+        {
+            "user": "[67] Zoink",
+            "percent": "67-100",
+            "isWR": true,
+            "video": "https://youtu.be/kQ-j2Uq3ec8?si=p2pg3p7NwBNKq-w9",
+            "date": "2025-02-22"
+        }
+    ]
+}

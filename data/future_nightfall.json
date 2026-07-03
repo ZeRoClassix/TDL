@@ -1,0 +1,37 @@
+{
+    "id": 39,
+    "name": "NIGHTFALL",
+    "author": "Yuko",
+    "creators": [
+        "Yuko",
+        "Lexy"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Nightfall concludes the legendary Twilight trilogy with the hardest fully 2.2-based map yet, aiming to redefine top-tier mechanical challenge for the modern era."
+    },
+    "verification": {
+        "username": "[BLOOM] nei",
+        "percent": 74
+    },
+    "showcase": "https://youtu.be/ml4bpWYi-4Q?si=OvIIsdPrsIRjrxZ5",
+    "description": "A masterpiece of 2.2 creative potential, Nightfall features stunning visual storytelling and extreme mechanical timings that push the boundaries of what is possible in the update.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Nightfall by Lexy",
+    "records": [
+        {
+            "user": "[BLOOM] nei",
+            "percent": "74",
+            "isWR": true,
+            "video": "https://youtu.be/SA7hgbpr2TQ?si=P093moQRYneYXSsA",
+            "date": "2025-04-08"
+        }
+    ]
+}

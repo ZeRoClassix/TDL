@@ -1,0 +1,40 @@
+{
+    "id":  21,
+    "name":  "Cryostasis",
+    "author":  "Xtibite",
+    "creators":  [
+                     "gridgd",
+                     "maykgd",
+                     "rondeletia",
+                     "wnch94",
+                     "Duque2",
+                     "aPunch4",
+                     "xtibite",
+                     "loolycat7302",
+                     "SimplyNiro",
+                     "Ryal",
+                     "OfficialSnom"
+                 ],
+    "verificationStatus":  "closed",
+    "difficultyCategory":  "medium",
+    "estimatedPlace":  30,
+    "placementContext":  {
+                             "above":  "Deimos",
+                             "below":  "Sakupen Circles",
+                             "reason":  "Cryostasis delivers a unique industrial atmosphere paired with extreme mechanical difficulty, themed around a factory in disrepair due to freezing climates."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/HCCeBqaSevc",
+    "description":  "A high-detail 1:42 long factory ice-themed mega-collab that combines cold, atmospheric visuals with relentless mechanical challenge and complex structural design.",
+    "devStatus":  "Closed verification",
+    "estimatedRelease":  "Private copy",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Cryostasis by various",
+    "records":  [
+
+                 ]
+}

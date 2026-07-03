@@ -1,0 +1,48 @@
+{
+    "id": 644,
+    "name": "Dark Dimension",
+    "author": "ThePurgatory",
+    "creators": [],
+    "verifier": "TheNixuzGD200",
+    "verification": "https://www.youtube.com/watch?v=g2DrT9bHjOI",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "ElPepinooXGD",
+        "link": "https://www.youtube.com/watch?v=pGdSNbnRwO8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ZAZA] Nikoo",
+        "link": "https://www.youtube.com/watch?v=Rw68q5vAbG0",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Bradenbowl",
+        "link": "https://www.youtube.com/watch?v=C86ox8uEOSE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[400] CuatrocientosYT",
+        "link": "https://www.youtube.com/watch?v=OcZQcxH3zNE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Jonete2",
+        "link": "https://www.youtube.com/watch?v=9sUuSKSNy1g",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Dylinator",
+        "link": "https://www.youtube.com/watch?v=G4EOmLOx_i8",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

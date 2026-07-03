@@ -1,0 +1,29 @@
+{
+    "id": 670,
+    "name": "The Catacombs",
+    "author": "[SKWAD] Cersia",
+    "creators": [],
+    "verifier": "[SKWAD] Slithium",
+    "verification": "https://www.youtube.com/watch?v=T9-75lfKVQg",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[910] Stefan Boss",
+        "link": "https://www.youtube.com/watch?v=gGlO9FxInI4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Sm1leX",
+        "link": "https://www.youtube.com/watch?v=Th3MVAse3uY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Laniakea",
+        "link": "https://www.youtube.com/watch?v=Krzl0afY7BY",
+        "percent": 100,
+        "hz": 360
+    }
+]
+}

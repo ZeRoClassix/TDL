@@ -1,0 +1,44 @@
+{
+    "id": 51,
+    "name": "SNOWDRIVE",
+    "author": "narwall",
+    "creators": [
+        "Zephlin",
+        "Valentine",
+        "Thycket",
+        "Magilex",
+        "Tenzk",
+        "Rainstorm",
+        "MythicalTG",
+        "Intensa",
+        "Dazel",
+        "Laser",
+        "DreamTide",
+        "Artaire",
+        "Narwall",
+        "Zeroya",
+        "Drakosa",
+        "Magmeta",
+        "Unerve"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Snowdrive is a massive 4.25-minute long endurance test that aims for a Top 25 placement, combining high-detail technical decoration with unrelenting mechanical challenge."
+    },
+    "verification": {
+        "username": "Magmeta",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/e3-cOWJP7_4?si=QWs6cRfIwFzB83_M",
+    "description": "A high-intensity project featuring a massive range of mechanical styles and structural themes from a talented roster of creators, Snowdrive is a promising upcoming challenge.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Mid 2027",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Snow Drive by Araki",
+    "records": []
+}

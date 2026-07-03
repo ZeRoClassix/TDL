@@ -1,0 +1,90 @@
+{
+    "id": 582,
+    "name": "Checked Steam",
+    "author": "gruzy",
+    "creators": [],
+    "verifier": "[IQB7] Whizkid05",
+    "verification": "https://www.youtube.com/watch?v=cq6047eYGXs",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "mac",
+        "link": "https://www.youtube.com/watch?v=9QKb326Y7iE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=UD9MpywC_XU",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] nng",
+        "link": "https://www.youtube.com/watch?v=jsqEpJKYDT8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Marcosito",
+        "link": "https://www.youtube.com/watch?v=rtH35JCU3ys",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[CAFE] CoffeeChips",
+        "link": "https://www.youtube.com/watch?v=TEsziEvj0ik",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[ETB] Reokin",
+        "link": "https://www.youtube.com/watch?v=o_N6yUg0k_U",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] V3ncho",
+        "link": "https://www.youtube.com/watch?v=-FNfJNnDx3o",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "njacked",
+        "link": "https://www.youtube.com/watch?v=Xp9dHY__8ps",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Lonhi",
+        "link": "https://www.youtube.com/watch?v=NmSgG_59rZI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Frozix",
+        "link": "https://www.youtube.com/watch?v=B-WFa9oLTXY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "ywuChaos",
+        "link": "https://www.youtube.com/watch?v=PA0du2cjhfE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] Slaughter",
+        "link": "https://www.youtube.com/watch?v=ivkyi2uqTLs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "ChopBlox",
+        "link": "https://www.youtube.com/watch?v=P_MbK-F12OM",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

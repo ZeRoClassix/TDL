@@ -1,0 +1,28 @@
+{
+    "id": 42,
+    "name": "Rainy",
+    "author": "SoDemUp",
+    "creators": [
+        "SoDemUp"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": "1-3",
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "Flamewall",
+        "reason": "Rainy is an ambitious art-focused project that pushes the absolute boundary of decoration and atmosphere, creating a unique impossible-level experience."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/qDXCBRs8BGc?si=7ya-38mtDTOyE1rz",
+    "description": "A high-effort artistic project led by SoDemUp, featuring stunning visual storytelling and atmospheric depth in an unverified state that emphasizes creative mastery.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Rainy by various",
+    "records": []
+}

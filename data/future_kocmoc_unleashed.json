@@ -1,0 +1,52 @@
+{
+    "id": 33,
+    "name": "KOCMOC Unleashed",
+    "author": "Vernam",
+    "creators": [
+        "Vernam",
+        "culuc",
+        "ImMaxX1",
+        "voltex",
+        "kisss",
+        "Konsi0",
+        "wnch94",
+        "bop9444",
+        "galliard_online",
+        "feron1711",
+        "Mitanytragicka"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Kocmoc Unleashed represents an even more brutal version of the legendary original, combining top-tier creative talent with gameplay that pushes human patience and skill to the limit."
+    },
+    "verification": {
+        "username": "[OG B] Abakarovich",
+        "percent": 68
+    },
+    "showcase": "https://youtu.be/1wXRp1xMdMU",
+    "description": "An unofficial, even harder expansion of Kocmoc, featuring some of the most intricate and visually dense parts in Geometry Dash history from a massive team of elite creators.",
+    "devStatus": "Closed verification",
+    "estimatedRelease": "Private copy",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Kocmoc Unleashed by various",
+    "records": [
+        {
+            "user": "[OG B] Abakarovich",
+            "percent": "19-91",
+            "isWR": true,
+            "video": "https://youtu.be/9p8gPt7704c?si=ind5hKLdxPiCPSmZ",
+            "date": "2025-08-19"
+        },
+        {
+            "user": "[OG B] Abakarovich",
+            "percent": "68",
+            "video": "https://youtu.be/cnEQHGQ4gbI?si=_Olh_e_lyaH-76BJ",
+            "date": "2026-03-11"
+        }
+    ]
+}

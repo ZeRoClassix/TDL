@@ -1,0 +1,41 @@
+/* =========================
+   Tabs – Pointercrate underline style
+========================= */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--color-border);
+    gap: 0;
+}
+
+.tabs .tab {
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;      /* Overlap parent border */
+    cursor: pointer;
+    font: inherit;
+    font-family: 'Nunito', 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.2rem;
+    margin: 0;
+    background-color: transparent;
+    color: var(--color-on-background-muted);
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast),
+        background var(--transition-fast);
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+.tabs .tab:hover {
+    background-color: var(--color-background-hover);
+    color: var(--color-on-background);
+}
+
+.tabs .tab.selected {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 700;
+}

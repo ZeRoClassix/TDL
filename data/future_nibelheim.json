@@ -1,0 +1,32 @@
+{
+    "id":  38,
+    "name":  "Nibelheim",
+    "author":  "Electrobird",
+    "creators":  [
+                     "Electrobird",
+                     "el3ctr0_bird",
+                     "EclipsedYamiOld"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Nibelheim is a Top 1 contender that combines high-detail 2.2-style polishing with punishing mechanical segments that have been in the works for years."
+                         },
+    "verification":  {
+                         "username":  "Beastular",
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/Ch9OXUmgL-k?si=J6-u_eWhOSC-WGiZ",
+    "description":  "A beautifully crafted atmospheric project from Electrobird and team, featuring intricate structural transitions and extreme mechanical timings set to a hauntingly melodic soundtrack.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Early 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Rose at Twilight by various",
+    "records":  [
+
+                ]
+}

@@ -1,0 +1,29 @@
+{
+    "id": 55,
+    "name": "Warcora",
+    "author": "IvashkaUA",
+    "creators": [
+        "IvashkaUA",
+        "Elizium Team"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Warcora combines a unique fairytale cave aesthetic with demanding mechanical gameplay, creating a high-detail project that targets the upper end of the list."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/HCKW-mOMXnI?si=6anxvd6_cOW-ZRO5",
+    "description": "A visually unique project featuring intricate structural detail and demanding mechanical segments, Warcora is a promising upcoming challenge that blends theme and difficulty.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Late 2026",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Warcora by various",
+    "records": []
+}

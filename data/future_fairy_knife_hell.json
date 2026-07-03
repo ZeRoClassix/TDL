@@ -1,0 +1,46 @@
+{
+    "id": 27,
+    "name": "FAIRY KNIFE HELL",
+    "author": "TMco",
+    "creators": [
+        "Zipixbox",
+        "2whatt",
+        "SwagMasta001",
+        "EternaswipVMAX",
+        "RXKNephew",
+        "Brittank88",
+        "RealVet",
+        "ItsHybrid",
+        "GDiris",
+        "Wespdx",
+        "CDMusic"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Fairy Knife Hell is a bridge between two eras of Geometry Dash, combining 7-year-old history with 2.2-style polishing to create a unique and punishing mechanical challenge."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/F_AShCzSsBM",
+    "description": "A high-intensity project that has been 7 years in the making, featuring a nice balance between old-school design and modern structural polishing with punishing wave segments.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Fairydust (Ravitex Remix) by Rukkus",
+    "records": [
+        {
+            "user": "[400] CuatrocientosYT",
+            "percent": "37",
+            "isWR": true,
+            "video": "https://youtu.be/Ub01LmysEdU?si=P3qO-gCpR9Xa98BS",
+            "date": "2026-02-25"
+        }
+    ]
+}

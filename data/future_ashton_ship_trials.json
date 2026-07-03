@@ -1,0 +1,28 @@
+{
+    "id": 83,
+    "name": "Ashton Ship Trials",
+    "author": "Michael",
+    "creators": [
+        "Michael"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hard",
+    "estimatedPlace": "10",
+    "placementContext": {
+        "above": "andromeda",
+        "below": "Every End",
+        "reason": "A sequel to the infamous Ashley Wave Trials, Ashton's Ship Trials focuses on extreme ship maneuvers and precision, aiming to continue the legacy of punishing mechanical skill tests."
+    },
+    "verification": {
+        "username": null,
+        "percent": 0
+    },
+    "showcase": "https://www.youtube.com/watch?v=P8Y1CKAfjgk",
+    "description": "Designed by Michael, this level features punishing ship corridors and tight timings, maintaining a minimalist yet striking aesthetic that emphasizes raw mechanical difficulty.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Ship Trials by Michael",
+    "records": []
+}

@@ -1,0 +1,43 @@
+{
+    "id": 649,
+    "name": "Subsuming Vortex",
+    "author": "[TCD] Cursed",
+    "creators": [],
+    "verifier": "[TCD] Cursed",
+    "verification": "https://www.youtube.com/watch?v=0eYG1ogJpIQ",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=r4Bh5pkVs-M",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[GNG] aidn76",
+        "link": "https://www.youtube.com/watch?v=imsU6d4f-NI",
+        "percent": 100,
+        "hz": 240
+    },
+    {
+        "user": "[UFA] A6",
+        "link": "https://www.youtube.com/watch?v=BQcxSX8CthM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MEALY] LAMINGTON",
+        "link": "https://www.youtube.com/watch?v=s98wyRZn5TA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[HOLA] Wity",
+        "link": "https://www.youtube.com/watch?v=8Ve0baF1T-Q",
+        "percent": 73,
+        "hz": 360
+    }
+]
+
+}
+

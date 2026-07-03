@@ -1,0 +1,32 @@
+{
+    "id":  37,
+    "name":  "Natural Disaster",
+    "author":  "ThePurgatory",
+    "creators":  [
+                     "GDGammaReXx",
+                     "HelixGD",
+                     "Rim0010"
+                 ],
+    "verificationStatus":  "closed",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  "10",
+    "placementContext":  {
+                             "above":  "andromeda",
+                             "below":  "Every End",
+                             "reason":  "Natural Disaster's redeco version breathes new life into a classic concept, bringing high-detail modern visuals and re-balanced gameplay to a Top 10 contender difficulty."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/G-vhSOVBrnA",
+    "description":  "A highly polished redeco version of the original project, featuring striking visual effects and a refined difficulty curve that pushes technical boundaries in 2.2.",
+    "devStatus":  "Closed verification",
+    "estimatedRelease":  "Private copy",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Natural Disaster by various",
+    "records":  [
+
+                 ]
+}

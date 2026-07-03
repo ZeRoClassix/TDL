@@ -1,0 +1,73 @@
+{
+    "id": 589,
+    "name": "Nullscapes",
+    "author": "Kiba",
+    "creators": [],
+    "verifier": "[67] Zoink",
+    "verification": "https://www.youtube.com/watch?v=EztneTPp5CU",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "spookkd",
+        "link": "https://www.youtube.com/watch?v=co4SRNnsf1Y",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "whfyre",
+        "link": "https://www.youtube.com/watch?v=vIIOdHqy36E",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FAX] Hover",
+        "link": "https://www.youtube.com/watch?v=GcG3X3WZZrs",
+        "percent": 100,
+        "hz": 360
+    },        
+    {
+        "user": "[SSS] w3rty",
+        "link": "https://www.youtube.com/watch?v=FmeeyDzivzI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[GNG] aidn76",
+        "link": "https://youtu.be/oXsAzfcdJhY?is=Jx_G4rkov_1nodzC",
+        "percent": 100,
+        "hz": 240
+    },
+    {
+        "user": "Adri420",
+        "link": "https://www.youtube.com/watch?v=nknW-sWVvSY",
+        "percent": 78,
+        "hz": 360
+    },
+    {
+        "user": "[HERVE] Cryostaz",
+        "link": "https://www.youtube.com/watch?v=xR0kyNZiIbs",
+        "percent": 76,
+        "hz": 360
+    },
+    {
+        "user": "[PATU] Theitha",
+        "link": "https://www.youtube.com/watch?v=j7tKDLfQddQ",
+        "percent": 74,
+        "hz": 360
+    },
+    {
+        "user": "ralex",
+        "link": "https://www.youtube.com/watch?v=hRUAGZmDn1k",
+        "percent": 71,
+        "hz": 360
+    },
+    {
+        "user": "benbotwyd",
+        "link": "https://www.youtube.com/watch?v=stxzvy_ZAp0",
+        "percent": 68,
+        "hz": 360
+    }
+]
+
+}
+

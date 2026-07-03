@@ -1,0 +1,31 @@
+{
+  "slug": "doggie",
+  "name": "[TCD] Doggie",
+  "verified": true,
+  "bio": "Scene-defining player with iconic clears, major verifications, and uploads that still carry huge list-wide attention.",
+  "bannerLabel": "Legacy pressure / Big clears",
+  "subscribers": 286000,
+  "socials": {
+    "youtube": "",
+    "twitch": "",
+    "discord": "",
+    "twitter": ""
+  },
+  "youtube": {
+    "channelId": "",
+    "handle": "",
+    "autoFetch": true
+  },
+  "videos": [
+    "doggie-slaughterhouse-verification",
+    "doggie-acheron-completion"
+  ],
+  "communityPosts": [
+    {
+      "id": "doggie-post-1",
+      "type": "text",
+      "content": "I still like mixing the all-time classics with newer list uploads. That contrast is what makes this kind of feed fun.",
+      "createdAt": "2026-04-23T20:30:00Z"
+    }
+  ]
+}

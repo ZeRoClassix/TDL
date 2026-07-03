@@ -1,0 +1,31 @@
+{
+  "slug": "wpopoff",
+  "name": "[WBT] wPopoff",
+  "verified": true,
+  "bio": "Completion specialist with elite consistency, top-list verifications, and the kind of uploads that age into staples.",
+  "bannerLabel": "Consistency / Verifier energy",
+  "subscribers": 233000,
+  "socials": {
+    "youtube": "",
+    "twitch": "",
+    "discord": "",
+    "twitter": ""
+  },
+  "youtube": {
+    "channelId": "",
+    "handle": "",
+    "autoFetch": true
+  },
+  "videos": [
+    "wpopoff-amethyst-verification",
+    "wpopoff-ordinary-verification"
+  ],
+  "communityPosts": [
+    {
+      "id": "wpopoff-post-1",
+      "type": "text",
+      "content": "The queue is mostly list-focused right now, but I am still leaving room for a few underrated uploads to break into the feed.",
+      "createdAt": "2026-04-22T18:10:00Z"
+    }
+  ]
+}

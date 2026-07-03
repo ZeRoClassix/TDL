@@ -1,0 +1,50 @@
+{
+    "id": 210,
+    "name": "HELIOPOLIS",
+    "author": "Pennutoh",
+    "creators": [
+        "StarkytheSalad",
+        "Galaxxyss",
+        "YoonsrDynamix",
+        "Matty2003",
+        "MindCap",
+        "Magpipe",
+        "Inex",
+        "ViperArctarus"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Heliopolis, the City of the Sun, is an OG project that has been polished for years into a high-intensity professional challenge that pushes the absolute boundary of mechanical consistency."
+    },
+    "verification": {
+        "username": "[67] Zoink",
+        "percent": 51
+    },
+    "showcase": "https://www.youtube.com/watch?v=7yaKGl_2Dsw",
+    "description": "A beautifully crafted atmospheric project inspired by the host's hometown, featuring diverse mechanical sections and high-detail structural decoration from 3 years of development.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": 51,
+    "gameVersion": "2.2",
+    "song": "Apoplexy by Bee Hunter",
+    "records": [
+        {
+            "user": "[OG B] garbag",
+            "percent": "47",
+            "isWR": false,
+            "video": "https://youtu.be/4u5aQmb7Ofw?si=Q8pcOhZlg5n2fK_8",
+            "date": "2026-04-07"
+        },
+        {
+            "user": "[67] Zoink",
+            "percent": 51,
+            "isWR": true,
+            "video": "https://youtu.be/Hld_6Bmzu8M?si=EXMAbv9_D7hDwX62",
+            "date": "2026-06-08"
+        }
+    ]
+}

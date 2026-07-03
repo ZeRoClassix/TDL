@@ -1,0 +1,32 @@
+{
+  "id": "trick-ordinary-completion",
+  "playerSlug": "trick",
+  "playerName": "[TCD] Trick",
+  "levelName": "ORDINARY",
+  "levelAuthor": "vit12",
+  "levelRank": 60,
+  "type": "completion",
+  "youtubeId": "qZJ7S4jauLc",
+  "title": "ORDINARY 100% Completion",
+  "uploadDate": "2026-04-12T19:10:00Z",
+  "statMode": "hybrid",
+  "views": 238000,
+  "likes": 19600,
+  "dislikes": 820,
+  "commentsCount": 1700,
+  "categoryFlags": {
+    "latest": true
+  },
+  "simulation": {
+    "dailyGrowth": 4700
+  },
+  "comments": [
+    {
+      "id": "t-ord-1",
+      "username": "CatalogKeeper",
+      "text": "Good example of a lower-ranked demon still pulling meaningful attention when the player has a strong audience.",
+      "likes": 94,
+      "createdAt": "2026-04-13T09:50:00Z"
+    }
+  ]
+}

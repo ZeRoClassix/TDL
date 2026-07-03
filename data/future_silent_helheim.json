@@ -1,0 +1,36 @@
+{
+    "id": 48,
+    "name": "Silent Helheim",
+    "author": "Neiron",
+    "creators": [
+        "Neiron"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": "2-3",
+    "placementContext": {
+        "above": "Flamewall",
+        "below": "Flamewall",
+        "reason": "Silent Helheim aims to be a new pinnacle of mechanical difficulty, featuring high-speed precision segments and a striking aesthetic."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/b-WlUBrqNZ4?si=7F9RW4B0yYlOysv6",
+    "description": "A dark and intense upcoming top-tier extreme demon project from Neiron, featuring brutal mechanical challenges and high-speed gameplay.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Silent Helheim by various",
+    "records": [
+        {
+            "user": "[smd] donley",
+            "percent": "52-100",
+            "isWR": true,
+            "video": "https://youtu.be/4DrXPua5K24?si=_tTY9w6Nj1rBrBtl",
+            "date": "2023-03-14"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id":  410,
+    "name":  "Snowblind",
+    "author":  "qwidzit",
+    "creators":  [
+                     "qwidzit",
+                     "kedsd"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  20,
+    "placementContext":  {
+                             "above":  "Defeated Circles",
+                             "below":  "Abyss of Darkness",
+                             "reason":  "Snowblind represents a new era of mechanical difficulty in a revamped 2.2 environment, aiming for a Top 20 placement with its extreme precision."
+                         },
+    "verification":  {
+                         "username":  "FHippo",
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/9p7JGDhEW-g?si=0SgziizDwxV09ZUe",
+    "description":  "A high-intensity project featuring extreme mechanical segments and a polished cold-themed aesthetic, Snowblind is a promising upcoming challenge.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Early 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Snowblind by various",
+    "records":  [
+
+                  ]
+}

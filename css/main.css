@@ -1,0 +1,329 @@
+/* =========================
+   Design Tokens – Pointercrate-style palette
+========================= */
+:root {
+    /* Primary brand colors */
+    --color-background: #f4f5f7;
+    --color-background-card: #ffffff;
+    --color-background-sidebar: #f8f9fb;
+    --color-on-background: #1f2937;
+    --color-on-background-muted: #6b7280;
+    --color-background-hover: #eef0f5;
+    --color-on-background-hover: #1f2937;
+
+    /* Accent – Pointercrate blue */
+    --color-primary: #4a90d9;
+    --color-primary-dark: #2c6fad;
+    --color-primary-light: #7ab3e8;
+    --color-on-primary: #ffffff;
+
+    /* Navy header */
+    --color-header-bg: #1a1a2e;
+    --color-header-accent: #16213e;
+
+    /* Borders & shadows */
+    --color-border: #dde1ea;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    --color-shadow-hover: rgba(0, 0, 0, 0.16);
+
+    /* Semantic */
+    --color-error: #e53e3e;
+    --color-on-error: #ffffff;
+    --color-success: #38a169;
+
+    /* Card/UI radius & sizing */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-smooth: 0.25s ease;
+}
+
+/* =========================
+   Dark Mode
+========================= */
+html.dark,
+body.dark,
+main.dark,
+header.dark,
+.auth-modal-overlay.dark,
+footer.dark {
+    color-scheme: dark;
+
+    --color-background: #0d0d1a;
+    --color-background-card: #131325;
+    --color-background-sidebar: #0f0f20;
+    --color-on-background: #e5e7eb;
+    --color-on-background-muted: #9ca3af;
+    --color-background-hover: #1c1c35;
+    --color-on-background-hover: #f9fafb;
+
+    --color-primary: #5ba3f5;
+    --color-primary-dark: #3d7de0;
+    --color-primary-light: #93c5fd;
+
+    --color-border: #2a2a4a;
+    --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-shadow-hover: rgba(0, 0, 0, 0.6);
+
+    --color-error: #fc8181;
+    --color-on-error: #1a1a2e;
+}
+
+/* =========================
+   Base Layout
+========================= */
+html,
+body {
+    height: 100%;
+    background: var(--color-background-card);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: var(--color-background-card);
+    color: var(--color-on-background);
+    font-family: 'Nunito', 'Lexend Deca', sans-serif;
+    transition:
+        background var(--transition-smooth),
+        color var(--transition-smooth);
+}
+
+/* =========================
+   Header
+========================= */
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 2.5rem;
+    height: 4rem;
+    background-color: var(--color-header-bg);
+    color: #ffffff;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+    transition: background var(--transition-smooth);
+}
+
+header.dark {
+    background-color: #08081a;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+header .logo h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+header .logo p {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+header .nav {
+    flex: 1;
+}
+
+/* =========================
+   Main Layout
+========================= */
+main {
+    flex: 1;
+    display: block;
+    /* Default to block, let pages define their grids */
+    background-color: var(--color-background);
+    background-image: url('../background/main-dark.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--color-on-background);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Dark overlay for better text readability over background */
+main::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(13, 13, 26, 0.85) 0%,
+            rgba(13, 13, 26, 0.75) 50%,
+            rgba(13, 13, 26, 0.85) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Subtle decorative top stripe */
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary), var(--color-primary-light));
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* =========================
+   Column scroll zones
+========================= */
+main>div {
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure all direct children of main are above the overlay */
+main>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Left sidebar – level list */
+main>div:first-child {
+    /*  background: rgba(15, 15, 32, 0.7); */
+    /*backdrop-filter: blur(10px); */
+    -webkit-backdrop-filter: blur(10px);
+    /* border-right: 1px solid rgba(255, 255, 255, 0.05); */
+}
+
+/* Right sidebar – meta */
+main>div:last-child {
+    /* background: rgba(15, 15, 32, 0.7); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.05); */
+}
+
+/* Submit page overrides the 3-col grid and acts as its own scroll root */
+main.page-submit {
+    display: block;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* =========================
+   Spinner
+========================= */
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 3;
+}
+
+/* =========================
+   Inputs (global)
+========================= */
+input[type="checkbox"] {
+    height: 1.25rem;
+    width: 1.25rem;
+    cursor: pointer;
+    margin: 0;
+    accent-color: var(--color-primary);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    background: var(--color-background-card);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0.65rem 0.9rem;
+    color: var(--color-on-background);
+    /* font-family: inherit;
+    font-size: 0.95rem; */
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    outline: none;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.18);
+}
+
+/* =========================
+   Tabs – Pointercrate underline style
+========================= */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.tabs button {
+    transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.tabs .active,
+.tabs .selected {
+    border-bottom: 2px solid var(--color-primary) !important;
+    color: var(--color-primary) !important;
+    font-weight: 700;
+}
+
+/* =========================
+   Global Scrollbar Styling
+========================= */
+/* Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Transparent background so site background shows through */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-header-bg);
+    /* Match main header color */
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    /* Ensures the border makes the thumb look thinner */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-header-accent);
+    /* Lighter shade on hover */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-header-bg) transparent;
+}

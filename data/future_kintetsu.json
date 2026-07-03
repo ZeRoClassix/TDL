@@ -1,0 +1,30 @@
+{
+    "id":  32,
+    "name":  "Kintetsu",
+    "author":  "mesa727",
+    "creators":  [
+                     "mesa727"
+                 ],
+    "verificationStatus":  "closed",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  "5-10",
+    "placementContext":  {
+                             "above":  "andromeda",
+                             "below":  "ORBIT",
+                             "reason":  "Kintetsu's improved version focuses on extreme mechanical precision, with the current verifier showing exceptional consistency on this high-speed project."
+                         },
+    "verification":  {
+                         "username":  "jupibun",
+                         "percent":  null
+                     },
+    "showcase":  "https://www.youtube.com/watch?v=f-keY28Ad3I",
+    "description":  "A new and improved version of Kintetsu, featuring polished decoration and highly demanding mechanical segments designed for the absolute elite of players.",
+    "devStatus":  "Currently being verified",
+    "estimatedRelease":  "Closed verification",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Kintetsu by various",
+    "records":  [
+
+                ]
+}

@@ -1,0 +1,54 @@
+{
+    "id": 637,
+    "name": "WOBBLING MACHINE",
+    "author": "Smarted",
+    "creators": [],
+    "verifier": "[POB2P] conski",
+    "verification": "https://www.youtube.com/watch?v=RKX6VOsICOg",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[j] Rilso",
+        "link": "https://www.youtube.com/watch?v=Nf-XlhUnVFI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "rqd",
+        "link": "https://www.youtube.com/watch?v=gUIMrQB0RNY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "GuitGuit",
+        "link": "https://www.youtube.com/watch?v=OPjoxit1stw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Danieljgd",
+        "link": "https://www.youtube.com/watch?v=fU_sB62QSzo",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[QOG] MagnificCub9216",
+        "link": "https://www.youtube.com/watch?v=xcioNiS_0Zw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IQB7] Whizkid05",
+        "link": "https://www.youtube.com/watch?v=zvhy07XI0Dg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IH82P] Nsaynchkn",
+        "link": "https://www.youtube.com/watch?v=TaEAGKV8Nmc",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

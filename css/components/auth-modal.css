@@ -1,0 +1,332 @@
+/* =========================
+   Auth Modal – Login / Sign Up
+   Pure front-end UI, no backend
+========================= */
+
+/* Overlay backdrop */
+.auth-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at top, rgba(91, 163, 245, 0.12), transparent 32%),
+        rgba(3, 6, 14, 0.76);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Modal card */
+.auth-modal {
+    background: linear-gradient(180deg, rgba(19, 19, 37, 0.94), rgba(19, 19, 37, 0.88));
+    border-radius: 24px;
+    box-shadow: 0 28px 80px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.08);
+    width: 100%;
+    max-width: 460px;
+    overflow: hidden;
+    animation: slideUp 0.22s ease;
+    position: relative;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(24px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Top accent stripe */
+.auth-modal::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary), var(--color-primary-light));
+}
+
+/* Header bar */
+.auth-modal__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.55rem 1.75rem 0;
+}
+
+.auth-modal__header-copy {
+    min-width: 0;
+}
+
+.auth-modal__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.32rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(91, 163, 245, 0.12);
+    border: 1px solid rgba(91, 163, 245, 0.22);
+    color: var(--color-primary-light);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.85rem;
+}
+
+.auth-modal__header h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    margin: 0;
+}
+
+.auth-modal__header p {
+    margin: 0.45rem 0 0;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    max-width: 28rem;
+}
+
+/* Close button */
+.auth-modal__close {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+    color: rgba(255,255,255,0.72);
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 0.45rem;
+    border-radius: 12px;
+    transition: color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.auth-modal__close:hover {
+    color: #ffffff;
+    background: rgba(91, 163, 245, 0.12);
+    border-color: rgba(91, 163, 245, 0.26);
+    transform: translateY(-1px);
+}
+
+/* Tab switcher inside modal (Login / Sign Up) */
+.auth-modal__tabs {
+    display: flex;
+    margin: 1.1rem 1.75rem 0;
+    padding: 0.25rem;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    border-radius: 16px;
+    gap: 0.35rem;
+}
+
+.auth-modal__tabs button {
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 0.72rem 1.1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.54);
+    cursor: pointer;
+    transition: color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+    flex: 1;
+}
+
+.auth-modal__tabs button:hover {
+    color: #ffffff;
+}
+
+.auth-modal__tabs button.active {
+    background: linear-gradient(180deg, rgba(91, 163, 245, 0.16), rgba(91, 163, 245, 0.06));
+    color: #ffffff;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+/* Form body */
+.auth-modal__body {
+    padding: 1.35rem 1.75rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+}
+
+.auth-modal__body--signup {
+    max-height: min(70vh, 540px);
+    min-height: 0;
+}
+
+.auth-modal__scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+}
+
+.auth-modal__body--signup .auth-modal__scroll {
+    overflow-y: auto;
+    max-height: 290px;
+    padding-right: 0.35rem;
+    scrollbar-gutter: stable;
+}
+
+.auth-modal__body--signup .auth-modal__scroll::-webkit-scrollbar {
+    width: 7px;
+}
+
+.auth-modal__body--signup .auth-modal__scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.auth-modal__body--signup .auth-modal__scroll::-webkit-scrollbar-thumb {
+    background: rgba(91, 163, 245, 0.28);
+    border-radius: 999px;
+}
+
+.auth-modal__body--signup .auth-modal__scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(91, 163, 245, 0.42);
+}
+
+.auth-modal__body--signup .auth-modal__scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(91, 163, 245, 0.28) transparent;
+}
+
+.auth-modal__intro {
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.07);
+    color: rgba(255,255,255,0.62);
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+/* Field group */
+.auth-modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.auth-modal__field label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255,255,255,0.58);
+}
+
+.auth-modal__field input {
+    background: var(--color-background);
+    border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 0.82rem 1rem;
+    color: var(--color-on-background);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.93rem;
+    font-weight: 600;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+.auth-modal__field input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.18);
+    outline: none;
+}
+
+.auth-modal__field input::placeholder {
+    color: rgba(255,255,255,0.32);
+}
+
+/* Form actions */
+.auth-modal__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.35rem;
+}
+
+.auth-modal__actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 0.96rem;
+    box-shadow: 0 14px 30px rgba(74, 144, 217, 0.22);
+}
+
+/* Divider */
+.auth-modal__divider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-on-background-muted);
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    margin: 0.25rem 0;
+}
+
+.auth-modal__divider::before,
+.auth-modal__divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--color-border);
+}
+
+/* Footer link */
+.auth-modal__footer {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.52);
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 0.3rem;
+}
+
+.auth-modal__footer a,
+.auth-modal__footer button.link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    transition: color var(--transition-fast);
+}
+
+.auth-modal__footer a:hover,
+.auth-modal__footer button.link:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+}
+
+/* Error message inside form */
+.auth-modal__error {
+    background: rgba(229, 62, 62, 0.1);
+    border: 1px solid rgba(229, 62, 62, 0.35);
+    color: var(--color-error);
+    border-radius: var(--radius-sm);
+    padding: 0.6rem 0.9rem;
+    font-size: 0.85rem;
+    font-family: 'Nunito', sans-serif;
+}

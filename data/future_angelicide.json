@@ -1,0 +1,49 @@
+{
+    "id": 84,
+    "name": "Angelicide",
+    "author": "LexyCat",
+    "creators": [
+        "LexyCat",
+        "MadisonYuko"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Angelicide presents an overwhelming challenge through its combination of extreme wave precision, tight ship corridors, and demanding timing-based gameplay. The level's sustained intensity with intricate dual sections and minimal consistency breaks creates an unforgiving experience that establishes it as a definitive Top 1 contender."
+    },
+    "verification": {
+        "username": null,
+        "percent": 0
+    },
+    "showcase": "https://youtu.be/UvLvEh_xN5A",
+    "description": "Angelicide delivers intense, precision-heavy gameplay featuring complex wave sections, tight ship timings, and challenging dual segments. The level maintains high difficulty throughout with minimal breaks, combining fast-paced mechanics with demanding accuracy requirements that test the absolute limits of player skill and consistency.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": "99",
+    "gameVersion": "2.2",
+    "song": null,
+    "records": [
+        {
+            "user": "Xtra8nuggies",
+            "percent": "68-100",
+            "video": "https://youtu.be/pLtBjiOf5GM?si=pv1eBoOvajPqZX9i",
+            "date": "2026-02-13"
+        },
+        {
+            "user": "Xtra8nuggies",
+            "percent": "36-78",
+            "isWR": true,
+            "video": "https://youtu.be/D39whb5uR30?si=ZgjmSp20KRU88eR-",
+            "date": "2026-02-28"
+        },
+        {
+            "user": "Xtra8nuggies",
+            "percent": "33",
+            "video": "https://youtu.be/dqkMUi7J7TY?si=LgBl41AreuXucqBd",
+            "date": "2026-02-09"
+        }
+    ]
+}

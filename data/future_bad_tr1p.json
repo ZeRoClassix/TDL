@@ -1,0 +1,30 @@
+{
+    "id":  38,
+    "name":  "Bad Tr1p",
+    "author":  "kapycta999",
+    "creators":  [
+                     "kapycta999"
+                 ],
+    "verificationStatus":  "closed",
+    "difficultyCategory":  "hard",
+    "estimatedPlace":  "4-5",
+    "placementContext":  {
+                             "above":  "ORBIT",
+                             "below":  "Tidal wave",
+                             "reason":  "Bad Tr1p introduces a unique glitch-themed experience, blending trippy visuals with demanding mechanical segments that challenge player focus and precision."
+                         },
+    "verification":  {
+                         "username":  "roze [GD]",
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/hOS2-V1tcO8",
+    "description":  "A highly innovative project featuring a distinctive glitch aesthetic and fast-paced, complex gameplay mechanics that stand out in the upcoming list.",
+    "devStatus":  "Closed verification",
+    "estimatedRelease":  "Private copy",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Bad Tr1p by various",
+    "records":  [
+
+                ]
+}

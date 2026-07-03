@@ -1,0 +1,33 @@
+{
+  "id": "zoink-acheron-verification",
+  "playerSlug": "zoink",
+  "playerName": "[67] Zoink",
+  "levelName": "Acheron",
+  "levelAuthor": "ryamu",
+  "levelRank": 14,
+  "type": "verification",
+  "youtubeId": "sBKR6aUorzA",
+  "title": "Acheron Verification",
+  "uploadDate": "2026-04-06T20:20:00Z",
+  "statMode": "hybrid",
+  "views": 742000,
+  "likes": 68800,
+  "dislikes": 2400,
+  "commentsCount": 5200,
+  "categoryFlags": {
+    "topVerifications": true,
+    "mostPopular": true
+  },
+  "simulation": {
+    "dailyGrowth": 12900
+  },
+  "comments": [
+    {
+      "id": "z-ach-1",
+      "username": "FrameStepper",
+      "text": "The pacing in this upload makes the whole clear look terrifyingly clean.",
+      "likes": 218,
+      "createdAt": "2026-04-07T10:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "id":  41,
+    "name":  "Peach Vomit",
+    "author":  "CherryTeam",
+    "creators":  [
+                     "CherryTeam"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Peach Vomit is a visually striking project from the CherryTeam, combining a unique soft aesthetic with high-speed mechanical challenge that targets the upper end of the demon list."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/hesf6fr_jh0",
+    "description":  "A high-detail 4k project featuring a distinct aesthetic and demanding mechanical segments, Peach Vomit is a standout project that pushes the limits of technical creative design.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Early 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Peach Vomit by various",
+    "records":  [
+
+                ]
+}

@@ -1,0 +1,77 @@
+{
+    "id": 620,
+    "name": "Every End",
+    "author": "MindCap",
+    "creators": [],
+    "verifier": "[FOWL] Hqmy",
+    "verification": "https://youtu.be/C7Umvy4VyDg?si=jKwJsb21MO9pUV2X",
+    "percentToQualify": "100",
+    "records": [
+        {
+            "user": "[67] Zoink",
+            "link": "https://www.youtube.com/watch?v=ZyRmgwSh5tQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "[OG B] garbag",
+            "link": "https://www.youtube.com/watch?v=K5BRT1tMycQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "[910] Stefan Boss",
+            "link": "https://www.youtube.com/watch?v=kMIzs6AzGZM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "N3bulA_",
+            "link": "https://www.youtube.com/watch?v=5s-ohIid6QM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "PlusrMinus",
+            "link": "https://www.youtube.com/watch?v=gXUwH1NNIYc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "TFIBB",
+            "link": "https://www.youtube.com/watch?v=ZCojNSeqyng",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "[USSR] lanx",
+            "link": "https://www.youtube.com/watch?v=qCMU4Ua8vcc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Samot",
+            "link": "https://www.youtube.com/watch?v=E_HhuUrOgbU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "bims",
+            "link": "https://www.youtube.com/watch?v=AuYoe-m-xJ0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Cymmas",
+            "link": "https://www.youtube.com/watch?v=LiY2n1dm1X4",
+            "percent": 87,
+            "hz": 360
+        },
+        {
+            "user": "Kiruu",
+            "link": "https://www.youtube.com/watch?v=V4VIbgSn00w",
+            "percent": 69,
+            "hz": 360
+        }
+    ]
+}

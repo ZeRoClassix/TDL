@@ -1,0 +1,29 @@
+{
+    "id": 25,
+    "name": "ASTEC",
+    "author": "Lesi",
+    "creators": [
+        "Lesi",
+        "More"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hard",
+    "estimatedPlace": "3-5",
+    "placementContext": {
+        "above": "Tidal wave",
+        "below": "Amethyst",
+        "reason": "Astec combines ancient-themed visuals with futuristic mechanical gameplay, creating a unique contrast and a difficult experience that targets the upper echelons of the demon list."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/_Aw6_d84Ojg",
+    "description": "A visually unique collaboration featuring intricate structural detail and demanding gameplay segments, Astec is a promising upcoming project that blends theme and difficulty seamlessly.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Astec by Lesi",
+    "records": []
+}

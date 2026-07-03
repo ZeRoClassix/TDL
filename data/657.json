@@ -1,0 +1,78 @@
+{
+    "id": 657,
+    "name": "Time Lapse",
+    "author": "HappyMoby",
+    "creators": [],
+    "verifier": "chloechu",
+    "verification": "https://www.youtube.com/watch?v=QWrDOemVBLk",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "Mateex",
+        "link": "https://www.youtube.com/watch?v=ns2RJoy4MpE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] Sangalchi",
+        "link": "https://www.youtube.com/watch?v=tMMEFS_Qxuc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[400] CuatrocientosYT",
+        "link": "https://www.youtube.com/watch?v=ayiAxI1j1iM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "peekingurangle",
+        "link": "https://www.youtube.com/watch?v=ISvQUaDc3uE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SLR] carv",
+        "link": "https://www.youtube.com/watch?v=IAdmlp4XyEc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Duv",
+        "link": "https://www.youtube.com/watch?v=27eH6Hd9BgE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "J03B",
+        "link": "https://www.youtube.com/watch?v=mws4Aze0wyQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "xxxluigixxx",
+        "link": "https://www.youtube.com/watch?v=JYM_s92Uqtw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OG B] Abakarovich",
+        "link": "https://www.youtube.com/watch?v=MnI1mM_wjzc",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[24hs] 金艮",
+        "link": "https://www.youtube.com/watch?v=FZyMSFMa3LA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "rakhwomaninov",
+        "link": "https://www.youtube.com/watch?v=f2kktPkj_bs",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

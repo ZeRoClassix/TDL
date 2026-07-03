@@ -1,0 +1,223 @@
+{
+  "_guide": {
+    "priority": "levelOverrides > local database > Pointercrate-style API",
+    "matching": "Levels can be matched by key, id, levelId, path, sourceLevelId, or name (case-insensitive).",
+    "behavior": "A level override can replace a local/API level, create a missing level, and upsert playerRecords safely.",
+    "nameLookup": "Level overrides support both numeric ID and name-based matching. Each entry should include both 'id' and 'name' for maximum compatibility."
+  },
+  "levelOverrides": {
+    "635": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 635,
+      "sourceLevelId": 635,
+      "name": "Thinking Space II",
+      "position": 1,
+      "author": "CairoX",
+      "publisher": "CairoX",
+      "creators": [
+        "CairoX",
+        "[GNG] aidn76"
+      ],
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://youtu.be/AoX45YA9C3U",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "638": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 638,
+      "sourceLevelId": 638,
+      "name": "Flamewall",
+      "position": 2,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=C051VANfN-Q",
+          "percent": 71,
+          "hz": 240
+        }
+      ]
+    },
+    "562": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 562,
+      "sourceLevelId": 562,
+      "name": "Tidal Wave",
+      "position": 4,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=RVSNsAJkYek",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "589": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 589,
+      "sourceLevelId": 589,
+      "name": "Nullscapes",
+      "position": 6,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://youtu.be/oXsAzfcdJhY?is=Jx_G4rkov_1nodzC",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "613": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 613,
+      "sourceLevelId": 613,
+      "name": "andromeda",
+      "position": 10,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=rM6lIPMtvVU",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "649": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 649,
+      "sourceLevelId": 649,
+      "name": "Subsuming Vortex",
+      "position": 11,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=imsU6d4f-NI",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "442": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 442,
+      "sourceLevelId": 442,
+      "name": "Acheron",
+      "position": 16,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://youtu.be/Ub0kDfCpFV8",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "639": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 639,
+      "sourceLevelId": 639,
+      "name": "Defeated Circles",
+      "position": 20,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://youtu.be/IJdumaw56DU",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "380": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 380,
+      "sourceLevelId": 380,
+      "name": "Slaughterhouse",
+      "position": 25,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=eKyAvPT5400",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "391": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 391,
+      "sourceLevelId": 391,
+      "name": "Sakupen Circles",
+      "position": 30,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=RVSNsAJkYek&ts",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "545": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 545,
+      "sourceLevelId": 545,
+      "name": "Eyes in the Water",
+      "position": 32,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://youtu.be/FON3TTR__EQ",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "655": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 655,
+      "sourceLevelId": 655,
+      "name": "The Salt Factory",
+      "position": 42,
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=5OeEKwuzcFw",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
+    },
+    "596": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 596,
+      "sourceLevelId": 596,
+      "name": "Judgement Knights",
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://www.youtube.com/watch?v=H6B-54QMZbQ",
+          "percent": 100,
+          "hz": 360
+        }
+      ]
+    }
+  }
+}

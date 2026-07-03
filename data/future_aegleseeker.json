@@ -1,0 +1,59 @@
+﻿{
+    "id":  81,
+    "name":  "Aegleseeker",
+    "author":  "Airbound",
+    "creators":  [
+                     "Airbound",
+                     "Chunlv1",
+                     "Rynoxious",
+                     "Arachnid",
+                     "Neoz",
+                     "Kr4t",
+                     "Vyzion",
+                     "Hashinoby",
+                     "Kacurro",
+                     "ADrone",
+                     "Culuc",
+                     "BlastiX",
+                     "LewinGD",
+                     "Dolo",
+                     "Apunch",
+                     "Lipz",
+                     "GamerKnight750",
+                     "Yuyu",
+                     "xe_113",
+                     "Cynixx",
+                     "Limit2",
+                     "HeSo",
+                     "Ballistic",
+                     "Shard",
+                     "Smitn",
+                     "Demixe",
+                     "Helpegasus",
+                     "HugoLA",
+                     "IvanPercie",
+                     "Ryaldymont"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "medium",
+    "estimatedPlace":  "20-30",
+    "placementContext":  {
+                             "above":  "Deimos",
+                             "below":  "Abyss of Darkness",
+                             "reason":  "Aegleseeker combines a unique 'heavenly' aesthetic with extreme precision-based gameplay, setting a new bar for both artistic and mechanical difficulty, potentially challenging the very top of the list."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/osTii62YJtY",
+    "description":  "A massive 2.2 collaboration featuring a unique visual style and relentless ship and wave sections, Aegleseeker is one of the most anticipated projects of the year, blending 'heaven-style' glow with intense structural detail.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Mid 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Aegleseeker by Silentroom & Frums",
+    "records":  [
+
+                ]
+}

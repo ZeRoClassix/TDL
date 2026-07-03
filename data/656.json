@@ -1,0 +1,53 @@
+{
+    "id": 656,
+    "name": "chrome hearts",
+    "author": "Roadbose",
+    "creators": [],
+    "verifier": "[YAHO] Sangalchi",
+    "verification": "https://www.youtube.com/watch?v=7o3I45B8-yY",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[SUN] paroe",
+        "link": "https://www.youtube.com/watch?v=GkgdCeB1-4o",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCC] Vikings",
+        "link": "https://www.youtube.com/watch?v=-huKhW8g62M",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "aidanhh",
+        "link": "https://www.youtube.com/watch?v=GZKhhjBfPtY",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[IQB7] Chubs Dubs",
+        "link": "https://www.youtube.com/watch?v=M0_kWfgDh3U",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[WAWA] el terror de las coneras",
+        "link": "https://www.youtube.com/watch?v=snJWq43Urao",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[SELL] Harhir",
+        "link": "https://www.youtube.com/watch?v=4N2WjhYbIak",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "zGamerdude",
+        "link": "https://www.youtube.com/watch?v=FevEeGvvqvQ",
+        "percent": 100,
+        "hz": 360
+    }
+]
+}

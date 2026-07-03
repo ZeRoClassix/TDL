@@ -1,0 +1,234 @@
+/* =========================
+   Roulette Page – Pointercrate card style
+   JS hooks preserved: .page-roulette, .sidebar,
+   .levels-container, .levels, .level, .toast,
+   .toasts-container, .toasts
+========================= */
+
+/* ---- Sidebar ---- */
+.page-roulette .sidebar {
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--color-background-sidebar);
+    border-right: 1px solid var(--color-border);
+    height: 100%;
+}
+
+.page-roulette .sidebar h2,
+.page-roulette .sidebar h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.page-roulette .sidebar a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.page-roulette .sidebar a:hover {
+    color: var(--color-primary-dark);
+}
+
+.page-roulette .sidebar .check {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-on-background);
+}
+
+.page-roulette .sidebar form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.page-roulette .sidebar .save .btns {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+/* ---- Level cards container ---- */
+.page-roulette .levels-container {
+    grid-row: 1;
+    grid-column: 2 / span 2;
+    overflow-y: auto;
+    padding: 1.75rem 2rem;
+    background: var(--color-background);
+}
+
+.page-roulette .levels {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ---- Individual level card ---- */
+.page-roulette .levels .level {
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    grid-auto-rows: max-content;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--color-background-card);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 3px 12px var(--color-shadow);
+    transition:
+        box-shadow var(--transition-smooth),
+        transform var(--transition-smooth);
+}
+
+.page-roulette .levels .level:hover {
+    box-shadow: 0 8px 24px var(--color-shadow-hover);
+    transform: translateY(-2px);
+}
+
+/* Thumbnail */
+.page-roulette .levels .level .video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Meta content */
+.page-roulette .levels .level .meta {
+    flex: 1;
+    padding: 1.1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.page-roulette .levels .level .meta h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-on-background);
+    letter-spacing: -0.02em;
+}
+
+.page-roulette .levels .level .meta p,
+.page-roulette .levels .level .meta span {
+    font-size: 0.85rem;
+    color: var(--color-on-background-muted);
+}
+
+/* Action bar */
+.page-roulette .levels .level .actions {
+    grid-column: 1 / span 2;
+    background: var(--color-header-bg);
+    padding: 0.85rem 1.1rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.page-roulette .levels .level .actions input[type="number"] {
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius-md);
+    padding: 0.55rem 0.8rem;
+    background: rgba(255,255,255,0.08);
+    flex: 1;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    outline: none;
+}
+
+.page-roulette .levels .level .actions input[type="number"]:focus {
+    border-color: var(--color-primary-light);
+    box-shadow: 0 0 0 3px rgba(74,144,217,0.25);
+}
+
+.page-roulette .levels .level .actions input[type="number"]::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+/* ---- Results section ---- */
+.page-roulette .levels .results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--color-background-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.75rem;
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.page-roulette .levels .results h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-on-background);
+    margin-bottom: 0.25rem;
+}
+
+.page-roulette .levels .results .btn {
+    margin-top: 0.5rem;
+}
+
+/* ---- Toast alerts ---- */
+.page-roulette .toasts-container {
+    overflow-y: auto;
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    align-self: start;
+    margin: 1.5rem 2rem 0;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.page-roulette .toasts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    overflow-y: auto;
+}
+
+.page-roulette .toast {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--color-error);
+    color: white;
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(229, 62, 62, 0.35);
+    pointer-events: all;
+}
+
+/* ---- Responsive ---- */
+@media screen and (min-width: 1366px) {
+    .page-roulette .levels-container {
+        grid-column: 2;
+        padding-right: 1rem;
+    }
+    .page-roulette .toasts-container {
+        grid-column: 3;
+        margin: 0;
+        padding: 1.75rem 1.75rem 0;
+        align-self: stretch;
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "id": 57,
+    "name": "Why",
+    "author": "lBedrockl",
+    "creators": [
+        "lBedrockl"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Why is a grueling 37-minute long solo memory demon that tests the absolute limit of player focus, patience, and endurance."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/QZbuA1F9Fbc",
+    "description": "One of the longest projects ever published in Geometry Dash history, Why is an excruciating 37-minute endurance test that combines complex memory segments with unrelenting gameplay.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Why by various",
+    "records": []
+}

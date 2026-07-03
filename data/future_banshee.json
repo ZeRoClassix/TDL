@@ -1,0 +1,37 @@
+{
+    "id": 32,
+    "name": "Banshee",
+    "author": "Nikro",
+    "creators": [
+        "Nikro",
+        "Komp"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hard",
+    "estimatedPlace": 5,
+    "placementContext": {
+        "above": "ORBIT",
+        "below": "Tidal wave",
+        "reason": "Banshee's incredible consistency-based difficulty, combined with its high-speed wave and ship sections, has proven to be a bridge too far for many, but the recent 86% run shows it is nearing completion."
+    },
+    "verification": {
+        "username": "[FOWL] Hqmy",
+        "percent": 86
+    },
+    "showcase": "https://youtu.be/h14lmGH31_M?si=Xi6TH4Liu6ySxcpE",
+    "description": "A high-intensity extreme demon that emphasizes fast-paced mechanics and precision, featuring a dark and mysterious aesthetic that complements its extreme difficulty curve.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": 86,
+    "gameVersion": "2.2",
+    "song": "Banshee by various",
+    "records": [
+        {
+            "user": "[FOWL] Hqmy",
+            "percent": "86",
+            "isWR": true,
+            "video": "https://www.youtube.com/watch?v=AkAcvx32BII",
+            "date": "2024-04-12"
+        }
+    ]
+}

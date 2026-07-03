@@ -1,0 +1,31 @@
+{
+    "id":  211,
+    "name":  "Her Funeral",
+    "author":  "injur3dGX",
+    "creators":  [
+                     "injur3dGX",
+                     "Ninedice"
+                 ],
+    "verificationStatus":  "open",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Her Funeral creates a dark and punishing atmosphere paired with high-speed precision that targets the absolute limits of difficulty."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/VMHi4LMOCOg?si=7YVIAt9uGCsOENuM",
+    "description":  "A dark and intense collaboration featuring a combination of styles inspired by the most difficult demons in the game, focusing on raw mechanical skill and atmospheric depth.",
+    "devStatus":  "Open verification",
+    "estimatedRelease":  "Already released",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Her Funeral by various",
+    "records":  [
+
+                ]
+}

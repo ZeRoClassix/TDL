@@ -1,0 +1,65 @@
+{
+    "id": 629,
+    "name": "Swing Swing",
+    "author": "[COMET] Kaza",
+    "creators": [],
+    "verifier": "[IQB7] Whizkid05",
+    "verification": "https://www.youtube.com/watch?v=_hL9hFU3WI4",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[FOWL] Lfz",
+        "link": "https://www.youtube.com/watch?v=aHDQBS4I-mI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[400] CuatrocientosYT",
+        "link": "https://www.youtube.com/watch?v=yPSkGaT0IP8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Tired",
+        "link": "https://www.youtube.com/watch?v=Ah6_4nzYo_4",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[PRIME] exsii",
+        "link": "https://www.youtube.com/watch?v=k9Ow-gztwJI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCC] Enfur",
+        "link": "https://www.youtube.com/watch?v=XTAESGVf1h8",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "TheJaco9",
+        "link": "https://www.youtube.com/watch?v=wrT066TxBtE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[67] Zoink",
+        "link": "https://www.youtube.com/watch?v=ro--xixe26g",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[PIG] birii",
+        "link": "https://www.youtube.com/watch?v=i7jNPmQTMEQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[YAHO] Erixen",
+        "link": "https://www.youtube.com/watch?v=-lWlnTdQ5jY",
+        "percent": 100,
+        "hz": 360
+    }
+]
+}

@@ -1,0 +1,38 @@
+{
+    "id": 64,
+    "name": "Escalator",
+    "author": "Neomabiloan",
+    "creators": [
+        "Neomabiloan",
+        "teraaa",
+        "More"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": "5-10",
+    "placementContext": {
+        "above": "andromeda",
+        "below": "ORBIT",
+        "reason": "Escalator represents a new peak of mechanical consistency and skill, with Hqmy's 33-96% run proving that this behemoth is well within the realm of verification."
+    },
+    "verification": {
+        "username": "[FOWL] Hqmy",
+        "percent": null
+    },
+    "showcase": "https://youtu.be/wyGXMC2I-j8",
+    "description": "A high-intensity project featuring extreme mechanical segments and a polished aesthetic, Escalator is one of the most anticipated upcoming challenges that pushes the boundary of elite performance.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": 100,
+    "gameVersion": "2.2",
+    "song": "Escalator by various",
+    "records": [
+        {
+            "user": "[OG B] teraaa",
+            "percent": "48-100",
+            "isWR": true,
+            "video": "https://youtu.be/BxE7Sb-8RM4?si=i02FZSTfupEDbRjA",
+            "date": "2026-02-04"
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+  "_guide": [
+    "videos: keyed by YouTube ID or explicit local video id",
+    "customVideos: add manual-only videos without creating per-video files",
+    "leave a field out to let fetched or simulated data win"
+  ],
+  "_videoTemplate": {
+    "id": "",
+    "title": "",
+    "player": "",
+    "levelName": "",
+    "levelAuthor": "",
+    "levelRank": 1,
+    "type": "progress",
+    "youtubeId": "",
+    "url": "",
+    "thumbnail": "",
+    "uploadDate": "",
+    "hz": 240,
+    "fpsCategory": "240",
+    "difficulty": "Top 10",
+    "progressPercent": 0,
+    "featured": false,
+    "statMode": "hybrid",
+    "views": 0,
+    "likes": 0,
+    "dislikes": 0,
+    "commentsCount": 0,
+    "categoryFlags": {
+      "mostPopular": false,
+      "latest": false,
+      "trending": false,
+      "topVerifications": false,
+      "topProgress": false,
+      "activeNow": false
+    },
+    "simulation": {
+      "baseViews": null,
+      "dailyGrowth": null,
+      "stagnationChance": null,
+      "engagementBias": null
+    },
+    "comments": []
+  },
+  "videos": {
+    "9fsZ014qB3s": {
+      "featured": true,
+      "views": 1180000,
+      "likes": 129000,
+      "dislikes": 3800,
+      "commentsCount": 9100,
+      "categoryFlags": {
+        "mostPopular": true,
+        "trending": true,
+        "topVerifications": true
+      },
+      "simulation": {
+        "dailyGrowth": 6800,
+        "engagementBias": 1.12
+      },
+      "comments": [
+        {
+          "id": "z-tv-1",
+          "username": "WaveFollower",
+          "text": "This still feels like one of the most important uploads the social page could surface.",
+          "likes": 481,
+          "createdAt": "2026-04-19T12:00:00Z",
+          "replies": [
+            {
+              "id": "z-tv-1-r1",
+              "username": "ListArchivist",
+              "text": "Top 1 level plus top player plus verifier context. It is the full package.",
+              "likes": 122,
+              "createdAt": "2026-04-19T14:00:00Z"
+            }
+          ]
+        }
+      ]
+    },
+    "sBKR6aUorzA": {
+      "views": 742000,
+      "likes": 68800,
+      "dislikes": 2400,
+      "commentsCount": 5200,
+      "categoryFlags": {
+        "topVerifications": true,
+        "mostPopular": true
+      }
+    },
+    "CELNmHwln_c": {
+      "featured": true,
+      "views": 1370000,
+      "likes": 154000,
+      "dislikes": 4200,
+      "commentsCount": 11800,
+      "categoryFlags": {
+        "mostPopular": true,
+        "latest": true,
+        "trending": true,
+        "topVerifications": true
+      },
+      "simulation": {
+        "dailyGrowth": 11800,
+        "engagementBias": 1.18
+      }
+    },
+    "kpcF1-QAHQc": {
+      "views": 932000,
+      "likes": 87500,
+      "dislikes": 3300,
+      "commentsCount": 7000,
+      "categoryFlags": {
+        "mostPopular": true,
+        "topVerifications": true
+      }
+    },
+    "4lfkzz1VCbA": {
+      "featured": true,
+      "views": 854000,
+      "likes": 77100,
+      "dislikes": 2600,
+      "commentsCount": 6200,
+      "categoryFlags": {
+        "mostPopular": true,
+        "trending": true,
+        "topVerifications": true
+      }
+    },
+    "AoX45YA9C3U": { "statMode": "manual", "views": 147382, "likes": 28143, "dislikes": 1482, "commentsCount": 11849 },
+    "C051VANfN-Q": { "statMode": "manual", "views": 57210, "likes": 11832, "dislikes": 712, "commentsCount": 3921 },
+    "eKyAvPT5400": { "statMode": "manual", "views": 43812, "likes": 8941, "dislikes": 401, "commentsCount": 874 },
+    "IJdumaw56DU": { "statMode": "manual", "views": 61403, "likes": 18521, "dislikes": 914, "commentsCount": 982 },
+    "oXsAzfcdJhY": { "statMode": "manual", "views": 88432, "likes": 19842, "dislikes": 1104, "commentsCount": 1483 },
+    "imsU6d4f-NI": { "statMode": "manual", "views": 48193, "likes": 8024, "dislikes": 395, "commentsCount": 381 },
+    "rM6lIPMtvVU": { "statMode": "manual", "views": 109214, "likes": 13052, "dislikes": 1042, "commentsCount": 814 },
+    "Ub0kDfCpFV8": { "statMode": "manual", "views": 12382, "likes": 2891, "dislikes": 124, "commentsCount": 194 },
+    "FON3TTR__EQ": { "statMode": "manual", "views": 10482, "likes": 3381, "dislikes": 82, "commentsCount": 362 },
+    "RVSNsAJkYek": { "statMode": "manual", "views": 92841, "likes": 9103, "dislikes": 853, "commentsCount": 1948 }
+  },
+  "customVideos": []
+}

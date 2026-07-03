@@ -1,0 +1,26 @@
+{
+    "id": 52,
+    "name": "AICHMIRA",
+    "author": "TEAM OMEGA",
+    "creators": ["TEAM OMEGA"],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": "2-3",
+    "placementContext": {
+        "above": "Flamewall",
+        "below": "Thinking Space II",
+        "reason": "AICHMIRA features an intricate combination of high-speed wave segments, precise ship corridors, and tight timing-based gameplay that creates an unforgiving difficulty curve. The level's sustained intensity with minimal breaks and complex dual sections pushes beyond current Top 1 benchmarks, establishing it as a definitive challenge for the world's best players."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/m1YH71pBkFM",
+    "description": "AICHMIRA showcases a fast-paced, precision-heavy gameplay style featuring intricate wave sections, tight ship timings, and challenging dual segments. The level combines high-speed mechanics with demanding accuracy requirements, creating an intense and unforgiving experience that tests the limits of player skill and consistency.",
+    "devStatus": "Decoration Process",
+    "estimatedRelease": "Late 2026",
+    "completionPercent": "92",
+    "gameVersion": "2.2",
+    "song": null,
+    "records": []
+}

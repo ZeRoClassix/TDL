@@ -1,0 +1,30 @@
+{
+    "id":  55,
+    "name":  "Avaddon",
+    "author":  "CherryTeam",
+    "creators":  [
+                     "CherryTeam"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  1,
+    "placementContext":  {
+                             "above":  "Thinking Space II",
+                             "below":  "-",
+                             "reason":  "Avaddon is a visually stunning project from the CherryTeam, combining an ethereal yet punishing aesthetic with gameplay that targets the top of the list."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/UMjrUj1fAZ8",
+    "description":  "Featuring a distinct and beautifully polished aesthetic, Avaddon is a high-speed mechanical challenge that showcases the peak of modern creative design and technical difficulty.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Early 2027",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Avaddon by various",
+    "records":  [
+
+                ]
+}

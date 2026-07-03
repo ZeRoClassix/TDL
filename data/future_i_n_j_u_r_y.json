@@ -1,0 +1,37 @@
+{
+    "id": 61,
+    "name": "I N J U R Y",
+    "author": "Rare",
+    "creators": [
+        "Rare",
+        "NineDice"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "I N J U R Y stands out as a definitive Top 1 contender through its unique combination of innovative gameplay design and striking visual presentation, featuring intricate mechanical segments that create an unforgiving difficulty curve."
+    },
+    "verification": {
+        "username": "KYWY",
+        "percent": 74
+    },
+    "showcase": "https://youtu.be/bqZL6QKsDZI",
+    "description": "I N J U R Y showcases unique, innovative gameplay paired with striking visual decoration, featuring intricate wave sections and tight ship timings wrapped in a distinctive aesthetic style.",
+    "devStatus": "Closed verification",
+    "estimatedRelease": "Private copy",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "I   N   J   U   R   Y by NineDice",
+    "records": [
+        {
+            "user": "KYWY",
+            "percent": "74",
+            "isWR": true,
+            "video": "https://youtu.be/653-Er6VWcw?si=tmY2H1z1jhZeUpGX",
+            "date": "2024-08-19"
+        }
+    ]
+}

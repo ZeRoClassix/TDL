@@ -1,0 +1,42 @@
+{
+    "id": 664,
+    "name": "paranoia",
+    "author": "[JUICE] Amplitron",
+    "creators": [],
+    "verifier": "[JUICE] Amplitron",
+    "verification": "https://www.youtube.com/watch?v=Aw83i8Zmh_0",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "w5678rr",
+        "link": "https://www.youtube.com/watch?v=ZuuQPOvR6Gw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[FOWL] merkz",
+        "link": "https://www.youtube.com/watch?v=rH3lgGbwrEA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "Hellcat",
+        "link": "https://www.youtube.com/watch?v=XTldXTAKhyM",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "LuckyL4",
+        "link": "https://www.youtube.com/watch?v=Hhvp8gdhJlQ",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[MEALY] LAMINGTON",
+        "link": "https://www.youtube.com/watch?v=Hv4vMpozmJU",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}

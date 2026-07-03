@@ -1,0 +1,51 @@
+{
+  "id": "zoink-tidal-wave-verification",
+  "playerSlug": "zoink",
+  "playerName": "[67] Zoink",
+  "levelName": "Tidal Wave",
+  "levelAuthor": "OniLink",
+  "levelRank": 4,
+  "type": "verification",
+  "youtubeId": "9fsZ014qB3s",
+  "title": "Tidal Wave Verification",
+  "uploadDate": "2026-04-18T18:00:00Z",
+  "statMode": "hybrid",
+  "views": 1180000,
+  "likes": 129000,
+  "dislikes": 3800,
+  "commentsCount": 9100,
+  "categoryFlags": {
+    "mostPopular": true,
+    "trending": true,
+    "topVerifications": true
+  },
+  "simulation": {
+    "dailyGrowth": 26800,
+    "engagementBias": 1.12
+  },
+  "comments": [
+    {
+      "id": "z-tv-1",
+      "username": "WaveFollower",
+      "text": "This still feels like one of the most important uploads the social page could surface.",
+      "likes": 481,
+      "createdAt": "2026-04-19T12:00:00Z",
+      "replies": [
+        {
+          "id": "z-tv-1-r1",
+          "username": "ListArchivist",
+          "text": "Top 1 level plus top player plus verifier context. It is the full package.",
+          "likes": 122,
+          "createdAt": "2026-04-19T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "z-tv-2",
+      "username": "HitboxWatcher",
+      "text": "The control here is absurd. The run looks way calmer than the level really is.",
+      "likes": 307,
+      "createdAt": "2026-04-20T16:15:00Z"
+    }
+  ]
+}

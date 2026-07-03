@@ -1,0 +1,31 @@
+{
+    "id":  31,
+    "name":  "KINESIOPHOBIA",
+    "author":  "thejosturner",
+    "creators":  [
+                     "thejosturner",
+                     "More"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hardest",
+    "estimatedPlace":  "3-5",
+    "placementContext":  {
+                             "above":  "ORBIT",
+                             "below":  "Amethyst",
+                             "reason":  "Kinesiophobia has been in development for years, aiming to push the boundaries of mechanical difficulty through a series of unrelenting and diverse skill tests."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/iF8BbipwaOM?si=YKOOVsBgzrpVtnqA",
+    "description":  "A high-intensity project featuring a massive range of mechanical styles, Kinesiophobia is a long-awaited challenge that targets the upper end of the demon list.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2026",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Kinesiophobia by various",
+    "records":  [
+
+                 ]
+}

@@ -1,0 +1,55 @@
+{
+    "id": 653,
+    "name": "Infinite Chaos",
+    "author": "CairoX",
+    "creators": [],
+    "verifier": "Victurkey",
+    "verification": "https://www.youtube.com/watch?v=wOMVERxU5IA",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[COMET] Kaza",
+        "link": "https://www.youtube.com/watch?v=3bM6MzwSNkA",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "JannisTE",
+        "link": "https://www.youtube.com/watch?v=_yFvYJkZMLg",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[400] CuatrocientosYT",
+        "link": "https://www.youtube.com/watch?v=-pP5HV6Oq5w",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[HOLA] DeividG",
+        "link": "https://www.youtube.com/watch?v=sW1nKXJoj2Q",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "DJ1482",
+        "link": "https://www.youtube.com/watch?v=EUVT8LanE8c",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[TCC] Vikings",
+        "link": "https://www.youtube.com/watch?v=K43TTIh1oLI",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[DL] mari",
+        "link": "https://www.youtube.com/watch?v=_Kh7QeyQdhI",
+        "percent": 100,
+        "hz": 360
+    }
+]
+
+}
+

@@ -1,0 +1,28 @@
+{
+    "id": 26,
+    "name": "Exterminatus",
+    "author": "CherryTeam",
+    "creators": [
+        "CherryTeam"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": "2-3",
+    "placementContext": {
+        "above": "Amethyst",
+        "below": "Flamewall",
+        "reason": "Exterminatus delivers a brutal mechanical challenge with precise timings and atmospheric decoration that aims to establish it as a top-tier contender."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/Z6x-Juz3OdE?si=3fgbxtW83JEPi74f",
+    "description": "A dark and punishing upcoming extreme demon project from the CherryTeam, featuring high-speed mechanical segments and intricate structural design.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Early 2027",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Exterminatus by various",
+    "records": []
+}

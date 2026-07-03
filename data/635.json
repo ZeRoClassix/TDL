@@ -1,0 +1,24 @@
+{
+    "id": 635,
+    "name": "Thinking Space II",
+    "author": "CairoX",
+    "creators": ["CairoX", "[GNG] aidn76" ],
+    "verifier": "[67] Zoink",
+    "verification": "https://www.youtube.com/watch?v=CELNmHwln_c",
+    "percentToQualify": "79",
+    "records": [
+    {
+        "user": "[WBT] wPopoff",
+        "link": "https://youtu.be/hJHiGeuahTI?si=HmWETJcqKrBspmAs",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[GNG] aidn76",
+        "link": "https://youtu.be/AoX45YA9C3U",
+        "percent": 100,
+        "hz": 240
+    }
+]
+
+}

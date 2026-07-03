@@ -1,0 +1,50 @@
+{
+    "id": 30,
+    "name": "Aeternus",
+    "author": "Riot",
+    "creators": [
+        "Riot",
+        "ryamu"
+    ],
+    "verificationStatus": "open",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Thinking Space II",
+        "below": "-",
+        "reason": "Aeternus is expected to be the inevitable Top 1 due to its relentless, near-impossible wave difficulty, extreme precision, and lack of consistency breaks, pushing far beyond current limits—making it likely to hold the #1 spot for a very long time once verified."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://www.youtube.com/watch?v=3IjecL747vs?si=UdCikYQyJ3uTJPnB",
+    "description": "Aeternus features extremely tight, relentless wave gameplay with minimal breaks, combined with a dark, atmospheric style and high-detail effects that emphasize intensity and precision throughout the level.",
+    "devStatus": "Open verification",
+    "estimatedRelease": "Already released",
+    "completionPercent": "100",
+    "gameVersion": "2.2",
+    "song": null,
+    "records": [
+        {
+            "user": "ChillGuy",
+            "percent": "72-100",
+            "isWR": true,
+            "video": "https://youtu.be/KJKza9jnLNs?si=fNQci4KFT2JOeJBF",
+            "date": "2025-03-31"
+        },
+        {
+            "user": "[TCD] Trick",
+            "percent": "71-93",
+            "video": "https://youtu.be/L4a6UY8KSXQ?si=oF3bVNIyXaRiFeqt",
+            "date": "2025-06-19"
+        },
+        {
+            "user": "dewbbs",
+            "percent": "20",
+            "isWR": true,
+            "video": "https://youtu.be/hMh2waoolfQ?si=S8YP_1hROIZLBSR3",
+            "date": "2026-04-11"
+        }
+    ]
+}

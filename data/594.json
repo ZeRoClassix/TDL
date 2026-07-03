@@ -1,0 +1,29 @@
+{
+    "id": 594,
+    "name": "BOOBAWAMBA",
+    "author": "Akunakunn",
+    "creators": [],
+    "verifier": "eastshark",
+    "verification": "https://www.youtube.com/watch?v=20fYiqLAo_E",
+    "percentToQualify": "100",
+    "records": [
+    {
+        "user": "[YAHO] agonom",
+        "link": "https://www.youtube.com/watch?v=HMoe9mM3_Zw",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[UFA] Vorten",
+        "link": "https://www.youtube.com/watch?v=ajHERHT_DEE",
+        "percent": 100,
+        "hz": 360
+    },
+    {
+        "user": "[OUGH] cbremner",
+        "link": "https://www.youtube.com/watch?v=KDsCVyWbG3w",
+        "percent": 100,
+        "hz": 360
+    }
+]
+}

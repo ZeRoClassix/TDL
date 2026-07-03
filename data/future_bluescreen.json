@@ -1,0 +1,32 @@
+{
+    "id":  57,
+    "name":  "BLUESCREEN",
+    "author":  "Zephlin",
+    "creators":  [
+                     "Zephlin",
+                     "Sugary_syrup",
+                     "SeokSquid"
+                 ],
+    "verificationStatus":  "wip",
+    "difficultyCategory":  "hard",
+    "estimatedPlace":  "3-5",
+    "placementContext":  {
+                             "above":  "ORBIT",
+                             "below":  "Amethyst",
+                             "reason":  "Bluescreen introduces a high-tech glitch aesthetic paired with punishingly precise gameplay that targets the top tier of difficulty."
+                         },
+    "verification":  {
+                         "username":  null,
+                         "percent":  null
+                     },
+    "showcase":  "https://youtu.be/tDyz8vTFbTo",
+    "description":  "A high-tech glitch-themed project led by Zephlin, Bluescreen features intricate structural detail and demanding mechanical segments designed to push player consistency to the limit.",
+    "devStatus":  "Decoration process",
+    "estimatedRelease":  "Late 2026",
+    "completionPercent":  null,
+    "gameVersion":  "2.2",
+    "song":  "Bluescreen by various",
+    "records":  [
+
+                ]
+}

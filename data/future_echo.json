@@ -1,0 +1,70 @@
+{
+    "id": 66,
+    "name": "ECHO",
+    "author": "Zeptoz",
+    "creators": [
+        "Zeptoz",
+        "Sley",
+        "Peton",
+        "Lieb",
+        "Metalface221",
+        "nikrodox",
+        "vlacc",
+        "Majkomar",
+        "dimmet",
+        "Darwin",
+        "Zoink Doink",
+        "7rodo",
+        "voltex",
+        "GrenadeofTacos",
+        "Marwec",
+        "Yoonsr",
+        "Stormfly",
+        "Giron",
+        "minusx",
+        "Acno",
+        "Thycket",
+        "R3XX3R",
+        "Gunnerbones",
+        "Molds",
+        "loltad",
+        "Yoreid",
+        "Jerkrat",
+        "Vermillion",
+        "Serponge",
+        "matty2003",
+        "Juhou",
+        "Dreamtide",
+        "Knots",
+        "pocke",
+        "Blitzer"
+    ],
+    "verificationStatus": "closed",
+    "difficultyCategory": "hard",
+    "estimatedPlace": "10",
+    "placementContext": {
+        "above": "andromeda",
+        "below": "Every End",
+        "reason": "Echo is a massive conceptual factory-based memory demon, currently aiming for a Top 5 placement through its unique gimmicks and uncompromising mechanical difficulty."
+    },
+    "verification": {
+        "username": "[FOWL] Hqmy",
+        "percent": "33-96"
+    },
+    "showcase": "https://youtu.be/ghJE29FsrE0",
+    "description": "One of the most ambitious megacollabs to date, Echo blends complex factory-themed decoration with innovative memory-based gameplay segments and conceptual structural design.",
+    "devStatus": "Currently being verified",
+    "estimatedRelease": "Closed verification",
+    "completionPercent": null,
+    "gameVersion": "2.2",
+    "song": "Echo by various",
+    "records": [
+        {
+            "user": "[FOWL] Hqmy",
+            "percent": "33-96",
+            "isWR": true,
+            "video": "https://youtu.be/Ju_UfXyBDSA?si=TVI_MvP5efaavKDS",
+            "date": "2025-12-10"
+        }
+    ]
+}
