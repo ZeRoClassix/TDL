@@ -179,7 +179,13 @@ export async function loadSocialDataset() {
             levelContext,
             config,
         }))
-    );
+    ).filter(video => {
+        const titleLower = String(video.title || '').toLowerCase();
+        // Remove livestreams and VODs based on the fetched YouTube title
+        if (titleLower.includes('🔴')) return false;
+        if (/\b(stream|vod|live)\b/i.test(titleLower)) return false;
+        return true;
+    });
 
     const profiles = buildProfiles({
         players: discoveredPlayers,
@@ -524,7 +530,11 @@ function buildDiscoveredListVideos({ levelContext, maxDiscoveredVideos, includeF
 
         for (const record of level.records) {
             if (limit > 0 && discovered.length >= limit) break;
-            const url = record.link || record.video;
+            const url = record.link || record.video || '';
+
+            // Skip livestreams and VODs
+            if (url.includes('twitch.tv') || url.includes('/live/') || url.includes('/live?')) continue;
+
             const youtubeId = resolveYoutubeId(url);
             if (!youtubeId) continue;
 
@@ -850,7 +860,7 @@ function buildProfileSeedMap({ players, videos, videoDetails, videoIdentityMap, 
         const resolvedAvatar = manual.avatar
             || (config.preferFetchedProfilePictures && manual.youtube?.autoFetch !== false ? channel.avatar : '')
             || buildYoutubeAvatarFallbackUrl(youtubeChannelId, youtubeHandle, identity?.authorUrl, manual.socials?.youtube);
-            
+
         const avatar = resolvedAvatar || cachedAvatar || generateAvatar(displayName);
         if (resolvedAvatar && resolvedAvatar !== cachedAvatar) {
             setCachedProfileAvatar(slug, resolvedAvatar);
@@ -914,7 +924,7 @@ function finalizeVideo({ video, videoDetails, videoIdentityMap, videoOverrides, 
     const difficulty = merged.difficulty || inferredLevel?.difficulty || difficultyFromRank(levelRank);
     const fpsCategory = merged.fpsCategory || deriveFpsCategory(merged.hz);
     const thumbnail = merged.thumbnail || detail.thumbnail || buildYoutubeThumbnail(merged.youtubeId, levelName || 'PCD Social');
-    const uploadDate = normalizeDate(merged.uploadDate || detail.uploadDate, detail.uploadDate || isoDaysAgo(levelRank));
+    const uploadDate = normalizeDate(detail.uploadDate || merged.uploadDate, detail.uploadDate || isoDaysAgo(levelRank));
     const stats = deriveVideoStats({
         video: {
             ...merged,

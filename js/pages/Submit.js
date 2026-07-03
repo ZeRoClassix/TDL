@@ -5,14 +5,12 @@
  * To wire up to a real backend, search for:
  *   // BACKEND: connect to your API here
  *
- * Reads level data from the existing /data/_list.json + /data/{id}.json
- * to power the demon dropdown and player autocomplete.
- *
- * Intentionally does NOT touch List.js, Leaderboard.js, Roulette.js,
- * content.js, score.js, or any data files.
+ * Reads level data from the shared Pointercrate-style content API to power
+ * the demon dropdown and player autocomplete.
  */
 
 import { store } from '../store.js';
+import { fetchList } from '../content.js';
 import Spinner from '../components/Spinner.js';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -477,35 +475,25 @@ export default {
         // ── Fetch top-150 data ──────────────────────────────────────────────
         // Re-uses the same data files as List.js; does not modify them.
         try {
-            const listRes = await fetch('/data/_list.json');
-            const listJson = await listRes.json();
-
-            // Only take the first 150 (indices 0-149 = main list, exclude legacy)
-            const top150 = listJson.slice(0, 150);
+            const list = await fetchList();
+            const top150 = (list || []).slice(0, 150);
 
             const playerSet = new Set();
 
-            const results = await Promise.allSettled(
-                top150.map(async (path, i) => {
-                    const lvlRes = await fetch(`/data/${path}.json`);
-                    const lvl = await lvlRes.json();
+            top150.forEach(([lvl, err], i) => {
+                if (!lvl || err) return;
 
-                    // Collect player names for autocomplete
-                    if (lvl.verifier) playerSet.add(lvl.verifier);
-                    (lvl.records || []).forEach(r => { if (r.user) playerSet.add(r.user); });
+                // Collect player names for autocomplete
+                if (lvl.verifier) playerSet.add(lvl.verifier);
+                (lvl.records || []).forEach(r => { if (r.user) playerSet.add(r.user); });
 
-                    return {
-                        rank: i + 1,
-                        name: lvl.name,
-                        percentToQualify: lvl.percentToQualify ?? 100,
-                        path,
-                    };
-                })
-            );
-
-            this.demons = results
-                .filter(r => r.status === 'fulfilled')
-                .map(r => r.value);
+                this.demons.push({
+                    rank: i + 1,
+                    name: lvl.name,
+                    percentToQualify: lvl.percentToQualify ?? 100,
+                    path: lvl.path,
+                });
+            });
 
             // Sort by rank (should already be ordered, but be safe)
             this.demons.sort((a, b) => a.rank - b.rank);

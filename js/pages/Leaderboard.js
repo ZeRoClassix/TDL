@@ -384,7 +384,10 @@ export default {
             }
             if (this.searchQuery) {
                 const q = this.searchQuery.toLowerCase();
-                result = result.filter(entry => entry.user.toLowerCase().includes(q));
+                result = result.filter(entry =>
+                    entry.user.toLowerCase().includes(q) ||
+                    String(entry.name || entry.displayName || '').toLowerCase().includes(q)
+                );
             }
             return result;
         },
@@ -512,15 +515,24 @@ export default {
     },
     methods: {
         localize,
+        getEntry(username) {
+            const key = String(username || '').toLowerCase();
+            return this.leaderboard.find(entry => String(entry.user || '').toLowerCase() === key) || null;
+        },
         getDisplayName(username) {
-            return this.store.getProfile(username).name || username;
+            const entry = this.getEntry(username);
+            return entry?.name || entry?.displayName || this.store.getProfile(username).name || username;
         },
         getFlag(username) {
-            // Priority: Store override -> 2kplayerflags.txt
+            // Priority: playerOverrides -> local profile -> 2kplayerflags.txt
+            const entry = this.getEntry(username);
+            if (entry?.flag || entry?.countryFlag) return entry.flag || entry.countryFlag;
             const profile = this.store.getProfile(username);
             return profile.flag || getPlayerFlag(username);
         },
         getTag(username) {
+            const entry = this.getEntry(username);
+            if (entry?.tag) return entry.tag;
             return this.store.getProfile(username).tag || null;
         },
         isOwner(username) {

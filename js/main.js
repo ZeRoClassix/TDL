@@ -26,7 +26,7 @@ const app = VueGlobal.createApp({
             // BACKEND: Connect to real login API here
             const username = this.loginUsername.trim();
             const password = this.loginPassword.trim();
-            
+
             // Mock authentication
             if (this.store.passwords && this.store.passwords[username] === password) {
                 this.store.setUser({ username, role: username === 'ModTest' ? 'moderator' : 'player' });

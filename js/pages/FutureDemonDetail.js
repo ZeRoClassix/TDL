@@ -203,8 +203,8 @@ export default {
                                 <div class="wr-records-list">
                                     <a v-for="(record, index) in wrRecords" 
                                        :key="index"
-                                       :href="record.video || record.link" 
-                                       target="_blank" 
+                                       href="#"
+                                       @click.prevent="openVideo(record.video || record.link)"
                                        class="featured-record-card"
                                        :class="{ 'wr-item': true }">
                                         <div class="featured-thumb-wrapper">
@@ -216,8 +216,8 @@ export default {
                                         <div class="featured-info">
                                             <div class="player-block">
                                                 <span class="player-name">
-                                                    {{ record.user }}
-                                                    <span v-if="isVerifier(record.user)" class="verifier-tag">VERIFIER</span>
+                                                    {{ record.user || record.username || record.player || 'Unknown Player' }}
+                                                    <span v-if="isVerifier(record.user || record.username || record.player)" class="verifier-tag">VERIFIER</span>
                                                     <span v-if="record.status" :class="['status-container', 'status-container-mini', 'status-' + record.status.toLowerCase()]">{{ record.status }}</span>
                                                     <span class="wr-tag">WR</span>
                                                 </span>
@@ -240,8 +240,8 @@ export default {
                                 <div class="records-grid">
                                     <a v-for="(record, index) in nonWrRecords" 
                                        :key="index" 
-                                       :href="record.video || record.link" 
-                                       target="_blank" 
+                                       href="#"
+                                       @click.prevent="openVideo(record.video || record.link)"
                                        class="record-mini-card">
                                         <div class="mini-thumb-wrapper">
                                             <img :src="getThumb(record.video || record.link)" class="mini-thumb">
@@ -250,8 +250,8 @@ export default {
                                         </div>
                                         <div class="mini-info">
                                             <span class="mini-player">
-                                                {{ record.user }}
-                                                <span v-if="isVerifier(record.user)" class="verifier-tag-sm">VERIFIER</span>
+                                                {{ record.user || record.username || record.player || 'Unknown Player' }}
+                                                <span v-if="isVerifier(record.user || record.username || record.player)" class="verifier-tag-sm">VERIFIER</span>
                                                 <span v-if="record.status" :class="['status-container', 'status-container-mini', 'status-' + record.status.toLowerCase()]">{{ record.status }}</span>
                                             </span>
                                         </div>
@@ -539,6 +539,16 @@ export default {
             if (!str) return '';
             return str.charAt(0).toUpperCase() + str.slice(1);
         },
+        embed,
+        openVideo(url) {
+            if (!url) return;
+            const id = getYoutubeIdFromUrl(url);
+            if (id) {
+                this.$router.push('/future-demons/watch/' + id);
+            } else {
+                window.open(url, '_blank');
+            }
+        },
         getThumb(video) {
             if (typeof video === 'object' && video?.video) {
                 video = video.video;
@@ -558,6 +568,7 @@ export default {
         },
         getPercentNumber,
         isVerifier(username) {
+            if (!username) return false;
             if (!this.demon) return false;
             const targetVerifier = (this.demon.verification && this.demon.verification.username) || this.demon.verifier;
             if (!targetVerifier) return false;

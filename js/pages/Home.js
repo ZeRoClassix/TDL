@@ -1,3 +1,5 @@
+import { fetchRecentChanges } from '../content.js';
+
 export default {
     name: 'Home',
     data() {
@@ -11,13 +13,62 @@ export default {
                 users: 435000,
                 records: 100000,
                 levels: 1700
-            }
+            },
+            recentChanges: [],
+            changesLoading: true,
+            _refreshTimer: null
         };
     },
     mounted() {
         this.animateCounters();
+        this.loadRecentChanges();
+        // Auto-refresh recent changes every 5 minutes to catch new demons immediately
+        this._refreshTimer = setInterval(() => this.loadRecentChanges(), 5 * 60 * 1000);
+    },
+    beforeUnmount() {
+        if (this._refreshTimer) clearInterval(this._refreshTimer);
+    },
+    computed: {
+        groupedRecentChanges() {
+            const groups = new Map();
+            this.recentChanges.forEach((change) => {
+                const label = this.formatChangeDate(change.date);
+                if (!groups.has(label)) groups.set(label, []);
+                groups.get(label).push(change);
+            });
+            return [...groups.entries()].map(([label, items]) => ({ label, items }));
+        }
     },
     methods: {
+        async loadRecentChanges() {
+            this.changesLoading = true;
+            try {
+                this.recentChanges = await fetchRecentChanges({ limit: 50 });
+            } catch (err) {
+                console.error('[Home] Failed to load recent changes:', err);
+            } finally {
+                this.changesLoading = false;
+            }
+        },
+        formatChangeDate(value) {
+            const date = new Date(value);
+            if (isNaN(date.getTime())) return 'DETECTED';
+            return date.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' }).toUpperCase();
+        },
+        recentChangeIcon(type) {
+            if (type === 'add') return 'icon-add';
+            if (type === 'remove') return 'icon-remove';
+            if (type === 'up') return 'icon-up';
+            if (type === 'down') return 'icon-down';
+            return 'icon-down';
+        },
+        changeTypeClass(type) {
+            if (type === 'add') return 'change-type-add';
+            if (type === 'remove') return 'change-type-remove';
+            if (type === 'up') return 'change-type-up';
+            if (type === 'down') return 'change-type-down';
+            return '';
+        },
         animateCounters() {
             const duration = 1500; // 1.5 seconds
             const frameRate = 240;
@@ -105,112 +156,38 @@ export default {
                                 <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Recent Changes</h3>
                             </div>
                             <div class="card-body">
-                                <div class="changes-date-group">
-                                    <div class="changes-date-label">24TH APRIL</div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-add" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="M5 12h14"/>
-                                            </svg>
-                                        </span>
-                                        <strong>Dualist</strong> <span class="change-detail">placed at #92, between Terminal Rampancy and The Golden</span>
-                                    </div>
+                                <div v-if="changesLoading" class="empty-state-v2" style="padding: 1rem; text-align: center; opacity: 0.6;">
+                                    <p>Loading changes from PCdemonlist.pages.dev/api...</p>
                                 </div>
-                                <div class="changes-date-group">
-                                    <div class="changes-date-label">19TH APRIL</div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-add" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="M5 12h14"/>
-                                            </svg>
-                                        </span>
-                                        <strong>zorin</strong> <span class="change-detail">placed at #29, between CHIL and Sakupen Circles</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-add" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="M5 12h14"/>
-                                            </svg>
-                                        </span>
-                                        <strong>NOMAD</strong> <span class="change-detail">placed at #38, between Silentlocked and poocubed</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-add" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="M5 12h14"/>
-                                            </svg>
-                                        </span>
-                                        <strong>Diabolic ClubStep</strong> <span class="change-detail">placed at #80, between BEELINE and Sonic Wave Infinity</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-add" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="M5 12h14"/>
-                                            </svg>
-                                        </span>
-                                        <strong>TrakineS</strong> <span class="change-detail">placed at #71, between ORDINARY and Loops of Fury</span>
-                                    </div>
+                                <div v-else-if="recentChanges.length === 0" class="empty-state-v2" style="padding: 1rem; text-align: center; opacity: 0.6;">
+                                    <p>No changes detected — list is in sync with PCdemonlist.pages.dev/api.</p>
                                 </div>
-                                <div class="changes-date-group">
-                                    <div class="changes-date-label">18TH APRIL</div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-down" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <div class="changes-date-group" v-for="group in groupedRecentChanges" :key="group.label">
+                                    <div class="changes-date-label">{{ group.label }}</div>
+                                    <div class="change-item" v-for="change in group.items" :key="change.detail" :class="changeTypeClass(change.type)">
+                                        <span class="change-icon" :class="recentChangeIcon(change.type)" aria-hidden="true">
+                                            <!-- ADD icon: plus -->
+                                            <svg v-if="change.type === 'add'" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M12 5v14"/>
-                                                <path d="m18 13-6 6-6-6"/>
+                                                <path d="M5 12h14"/>
+                                            </svg>
+                                            <!-- UP icon: arrow up -->
+                                            <svg v-else-if="change.type === 'up'" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 19V5"/>
+                                                <path d="m5 12 7-7 7 7"/>
+                                            </svg>
+                                            <!-- DOWN icon: arrow down -->
+                                            <svg v-else-if="change.type === 'down'" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 5v14"/>
+                                                <path d="m5 12 7 7 7-7"/>
+                                            </svg>
+                                            <!-- REMOVE icon: x -->
+                                            <svg v-else width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M18 6 6 18"/>
+                                                <path d="m6 6 12 12"/>
                                             </svg>
                                         </span>
-                                        <strong>ORDINARY</strong> <span class="change-detail">moved from #68 to #70, between Climax and TrakineS</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-down" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="m18 13-6 6-6-6"/>
-                                            </svg>
-                                        </span>
-                                        <strong>The Golden</strong> <span class="change-detail">moved from #90 to #92, between Terminal Rampancy and Oblivion</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-down" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="m18 13-6 6-6-6"/>
-                                            </svg>
-                                        </span>
-                                        <strong>UNKNOWN</strong> <span class="change-detail">moved from #95 to #98, between Levigo and ATOMIC CANNON Mk III</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-down" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="m18 13-6 6-6-6"/>
-                                            </svg>
-                                        </span>
-                                        <strong>Henken</strong> <span class="change-detail">moved from #110 to #114, between Starlit Stroll and Trueffet</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-down" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="m18 13-6 6-6-6"/>
-                                            </svg>
-                                        </span>
-                                        <strong>Trueffet</strong> <span class="change-detail">moved from #112 to #115, between Henken and Kenos</span>
-                                    </div>
-                                    <div class="change-item">
-                                        <span class="change-icon icon-down" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M12 5v14"/>
-                                                <path d="m18 13-6 6-6-6"/>
-                                            </svg>
-                                        </span>
-                                        <strong>Kenos</strong> <span class="change-detail">moved from #114 to #116, between Trueffet and Fragile</span>
+                                        <strong>{{ change.title }}</strong> <span class="change-detail">{{ change.summary || change.detail }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -358,6 +335,38 @@ export default {
                             <h3><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg> Site Updates</h3>
                         </div>
                         <div class="card-body">
+                            <div class="update-item">
+                                <div class="update-date">2026-06-10</div>
+                                <div class="update-content">
+                                    <h4>Live API Integration — PCdemonlist.pages.dev/api</h4>
+                                    <ul>
+                                        <li>The site now uses PCdemonlist.pages.dev/api as its primary data source, pulling live demon data, records, and player rankings directly from the PCdemonlist API.</li>
+                                        <li>All 150 main list demons, their records, creators, and verifiers are now fetched in real time — no manual updates required.</li>
+                                        <li>Player leaderboard is automatically computed from live API records with full score calculations.</li>
+                                        <li>Recent Changes are auto-detected by comparing the live list against the last known snapshot, including position movements, additions, and removals.</li>
+                                        <li>Override system (Player &amp; Level) layers on top of live data for custom player profiles and level edits.</li>
+                                        <li>Smart caching and parallel batch fetching ensure fast load times with no lag.</li>
+                                        <li>Graceful fallback to local JSON files if the API is temporarily unreachable.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="update-item">
+
+                                <div class="update-date">2026-06-03</div>
+                                <div class="update-content">
+                                    <h4>PCdemonlist API Migration & Override System</h4>
+                                    <ul>
+                                        <li>Pointercrate-style backend migration for main Demonlist, Player Rankings, Records, and Profile data.</li>
+                                        <li>New Player Override System with full-profile, ranking, record, completion, verification, progress, creator, social, avatar, and statistics support.</li>
+                                        <li>New Level Override System for level metadata, placement, creators, verifier, victors, records, progress, requirements, videos, and thumbnails.</li>
+                                        <li>Automatic Recent Changes Tracking for demon additions, removals, and placement movement.</li>
+                                        <li>Improved ranking synchronization through a shared data-resolution layer.</li>
+                                        <li>Full backward compatibility with existing routes, pages, styling, and local JSON entries.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
                             <div class="update-item">
                                 <div class="update-date">2026-04-18</div>
                                 <div class="update-content">

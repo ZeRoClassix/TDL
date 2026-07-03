@@ -58,32 +58,46 @@ export async function fetchYoutubeVideoDetails({ videoIds, apiKey, cacheHours = 
     const missing = ids.filter((id) => !isFresh(bucket[id], ttlMs));
 
     try {
-        for (const batch of chunk(missing, 50)) {
-            if (!batch.length) continue;
-            const data = await fetchYoutubeJson('videos', {
-                part: 'snippet,statistics',
-                id: batch.join(','),
-                key: apiKey,
-            });
+        const batches = chunk(missing, 50).filter(b => b.length > 0);
+        
+        // Cache failures to prevent endless lag on retry
+        missing.forEach(id => {
+            bucket[id] = { fetchedAt: Date.now(), value: null };
+        });
 
-            (data.items || []).forEach((item) => {
-                bucket[item.id] = {
-                    fetchedAt: Date.now(),
-                    value: {
-                        id: item.id,
-                        title: item.snippet?.title || '',
-                        channelId: item.snippet?.channelId || '',
-                        channelTitle: item.snippet?.channelTitle || '',
-                        uploadDate: item.snippet?.publishedAt || '',
-                        thumbnail: item.snippet?.thumbnails?.high?.url
-                            || item.snippet?.thumbnails?.medium?.url
-                            || buildYoutubeThumbnail(item.id),
-                        views: Number(item.statistics?.viewCount || 0),
-                        likes: Number(item.statistics?.likeCount || 0),
-                        commentsCount: Number(item.statistics?.commentCount || 0),
-                    },
-                };
-            });
+        // Fetch in smaller concurrent groups to prevent YouTube 429 Too Many Requests
+        for (let i = 0; i < batches.length; i += 3) {
+            const currentBatches = batches.slice(i, i + 3);
+            await Promise.allSettled(currentBatches.map(async (batch) => {
+                try {
+                    const data = await fetchYoutubeJson('videos', {
+                        part: 'snippet,statistics',
+                        id: batch.join(','),
+                        key: apiKey,
+                    });
+
+                    (data.items || []).forEach((item) => {
+                        bucket[item.id] = {
+                            fetchedAt: Date.now(),
+                            value: {
+                                id: item.id,
+                                title: item.snippet?.title || '',
+                                channelId: item.snippet?.channelId || '',
+                                channelTitle: item.snippet?.channelTitle || '',
+                                uploadDate: item.snippet?.publishedAt || '',
+                                thumbnail: item.snippet?.thumbnails?.high?.url
+                                    || item.snippet?.thumbnails?.medium?.url
+                                    || buildYoutubeThumbnail(item.id),
+                                views: Number(item.statistics?.viewCount || 0),
+                                likes: Number(item.statistics?.likeCount || 0),
+                                commentsCount: Number(item.statistics?.commentCount || 0),
+                            },
+                        };
+                    });
+                } catch (e) {
+                    // Failures are already cached as null above
+                }
+            }));
         }
         writeBucket(CACHE_KEYS.videoDetails, bucket);
     } catch (error) {
@@ -103,30 +117,42 @@ export async function fetchYoutubeChannelDetails({ channelIds, apiKey, cacheHour
     const missing = ids.filter((id) => !isFresh(bucket[id], ttlMs));
 
     try {
-        for (const batch of chunk(missing, 50)) {
-            if (!batch.length) continue;
-            const data = await fetchYoutubeJson('channels', {
-                part: 'snippet,statistics,contentDetails',
-                id: batch.join(','),
-                key: apiKey,
-            });
+        const batches = chunk(missing, 50).filter(b => b.length > 0);
+        
+        missing.forEach(id => {
+            bucket[id] = { fetchedAt: Date.now(), value: null };
+        });
 
-            (data.items || []).forEach((item) => {
-                bucket[item.id] = {
-                    fetchedAt: Date.now(),
-                    value: {
-                        id: item.id,
-                        name: item.snippet?.title || '',
-                        description: item.snippet?.description || '',
-                        avatar: item.snippet?.thumbnails?.high?.url
-                            || item.snippet?.thumbnails?.medium?.url
-                            || '',
-                        subscribers: Number(item.statistics?.subscriberCount || 0),
-                        uploadsPlaylistId: item.contentDetails?.relatedPlaylists?.uploads || '',
-                        customUrl: item.snippet?.customUrl || '',
-                    },
-                };
-            });
+        for (let i = 0; i < batches.length; i += 3) {
+            const currentBatches = batches.slice(i, i + 3);
+            await Promise.allSettled(currentBatches.map(async (batch) => {
+                try {
+                    const data = await fetchYoutubeJson('channels', {
+                        part: 'snippet,statistics,contentDetails',
+                        id: batch.join(','),
+                        key: apiKey,
+                    });
+
+                    (data.items || []).forEach((item) => {
+                        bucket[item.id] = {
+                            fetchedAt: Date.now(),
+                            value: {
+                                id: item.id,
+                                name: item.snippet?.title || '',
+                                description: item.snippet?.description || '',
+                                avatar: item.snippet?.thumbnails?.high?.url
+                                    || item.snippet?.thumbnails?.medium?.url
+                                    || '',
+                                subscribers: Number(item.statistics?.subscriberCount || 0),
+                                uploadsPlaylistId: item.contentDetails?.relatedPlaylists?.uploads || '',
+                                customUrl: item.snippet?.customUrl || '',
+                            },
+                        };
+                    });
+                } catch (e) {
+                    // Failures cached as null
+                }
+            }));
         }
         writeBucket(CACHE_KEYS.channelDetails, bucket);
     } catch (error) {

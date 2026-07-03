@@ -59,13 +59,13 @@ export async function initFlags() {
             allEntries.length = 0;
             for (const fullKey in rawPlayers) {
                 const flagId = rawPlayers[fullKey];
-                
+
                 // key example: "#85 [GNG] aidn76" or "#1 [67] Zoink8385.58"
                 // 1. Remove rank
                 const keyNoRank = fullKey.replace(/^#\d+\s+/, '');
                 // 2. Normalize (remove tags and spaces)
                 const norm = normalizeName(keyNoRank);
-                
+
                 if (norm) {
                     allEntries.push({ norm, flagId });
                 }
@@ -84,10 +84,10 @@ export async function initFlags() {
  */
 export function getPlayerFlag(playerName) {
     if (!playerName || !allEntries.length) return null;
-    
+
     // Normalize target name (Remove tags and spaces)
     const target = normalizeName(playerName);
-    
+
     // Find matching entry
     for (const entry of allEntries) {
         // If the key in the file starts with the player character
@@ -102,7 +102,7 @@ export function getPlayerFlag(playerName) {
             }
         }
     }
-    
+
     return null;
 }
 

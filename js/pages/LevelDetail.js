@@ -132,7 +132,7 @@ export default {
                             <!-- First Victor -->
                             <div v-if="sortedRecords.length > 0" class="featured-record-section">
                                 <h4 class="section-subtitle">First Victor</h4>
-                                <a :href="sortedRecords[0].link" target="_blank" class="featured-record-card">
+                                <a :href="getRecordLink(sortedRecords[0].link)" :target="getRecordTarget(sortedRecords[0].link)" class="featured-record-card">
                                     <div class="featured-thumb-wrapper">
                                         <img :src="getThumb(sortedRecords[0].link)" class="featured-thumb" alt="Progress Thumbnail">
                                         <div class="play-overlay">
@@ -163,8 +163,8 @@ export default {
                                 <div class="records-grid">
                                     <a v-for="(record, index) in sortedRecords.slice(1)" 
                                        :key="index" 
-                                       :href="record.link" 
-                                       target="_blank" 
+                                       :href="getRecordLink(record.link)" 
+                                       :target="getRecordTarget(record.link)" 
                                        class="record-mini-card">
                                         <div class="mini-thumb-wrapper">
                                             <img :src="getThumb(record.link)" class="mini-thumb">
@@ -397,6 +397,13 @@ export default {
             const id = getYoutubeIdFromUrl(video);
             if (!id) return 'extreme.png';
             return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+        },
+        getRecordLink(link) {
+            const ytId = getYoutubeIdFromUrl(link);
+            return ytId ? `#/social/watch/${ytId}` : link;
+        },
+        getRecordTarget(link) {
+            return getYoutubeIdFromUrl(link) ? '_self' : '_blank';
         },
         formatDate(dateStr) {
             if (!dateStr) return '-';
