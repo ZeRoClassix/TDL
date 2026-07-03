@@ -161,7 +161,6 @@ PLAYERS :
   "#28 [COMET] Nexel1975.75": "ca",
   "#29 [4MO] ROZE1947.86": "ru",
   "#30 [BHO] Cookie1929.92": "us",
-  "#31 mindzdraf1914.96": "ua",
   "#32 [FAX] Hover1898.34": "at",
   "#33 [910] Stefan Boss1889.75": "ro",
   "#34 [FOWL] Hqmy1866.48": "us",
