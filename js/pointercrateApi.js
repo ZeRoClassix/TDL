@@ -621,6 +621,9 @@ export function getPlayerNationality(playerName) {
 }
 
 export async function fetchPointercrateDemons({ refresh = false } = {}) {
+    // Pre-warm the player rankings cache in the background for faster leaderboard loading
+    fetchApiPlayerRankings({ refresh }).catch(() => {});
+
     // Check memory cache
     if (!refresh && listPromise && (Date.now() - listCacheTime < CACHE_TTL_MS)) {
         return listPromise;
