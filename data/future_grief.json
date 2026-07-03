@@ -27,8 +27,8 @@
         "reason": "Grief is a definitive unnerfed Slaughterhouse remake that has been over 8 years in the making, aiming to reclaim the title of the absolute peak of difficulty."
     },
     "verification": {
-        "username": "[TCD] Doggie",
-        "percent": 83
+        "user": "[TCD] Doggie",
+        "percent": "97"
     },
     "showcase": "https://www.youtube.com/watch?v=bQXnREyaO34",
     "description": "One of the most anticipated and long-awaited projects in GD history, Grief is a brutal re-imagining of Slaughterhouse that pushes human consistency to its ultimate limit.",
@@ -46,10 +46,10 @@
         },
         {
             "user": "[TCD] Doggie",
-            "percent": "83",
+            "percent": "97",
             "isWR": true,
-            "video": "https://youtu.be/mp8TSHLoW8Q?si=QnQmnU1P9SrULbpU",
-            "date": "2025-11-02"
+            "video": "https://www.youtube.com/watch?v=Emd2tWP2FkI",
+            "date": "2026-06-13"
         }
     ]
 }

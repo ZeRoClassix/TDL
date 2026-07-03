@@ -1,0 +1,135 @@
+{
+  "_guide": {
+    "priority": "playerOverrides > local database > Pointercrate-style API",
+    "matching": "Players can be matched by key, name, or aliases. A single 'name' field is used for display, matching, and identification.",
+    "behavior": "When enabled, an entry here replaces the generated/API player entry. Missing players are created automatically.",
+    "naming": "Use a single 'name' field for the player display name. The 'aliases' array handles alternate spellings/tags.",
+    "removeRecords_howTo": [
+      "To REMOVE specific records from a player, add a 'removeRecords' array with the level names to remove.",
+      "This keeps all of the player's auto-computed data but filters out the specified levels.",
+      "The player's total score is automatically recalculated after removal.",
+      "You can also combine removeRecords with name/flag/rank overrides.",
+      "",
+      "Example — Remove 'Acheron' and 'Slaughterhouse' from a player named 'SomePlayer':",
+      "{",
+      "  \"someplayer\": {",
+      "    \"enabled\": true,",
+      "    \"name\": \"SomePlayer\",",
+      "    \"removeRecords\": [\"Acheron\", \"Slaughterhouse\"]",
+      "  }",
+      "}",
+      "",
+      "You can also change the player's name/flag while removing records:",
+      "{",
+      "  \"someplayer\": {",
+      "    \"enabled\": true,",
+      "    \"name\": \"SomePlayer\",",
+      "    \"countryFlag\": \"us\",",
+      "    \"removeRecords\": [\"Acheron\"]",
+      "  }",
+      "}"
+    ]
+  },
+  "_example_removeRecords": {
+    "_comment": "EXAMPLE: This entry is disabled. Copy it, rename the key to the player's normalized name, and set enabled to true.",
+    "enabled": false,
+    "name": "ExamplePlayer",
+    "removeRecords": ["Level Name 1", "Level Name 2"]
+  },
+  "playerOverrides": {
+    "aidn76": {
+      "enabled": true,
+      "name": "[GNG] aidn76",
+      "aliases": [
+        "aidn76",
+        "[GNG] aidn76"
+      ],
+      "countryFlag": "si",
+      "flag": "si",
+      "nationality": "Slovenia",
+      "rank": 58,
+      "position": 58,
+      "points": 1441,
+      "records": [
+        { "levelId": 635, "level": "Thinking Space II", "rank": 1, "percent": 100, "link": "https://youtu.be/AoX45YA9C3U", "hz": 240, "score": 200 },
+        { "levelId": 638, "level": "Flamewall", "rank": 2, "percent": 71, "link": "https://www.youtube.com/watch?v=C051VANfN-Q", "hz": 240, "score": 0 },
+        { "levelId": 562, "level": "Tidal Wave", "rank": 4, "percent": 100, "link": "https://www.youtube.com/watch?v=RVSNsAJkYek", "hz": 240, "score": 161 },
+        { "levelId": 589, "level": "Nullscapes", "rank": 6, "percent": 100, "link": "https://youtu.be/oXsAzfcdJhY?is=Jx_G4rkov_1nodzC", "hz": 240, "score": 152 },
+        { "levelId": 613, "level": "andromeda", "rank": 10, "percent": 100, "link": "https://www.youtube.com/watch?v=rM6lIPMtvVU", "hz": 240, "score": 140 },
+        { "levelId": 649, "level": "Subsuming Vortex", "rank": 11, "percent": 100, "link": "https://www.youtube.com/watch?v=imsU6d4f-NI", "hz": 240, "score": 137 },
+        { "levelId": 442, "level": "Acheron", "rank": 16, "percent": 100, "link": "https://youtu.be/Ub0kDfCpFV8", "hz": 240, "score": 126 },
+        { "levelId": 639, "level": "Defeated Circles", "rank": 20, "percent": 100, "link": "https://youtu.be/IJdumaw56DU", "hz": 240, "score": 119 },
+        { "levelId": 380, "level": "Slaughterhouse", "rank": 25, "percent": 100, "link": "https://www.youtube.com/watch?v=eKyAvPT5400", "hz": 240, "score": 111 },
+        { "levelId": 391, "level": "Sakupen Circles", "rank": 30, "percent": 100, "link": "https://www.youtube.com/watch?v=RVSNsAJkYek&ts", "hz": 240, "score": 104 },
+        { "levelId": 545, "level": "Eyes in the Water", "rank": 32, "percent": 100, "link": "https://youtu.be/FON3TTR__EQ", "hz": 240, "score": 101 },
+        { "levelId": 655, "level": "The Salt Factory", "rank": 42, "percent": 100, "link": "https://www.youtube.com/watch?v=5OeEKwuzcFw", "hz": 240, "score": 90 },
+        { "levelId": 596, "level": "Judgement Knights", "rank": 138, "percent": 100, "link": "https://www.youtube.com/watch?v=H6B-54QMZbQ", "hz": 360, "score": 0 }
+      ],
+      "completions": [
+        { "levelId": 635, "level": "Thinking Space II", "rank": 1, "percent": 100, "link": "https://youtu.be/AoX45YA9C3U", "hz": 240, "score": 200 },
+        { "levelId": 562, "level": "Tidal Wave", "rank": 4, "percent": 100, "link": "https://www.youtube.com/watch?v=RVSNsAJkYek", "hz": 240, "score": 161 },
+        { "levelId": 589, "level": "Nullscapes", "rank": 6, "percent": 100, "link": "https://youtu.be/oXsAzfcdJhY?is=Jx_G4rkov_1nodzC", "hz": 240, "score": 152 },
+        { "levelId": 613, "level": "andromeda", "rank": 10, "percent": 100, "link": "https://www.youtube.com/watch?v=rM6lIPMtvVU", "hz": 240, "score": 140 },
+        { "levelId": 649, "level": "Subsuming Vortex", "rank": 11, "percent": 100, "link": "https://www.youtube.com/watch?v=imsU6d4f-NI", "hz": 240, "score": 137 },
+        { "levelId": 442, "level": "Acheron", "rank": 16, "percent": 100, "link": "https://youtu.be/Ub0kDfCpFV8", "hz": 240, "score": 126 },
+        { "levelId": 639, "level": "Defeated Circles", "rank": 20, "percent": 100, "link": "https://youtu.be/IJdumaw56DU", "hz": 240, "score": 119 },
+        { "levelId": 380, "level": "Slaughterhouse", "rank": 25, "percent": 100, "link": "https://www.youtube.com/watch?v=eKyAvPT5400", "hz": 240, "score": 111 },
+        { "levelId": 391, "level": "Sakupen Circles", "rank": 30, "percent": 100, "link": "https://www.youtube.com/watch?v=RVSNsAJkYek&ts", "hz": 240, "score": 104 },
+        { "levelId": 545, "level": "Eyes in the Water", "rank": 32, "percent": 100, "link": "https://youtu.be/FON3TTR__EQ", "hz": 240, "score": 101 },
+        { "levelId": 655, "level": "The Salt Factory", "rank": 42, "percent": 100, "link": "https://www.youtube.com/watch?v=5OeEKwuzcFw", "hz": 240, "score": 90 },
+        { "levelId": 596, "level": "Judgement Knights", "rank": 138, "percent": 100, "link": "https://www.youtube.com/watch?v=H6B-54QMZbQ", "hz": 360, "score": 0 }
+      ],
+      "verifications": [],
+      "progressRecords": [
+        { "levelId": 638, "level": "Flamewall", "rank": 2, "percent": 71, "link": "https://www.youtube.com/watch?v=C051VANfN-Q", "hz": 240, "score": 0 }
+      ],
+      "publishedLevels": [
+        { "levelId": 635, "level": "Thinking Space II", "rank": 1, "role": "creator" }
+      ],
+      "createdLevels": [
+        { "levelId": 635, "level": "Thinking Space II", "rank": 1, "role": "creator" }
+      ],
+      "victories": [
+        "Thinking Space II",
+        "Tidal Wave",
+        "Nullscapes",
+        "andromeda",
+        "Subsuming Vortex",
+        "Acheron",
+        "Defeated Circles",
+        "Slaughterhouse",
+        "Sakupen Circles",
+        "Eyes in the Water",
+        "The Salt Factory",
+        "Judgement Knights"
+      ],
+      "profile": {
+        "bio": "Main-list player and Thinking Space II creator, mirrored from the current local demonlist records.",
+        "bannerLabel": "Main-list completions / TS2 creator",
+        "verified": true
+      },
+      "socials": {
+        "youtube": "",
+        "twitch": "",
+        "discord": "",
+        "twitter": ""
+      },
+      "avatar": "",
+      "statistics": {
+        "totalRecords": 13,
+        "completions": 12,
+        "progressRecords": 1,
+        "verifications": 0,
+        "createdLevels": 1,
+        "publishedLevels": 1,
+        "mainListCompletions": 11,
+        "extendedListCompletions": 1,
+        "hardestDemon": {
+          "levelId": 635,
+          "level": "Thinking Space II",
+          "rank": 1
+        }
+      }
+    }
+  }
+}
