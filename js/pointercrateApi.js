@@ -43,8 +43,8 @@ const EXCLUDED_PLAYER_KEYS = new Set([
 // Each entry: [prefix, needsEncoding]
 const CORS_PROXIES = [
     ['', false],  // direct (no proxy)
-    ['https://corsproxy.io/?', false],  // corsproxy.io - raw URL after ?
-    ['https://api.allorigins.win/raw?url=', true],  // allorigins - needs encoding
+    ['https://corsproxy.org/?', false],  // corsproxy.org - raw URL after ?
+    ['https://api.allorigins.win/get?url=', true],  // allorigins - needs encoding
     ['https://api.codetabs.com/v1/proxy?quest=', true],  // codetabs - needs encoding
 ];
 
@@ -117,7 +117,10 @@ async function fetchApi(endpoint) {
                 errors.push(`Proxy ${proxyIdx} (${prefix || 'direct'}) returned ${resp.status}`);
                 continue;
             }
-            const data = await resp.json();
+            let data = await resp.json();
+            if (data && typeof data.contents === 'string') {
+                try { data = JSON.parse(data.contents); } catch (e) {}
+            }
             // Remember which proxy worked
             if (proxyIdx !== workingProxyIndex) {
                 workingProxyIndex = proxyIdx;
@@ -438,7 +441,11 @@ async function fetchApiPlayerRankings({ refresh = false } = {}) {
                             headers: { 'Accept': 'application/json' },
                         });
                         if (!resp.ok) continue;
-                        data = await resp.json();
+                        let parsed = await resp.json();
+                        if (parsed && typeof parsed.contents === 'string') {
+                            try { parsed = JSON.parse(parsed.contents); } catch (e) {}
+                        }
+                        data = parsed;
                         if (proxyIdx !== workingProxyIndex) {
                             workingProxyIndex = proxyIdx;
                         }
