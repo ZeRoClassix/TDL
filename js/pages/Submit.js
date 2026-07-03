@@ -90,7 +90,7 @@ export default {
                                     type="button"
                                     class="dropdown-trigger"
                                     :class="{ 'is-error': errors.demon }"
-                                    @click="toggleDemonDropdown"
+                                    @click.stop="toggleDemonDropdown"
                                     @keydown.escape="demonOpen = false"
                                     id="field-demon"
                                     :aria-expanded="demonOpen"
