@@ -60,7 +60,7 @@ export default {
             this.video = {
                 id,
                 youtubeId: id,
-                embedUrl: `https://www.youtube.com/embed/${id}?autoplay=1`,
+                embedUrl: `https://www.youtube.com/embed/${id}?autoplay=1&modestbranding=1&rel=0&showinfo=0`,
                 badge: 'Record',
                 isFramePerfect: false,
                 title: 'Loading video...',
@@ -141,7 +141,12 @@ export default {
                     } else if (demonNameLower === 'heliopolis') {
                         this.video.views = Math.floor(Math.random() * (1500000 - 1200000) + 1200000);
                     } else if (demonNameLower === 'silent kocmoc') {
-                        this.video.views = Math.floor(Math.random() * (1200000 - 1000000) + 1000000);
+                        const recName = matchedRecord ? (matchedRecord.user || matchedRecord.username || matchedRecord.player || '').toLowerCase() : '';
+                        if (matchedRecord && Number(matchedRecord.percent) === 75 && recName.includes('aidn76')) {
+                            this.video.views = 384129;
+                        } else {
+                            this.video.views = Math.floor(Math.random() * (1200000 - 1000000) + 1000000);
+                        }
                     } else if (['kocmoc unleashed', 'vehemence', 'aeternus', 'angleicide', 'injury', 'etertnal silence', 'sweeping demon 2'].includes(demonNameLower)) {
                         this.video.views = Math.floor(Math.random() * (800000 - 300000) + 300000);
                     } else {
