@@ -39,10 +39,11 @@ const EXCLUDED_PLAYER_KEYS = new Set([
     'a6'
 ]);
 
-// CORS proxy chain — try direct first, then these proxies in order
+// CORS proxy chain — try self-hosted proxy first, then direct, then third-party fallbacks
 // Each entry: [prefix, needsEncoding]
 const CORS_PROXIES = [
-    ['', false],  // direct (no proxy)
+    ['/api/proxy?url=', true],  // self-hosted Cloudflare Pages Function (server-side, no CORS)
+    ['', false],  // direct (no proxy — works locally)
     ['https://corsproxy.io/?', false],  // corsproxy.io - raw URL after ?
     ['https://api.allorigins.win/raw?url=', true],  // allorigins - needs encoding
     ['https://api.codetabs.com/v1/proxy?quest=', true],  // codetabs - needs encoding
