@@ -363,6 +363,18 @@
     border-color: rgba(251, 191, 36, 0.22);
 }
 
+.icon-remove {
+    color: #f87171;
+    background: linear-gradient(180deg, rgba(248, 113, 113, 0.18), rgba(127, 29, 29, 0.08));
+    border-color: rgba(248, 113, 113, 0.22);
+}
+
+/* Change type specific text styling */
+.change-type-add strong { color: #86efac; }
+.change-type-up strong { color: #7dd3fc; }
+.change-type-down strong { color: #fbbf24; }
+.change-type-remove strong { color: #f87171; }
+
 .change-item strong {
     color: var(--color-on-background);
     margin-right: 0.4rem;
