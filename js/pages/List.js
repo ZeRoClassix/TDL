@@ -60,14 +60,6 @@ export default {
                                 </td>
                             </tr>
                             
-                            <tr v-if="!searchQuery && item.originalIndex === 150" class="list-label-row">
-                                <td colspan="2" class="list-label-container">
-                                    <div class="list-category-header">
-                                        <h3>Legacy List</h3>
-                                    </div>
-                                </td>
-                            </tr>
-
                             <tr class="list-item-row" :class="{ 'extended-item': item.rank > 75 && item.rank <= 150 }">
                                 <td colspan="2" class="level" :class="{ 'error': !item.level }">
                                      <button @click="goToLevel(item.level)" class="level-bar-btn" @mouseenter="hoveredIndex = item.originalIndex" @mouseleave="hoveredIndex = null">
@@ -81,8 +73,7 @@ export default {
                                                     <img :src="getThumb(item.level?.verification)" class="level-thumb" alt="Thumbnail">
                                                 </div>
                                                 <div class="rank">
-                                                    <p v-if="item.rank <= 150" class="type-label-lg">#{{ item.rank }}</p>
-                                                    <p v-else class="type-label-lg">Legacy</p>
+                                                    <p class="type-label-lg">#{{ item.rank }}</p>
                                                 </div>
                                                  <div class="level-names">
                                                      <span class="name-label">{{ item.level?.name || ('Error ' + item.err + '.json') }}</span>
@@ -224,18 +215,20 @@ export default {
     }),
     computed: {
         filteredList() {
+            const mapped = this.list
+                .map(([level, err], index) => ({ level, err, rank: index + 1, originalIndex: index }))
+                .filter(item => item.rank <= 150);
+
             if (!this.searchQuery) {
-                return this.list.map(([level, err], index) => ({ level, err, rank: index + 1, originalIndex: index }));
+                return mapped;
             }
             const q = this.searchQuery.toLowerCase();
-            return this.list
-                .map(([level, err], index) => ({ level, err, rank: index + 1, originalIndex: index }))
-                .filter(item => {
-                    const l = item.level;
-                    if (!l) return false;
-                    return (l.name && l.name.toLowerCase().includes(q)) ||
-                        (l.author && l.author.toLowerCase().includes(q));
-                });
+            return mapped.filter(item => {
+                const l = item.level;
+                if (!l) return false;
+                return (l.name && l.name.toLowerCase().includes(q)) ||
+                    (l.author && l.author.toLowerCase().includes(q));
+            });
         },
         level() {
             return this.list[this.selected] ? this.list[this.selected][0] : null;
