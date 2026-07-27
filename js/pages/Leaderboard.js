@@ -47,7 +47,7 @@ function getVideoThumbnailUrl(link) {
     const id = getYouTubeId(link);
     if (!id) return null;
     // Use maxres when available; YouTube will fall back internally if not.
-    return `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+    return `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 }
 
 const PlayerHeader = {
