@@ -6,6 +6,29 @@
     "nameLookup": "Level overrides support both numeric ID and name-based matching. Each entry should include both 'id' and 'name' for maximum compatibility."
   },
   "levelOverrides": {
+    "silent_kocmoc": {
+      "enabled": true,
+      "inheritLocal": false,
+      "id": "silent_kocmoc",
+      "name": "Silent Kocmoc",
+      "position": 1,
+      "author": "bop9444",
+      "publisher": "bop9444",
+      "creators": [
+        "aidn76",
+        "bop9444",
+        "LierAs49",
+        "Lekz",
+        "blizzard0692",
+        "Nibbles"
+      ],
+      "verifier": "[GNG] aidn76",
+      "verification": "https://youtu.be/rpBQfSqugtk",
+      "video": "https://youtu.be/rpBQfSqugtk",
+      "percentToQualify": 100,
+      "difficulty": "Extreme Demon",
+      "records": []
+    },
     "635": {
       "enabled": true,
       "inheritLocal": true,
