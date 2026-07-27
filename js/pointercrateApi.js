@@ -856,7 +856,16 @@ async function fetchPointercrateDemonsInternal() {
     // ── Sort by position, push errors to end ─────────────────
     const ok = tuples
         .filter(([level]) => level)
-        .sort(([a], [b]) => Number(a.position || 9999) - Number(b.position || 9999));
+        .sort(([a], [b]) => {
+            const posA = Number(a.position || 9999);
+            const posB = Number(b.position || 9999);
+            if (posA !== posB) return posA - posB;
+            // Tie-breaker: override-only levels (non-numeric IDs) sort before API levels
+            const aIsCustom = isNaN(Number(a.id));
+            const bIsCustom = isNaN(Number(b.id));
+            if (aIsCustom !== bIsCustom) return aIsCustom ? -1 : 1;
+            return 0;
+        });
     const errs = tuples.filter(([level, err]) => !level && err);
     const result = [...ok, ...errs];
 
