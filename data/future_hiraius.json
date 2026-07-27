@@ -1,0 +1,35 @@
+{
+    "id": 2441,
+    "name": "HIRAIUS",
+    "author": "[GNG] aidn76",
+    "creators": [
+        "[GNG] aidn76",
+        "Burgadahzz",
+        "Dr. Cuber",
+        "GALVAM",
+        "qMystic",
+        "marramix",
+        "Solarium",
+        "ESTA"
+    ],
+    "verificationStatus": "wip",
+    "difficultyCategory": "hardest",
+    "estimatedPlace": 1,
+    "placementContext": {
+        "above": "Society",
+        "below": "-",
+        "reason": "HIRAIUS is a merciless descent through the depths of Hell, designed around relentless precision, extreme consistency, and constant mechanical pressure. Every section is built to surpass the limits established by Aeternus, leaving virtually no room for error from beginning to end."
+    },
+    "verification": {
+        "username": null,
+        "percent": null
+    },
+    "showcase": "https://youtu.be/zXS9pauP58c",
+    "description": "An unforgiving hell-themed Extreme Demon that portrays the player's descent into an endless infernal abyss. Featuring oppressive environments, towering demonic structures, rivers of molten lava, and brutally optimized gameplay, HIRAIUS combines cinematic atmosphere with relentless mechanical intensity to create one of the most punishing challenges ever conceived.",
+    "devStatus": "Decoration process",
+    "estimatedRelease": "Mid 2027",
+    "completionPercent": 0,
+    "gameVersion": "2.2",
+    "song": "Deimos by solkrieg",
+    "records": []
+}
