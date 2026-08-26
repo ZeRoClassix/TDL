@@ -241,6 +241,21 @@
           "hz": 360
         }
       ]
+    },
+    "698": {
+      "enabled": true,
+      "inheritLocal": true,
+      "id": 698,
+      "sourceLevelId": 698,
+      "name": "Society",
+      "playerRecords": [
+        {
+          "user": "[GNG] aidn76",
+          "link": "https://youtu.be/J2spXNZdWps",
+          "percent": 100,
+          "hz": 240
+        }
+      ]
     }
   }
 }

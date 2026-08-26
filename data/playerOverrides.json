@@ -50,9 +50,6 @@
       "countryFlag": "si",
       "flag": "si",
       "nationality": "Slovenia",
-      "rank": 32,
-      "position": 32,
-      "points": 1641,
       "records": [
         {
           "levelId": "silent_kocmoc",
@@ -62,6 +59,15 @@
           "link": "https://youtu.be/rpBQfSqugtk",
           "hz": 240,
           "score": 200
+        },
+        {
+          "levelId": 698,
+          "level": "Society",
+          "rank": 2,
+          "percent": 100,
+          "link": "https://youtu.be/J2spXNZdWps",
+          "hz": 240,
+          "score": 195
         },
         {
           "levelId": 635,
@@ -190,6 +196,15 @@
           "link": "https://youtu.be/rpBQfSqugtk",
           "hz": 240,
           "score": 200
+        },
+        {
+          "levelId": 698,
+          "level": "Society",
+          "rank": 2,
+          "percent": 100,
+          "link": "https://youtu.be/J2spXNZdWps",
+          "hz": 240,
+          "score": 195
         },
         {
           "levelId": 635,
@@ -346,6 +361,7 @@
       ],
       "victories": [
         "Silent Kocmoc",
+        "Society",
         "Thinking Space II",
         "Tidal Wave",
         "Nullscapes",
@@ -372,13 +388,13 @@
       },
       "avatar": "",
       "statistics": {
-        "totalRecords": 14,
-        "completions": 13,
+        "totalRecords": 15,
+        "completions": 14,
         "progressRecords": 1,
         "verifications": 1,
         "createdLevels": 2,
         "publishedLevels": 1,
-        "mainListCompletions": 12,
+        "mainListCompletions": 13,
         "extendedListCompletions": 1,
         "hardestDemon": {
           "levelId": "silent_kocmoc",
