@@ -87,7 +87,7 @@ export function isExcludedPlayer(value) {
 
 async function fetchJson(path, fallback) {
     try {
-        const response = await fetch(dataUrl(path));
+        const response = await fetch(dataUrl(path) + '?t=' + Date.now(), { cache: 'no-store' });
         if (!response.ok) return fallback;
         return await response.json();
     } catch {
@@ -622,7 +622,7 @@ export function getPlayerNationality(playerName) {
 
 export async function fetchPointercrateDemons({ refresh = false } = {}) {
     // Pre-warm the player rankings cache in the background for faster leaderboard loading
-    fetchApiPlayerRankings({ refresh }).catch(() => {});
+    fetchApiPlayerRankings({ refresh }).catch(() => { });
 
     // Check memory cache
     if (!refresh && listPromise && (Date.now() - listCacheTime < CACHE_TTL_MS)) {
@@ -866,6 +866,11 @@ async function fetchPointercrateDemonsInternal() {
             if (aIsCustom !== bIsCustom) return aIsCustom ? -1 : 1;
             return 0;
         });
+
+    ok.forEach(([level], index) => {
+        level.position = index + 1;
+    });
+
     const errs = tuples.filter(([level, err]) => !level && err);
     const result = [...ok, ...errs];
 
@@ -882,6 +887,9 @@ function addScoreEntry(scoreMap, user, bucket, entry) {
 }
 
 function normalizePlayerScoreItem(item = {}, bucket = 'completed') {
+    if (typeof item === 'string') {
+        item = { level: item, percent: bucket === 'progressed' ? 0 : 100 };
+    }
     return {
         rank: Number(item.rank || item.position || 0),
         level: String(item.level || item.levelName || '').trim(),
@@ -893,17 +901,53 @@ function normalizePlayerScoreItem(item = {}, bucket = 'completed') {
     };
 }
 
-function entryFromPlayerOverride(player) {
+function entryFromPlayerOverride(player, levelMapById, levelMapByName) {
     const displayName = String(player.name || player.username || player.displayName || '').trim();
 
-    const verified = asArray(player.verifications || player.verified)
-        .map((item) => normalizePlayerScoreItem(item, 'verified'));
-    const completed = asArray(player.completions || player.victories || player.completed)
-        .map((item) => normalizePlayerScoreItem(item, 'completed'));
-    const progressed = asArray(player.progressRecords || player.progressed || player.progress)
-        .map((item) => normalizePlayerScoreItem(item, 'progressed'));
-    const total = Number(player.points ?? player.total ?? [...verified, ...completed, ...progressed]
-        .reduce((sum, item) => sum + Number(item.score || 0), 0));
+    const fixItem = (item, bucket) => {
+        const normalized = normalizePlayerScoreItem(item, bucket);
+
+        let levelMatch = null;
+        if (normalized.id && levelMapById) {
+            levelMatch = levelMapById.get(String(normalized.id));
+        }
+        if (!levelMatch && normalized.level && levelMapByName) {
+            levelMatch = levelMapByName.get(normalizeLookupKey(normalized.level));
+        }
+
+        if (levelMatch) {
+            normalized.rank = levelMatch.position > 150 ? 'LEGACY' : levelMatch.position;
+            normalized.score = score(levelMatch.position, normalized.percent ?? 100, levelMatch.percentToQualify);
+            normalized.id = levelMatch.id;
+            normalized.level = levelMatch.name;
+        } else if (levelMapById || levelMapByName) {
+            // If lists are provided but level not found, zero out the score as it's not on the list
+            normalized.score = 0;
+            normalized.rank = 'LEGACY';
+        }
+        return normalized;
+    };
+
+    const sortItems = (arr) => arr.sort((a, b) => {
+        const getRank = (r) => (r === 'LEGACY' || !r) ? 99999 : Number(r);
+        return getRank(a.rank) - getRank(b.rank);
+    });
+
+    const verified = sortItems(asArray(player.verifications || player.verified)
+        .map((item) => fixItem(item, 'verified'))
+        .filter((item) => item.rank !== 'LEGACY'));
+    const completed = sortItems(asArray(player.completions || player.victories || player.completed)
+        .map((item) => fixItem(item, 'completed'))
+        .filter((item) => item.rank !== 'LEGACY'));
+    const progressed = sortItems(asArray(player.progressRecords || player.progressed || player.progress)
+        .map((item) => fixItem(item, 'progressed'))
+        .filter((item) => item.rank !== 'LEGACY'));
+
+    const calculatedTotal = [...verified, ...completed, ...progressed]
+        .reduce((sum, item) => sum + Number(item.score || 0), 0);
+
+    const hasRecords = verified.length > 0 || completed.length > 0 || progressed.length > 0;
+    const total = hasRecords ? calculatedTotal : Number(player.points ?? player.total ?? 0);
 
     return {
         user: displayName,
@@ -928,8 +972,17 @@ function entryFromPlayerOverride(player) {
     };
 }
 
-function applyPlayerOverrides(entries, playerOverrides) {
+function applyPlayerOverrides(entries, playerOverrides, list = []) {
     const byUser = new Map(entries.map((entry) => [normalizeLookupKey(entry.user), entry]));
+
+    const levelMapById = new Map();
+    const levelMapByName = new Map();
+
+    list.forEach(([level]) => {
+        if (!level) return;
+        levelMapById.set(String(level.id), level);
+        levelMapByName.set(normalizeLookupKey(level.name), level);
+    });
 
     Object.entries(playerOverrides || {}).forEach(([key, player]) => {
         if (!player || key.startsWith('_') || player.enabled === false) return;
@@ -972,7 +1025,10 @@ function applyPlayerOverrides(entries, playerOverrides) {
             byUser.set(lookup, filtered);
         } else {
             // Full override — replaces the entire player entry
-            const overrideEntry = entryFromPlayerOverride({ ...player, name: player.name || key });
+            // If they provided records, we ignore the manual rank and let it compute naturally, unless forced.
+            // Wait, to auto calculate the player rank, we will ignore rankOverride if they have auto-calculated points.
+            // Actually, we'll let the JSON's presence of `rankOverride` dictate it. We can clean up the JSON separately.
+            const overrideEntry = entryFromPlayerOverride({ ...player, name: player.name || key }, levelMapById, levelMapByName);
             byUser.set(lookup, overrideEntry);
         }
     });
@@ -1092,7 +1148,7 @@ export async function fetchPointercrateLeaderboard() {
         }
     });
 
-    return [applyPlayerOverrides([...byUser.values()], overrideState.playerOverrides), errs];
+    return [applyPlayerOverrides([...byUser.values()], overrideState.playerOverrides, list), errs];
 }
 
 // ── Recent Changes ───────────────────────────────────────────────────
